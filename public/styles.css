@@ -1,0 +1,206 @@
+a {
+  text-decoration: none;
+}
+
+main{
+  
+}
+
+html {
+  /* Reserva el espacio de la barra de scroll siempre */
+  scrollbar-gutter: stable;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.width100 {
+  width: 100%;
+}
+
+.main-icon {
+  width: 110px;
+  object-fit: contain;
+}
+
+
+.testing-box {
+  border: 2px solid #db3455;
+}
+
+.placeholder-image{
+  width: 100%;
+}
+
+.horizontal-container {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button-style {
+  background-color: #232323;
+  border: 2px solid #ffffff00;
+  border-radius: 90px;
+  padding: 6px;
+}
+
+
+
+
+.content-info {
+  background-color: #000000;
+}
+
+.plan-style {
+  background-color: #ffffff;
+  border: 2px solid #474747;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.plan-container {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  padding: 5px;
+
+  align-items: center;
+}
+
+.bottom-links-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 600px;
+  gap: 3px;
+  width: 100%;
+}
+
+.list-of-links {
+  padding: 0px;
+  margin: 0px;
+}
+
+.link-listed {
+  padding: 0px;
+  margin: 0px;
+}
+
+.base-icon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+
+
+
+/* El método "Mobile First" (Ocultar en escritorio)
+    Es la práctica más recomendada hoy en día
+    Muchos desarrolladores crean clases genéricas 
+    para usarlas rápido en el HTML
+
+    Dispositivo,Ancho (Breakpoint)
+    Móviles,Menos de 576px
+    Tablets,Entre 576px y 992px
+    Laptops/PC,Más de 992px
+    Pantallas Grandes,Más de 1200px
+*/
+/* Cuando la pantalla mide 760px o MÁS, desaparece */
+@media (min-width: 710px) {
+  .solo-desktop {
+    display: none;
+  }
+}
+
+/* Cuando la pantalla mide 760px o menos, desaparece */
+@media (max-width: 710px) {
+  .hidden-mobile {
+    display: none;
+  }
+}
+
+
+
+/* El "marco" donde vive el efecto parallax */
+.contenido-hero {
+  position: relative;
+  /* Para que esté por encima de la imagen */
+  overflow: hidden;
+  /* CRUCIAL: Corta cualquier exceso de imagen */
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+}
+
+.hero-content-interior {
+  align-self: center;
+  width: 80%;
+  height: 60%
+}
+.hero-30{
+  align-self: center;
+  width:  80%;
+  height: 20%;
+}
+
+.color-white {
+  color: white;
+}
+
+.hero-content-title {}
+
+.hero-content-paragraph {}
+
+.hero-content-button {
+  align-self: left;
+}
+
+.fondo-animado {
+  position: absolute;
+  width: 100%;
+  height: 120%;
+  object-fit: cover;
+  z-index: -1;
+  /* Empezamos con los valores iniciales */
+  transform: translateY(100px) scale(1.3);
+  /* Transición suave para cuando JS cambie los valores */
+  transition: transform 1.2s cubic-bezier(0.25, 1, 0.5, 1);
+  will-change: transform;
+}
+
+/* Clase para bloquear el scroll del cuerpo */
+.no-scroll {
+  overflow: hidden;
+}
+
+/* El resto de secciones deben ser sólidas para tapar el hero al subir */
+.main-content-section {
+  position: relative;
+  z-index: 2;
+  /* Mayor que el hero */
+  background-color: white;
+  /* Color sólido para que no sea transparente */
+  padding: 40px;
+}
+
+/* Definición del movimiento */
+@keyframes mover-arriba {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-50%);
+  }
+
+  /* Sube un 15% mientras bajas */
+}

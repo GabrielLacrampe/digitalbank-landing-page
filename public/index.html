@@ -1,11 +1,441 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <!--Importante: La etiqueta Viewport
+        Para que las Media Queries funcionen correctamente en dispositivos reales, 
+        debes tener esta línea dentro del <head> de tu HTML. Si no la tienes, el móvil
+        intentará "emular" una pantalla de escritorio y tus reglas de 20px o 768px
+        no se aplicarán bien.
+    -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
+
 <body>
-    
+    <header>
+        <div class="horizontal-container">
+            <div class="">
+                <img class="main-icon" src="..\Media\Revolut_logo.svg.png" alt="NombreBanco">
+            </div>
+
+            <!-- Aquí tienen dos div separados que se muestran
+                 uno u otro dependiendo del tamaño de la pantalla-->
+
+            <!-- Pantalla amplia, menu con opciones:
+                Personal, Business, Kids & Tens, Sobre Nosotros, 
+                Iniciar sesión y Registrarse-->
+            <div class="horizontal-container  width100">
+                <!-- Personal, Business, Kids & Tens, Sobre Nosotros -->
+                <span class=" horizontal-container">
+                    <div class="button-style hidden-mobile"><a href=""><span>Personal</span></a> </div>
+                    <div class="button-style hidden-mobile"><a href=""><span>Businnes</span></a></div>
+                    <div class="button-style hidden-mobile"><a href=""><span>Kids & Teens</span></a></div>
+                    <div class="button-style hidden-mobile"><a href=""><span>Sobre Nosotros</span></a></div>
+                </span>
+
+                <!-- Iniciar sesión y Registrarse -->
+                <span class=" horizontal-container justify-right">
+                    <div class="button-style hidden-mobile"><a href=""><span>Iniciar sesión</span></a> </div>
+                    <div class="button-style hidden-mobile"><a href=""><span>Registrarse</span></a> </div>
+                </span>
+            </div>
+
+            <div>
+                <i class="bi bi-menu-button-wide solo-desktop"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="contenido-hero testing-box">
+            <img src="\Media\heron.jpg" class="fondo-animado" alt="Fondo">
+
+            <div class="testing-box hero-30"></div>
+            <div class="testing-box hero-content-interior">
+                <h1 class="hero-content-title color-white">Banca y mucho más</h1>
+
+                <p class="hero-content-paragraph color-white">Tanto si estás en casa como de viaje,
+                    deja que Revolut supere tus expectativas bancarias.
+                    Regístrate con un toque.
+                </p>
+                <div class="button-style hero-content-button">
+                    <a class="color-white" href="">
+                        <span>Descargar App</span></a>
+                </div>
+            </div>
+            <div class="testing-box hero-30"></div>
+        </div>
+
+
+        <div class="testing-box">
+            <div>
+                <img class="width100" src="..\Media\IndicadorRiesgo.png" alt="indicador de riesgo">
+            </div>
+        </div>
+
+        <div class="testing-box">
+            <p>Para más información, consulta el Documento de información sobre comisiones y la lista de
+                servicios
+                más representativos asociados a una cuenta de pago.</p>
+
+            <h3>El banco que ya usan 4,7 millones de personas en España</h3>
+
+            <p>La app bancaria más descargada n.º 1
+                La app bancaria más descargada n.º 1
+                4,6/5 en Trustpilot
+                4,6/5 en Trustpilot
+                Mejor banco digital del mundo en 2025
+                Mejor banco digital del mundo en 2025
+                Lista de los mejores bancos del mundo de Forbes 2025
+                Lista de los mejores bancos del mundo de Forbes 2025</p>
+        </div>
+
+        <div class="testing-box">
+            <h1>OTRA SECCIÓN CON VIDEO Y OPCIONES</h1>
+            <img class=" placeholder-image" src="\Media/plant-8338691_1280.jpg" alt="Fondo">
+
+        </div>
+
+        <div class="testing-box">
+            <h1>OTRA SECCIÓN CON VIDEO Y OPCIONES</h1>
+            <img class=" placeholder-image" src="\Media\children-4894710_1280.jpg" alt="Fondo">
+
+        </div>
+        <div class="testing-box">
+            <h1>OTRA SECCIÓN CON VIDEO Y OPCIONES</h1>
+            <img class=" placeholder-image" src="/Media/credit-card-2439141_1280.jpg" alt="Fondo">
+
+        </div>
+        <div class="testing-box">
+            <h1>OTRA SECCIÓN CON VIDEO Y OPCIONES</h1>
+            <img class=" placeholder-image" src="\Media/plant-8338691_1280.jpg" alt="Fondo">
+
+        </div>
+        <div class="testing-box">
+            <h1>SECCION CON MUCHO TEXTO</h1>
+            <p>Únete a los Más de 65 millones de personas que ya utilizan Revolut
+        </div>
+    </main>
+
+    <footer role="contentinfo" class="content-info">
+        <h2 style="color: white;">Elige tu plan</h2>
+        <section class="">
+            <ul class="plan-container">
+                <li>
+                    <a href="">
+                        <div class="plan-style">
+                            <span>
+                                <h2>Estándar</h2>
+                            </span>
+                            <h3>Gratis</h3>
+                            <p>Para las finanzas básicas: todo lo que necesitas para gestionar tu dinero de forma
+                                sencilla y eficaz. Enviar dinero al extranjero o ajustarte a un presupuesto nunca ha
+                                sido tan fácil.</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="plan-style">
+                            <span>
+                                <h2>Estándar</h2>
+                            </span>
+                            <h3>Gratis</h3>
+                            <p>Para las finanzas básicas: todo lo que necesitas para gestionar tu dinero de forma
+                                sencilla y eficaz. Enviar dinero al extranjero o ajustarte a un presupuesto nunca ha
+                                sido tan fácil.</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="plan-style">
+                            <span>
+                                <h2>Estándar</h2>
+                            </span>
+                            <h3>Gratis</h3>
+                            <p>Para las finanzas básicas: todo lo que necesitas para gestionar tu dinero de forma
+                                sencilla y eficaz. Enviar dinero al extranjero o ajustarte a un presupuesto nunca ha
+                                sido tan fácil.</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <ul class="plan-container">
+                <li>
+                    <a href="">
+                        <div class="plan-style">
+                            <span>
+                                <h2>Estándar</h2>
+                            </span>
+                            <h3>Gratis</h3>
+                            <p>Para las finanzas básicas: todo lo que necesitas para gestionar tu dinero de forma
+                                sencilla y eficaz. Enviar dinero al extranjero o ajustarte a un presupuesto nunca ha
+                                sido tan fácil.</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="plan-style">
+                            <span>
+                                <h2>Estándar</h2>
+                            </span>
+                            <h3>Gratis</h3>
+                            <p>Para las finanzas básicas: todo lo que necesitas para gestionar tu dinero de forma
+                                sencilla y eficaz. Enviar dinero al extranjero o ajustarte a un presupuesto nunca ha
+                                sido tan fácil.</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <!-- En movil se transforman en desplegables, solo se ve el titulo-->
+        <section class="bottom-links-container">
+            <ul role="planes">
+                <div class="list-of-links">
+                    <p>Planes</p>
+                    <a class="link-listed" href="">
+                        <p>Estandar</p>
+                    </a>
+                    <a class="link-listed" href="">
+                        <p>Estandar</p>
+                    </a>
+
+                    <a class="link-listed" href="">
+                        <p>Estandar</p>
+                    </a>
+
+                    <a class="link-listed" href="">
+                        <p>Estandar</p>
+                    </a>
+
+                    <a class="link-listed" href="">
+                        <p>Estandar</p>
+                    </a>
+                    <a class="link-listed" href="">
+                        <p>Estandar</p>
+                    </a>
+                </div>
+            </ul>
+            <ul role="finanzasMundiales">
+                <div class="list-of-links">
+                    <p>Finanzas Mundiales</p>
+                    <a class="link-listed" href="">
+                        <p>Estandar</p>
+                    </a>
+                    <a class="link-listed" href="">
+                        <p>Estandar</p>
+                    </a>
+
+                    <a class="link-listed" href="">
+                        <p>Estandar</p>
+                    </a>
+
+                    <a class="link-listed" href="">
+                        <p>Estandar</p>
+                    </a>
+
+                    <a class="link-listed" href="">
+                        <p>Estandar</p>
+                    </a>
+                </div>
+            </ul>
+            <ul role="planes">
+                <div class="list-of-links">
+                    <p>Ayuda</p>
+                    <a class="link-listed" href="">
+                        <p>Estandar</p>
+                    </a>
+                    <a class="link-listed" href="">
+                        <p>Estandar</p>
+                    </a>
+
+                    <a class="link-listed" href="">
+                        <p>Estandar</p>
+                    </a>
+
+                    <a class="link-listed" href="">
+                        <p>Estandar</p>
+                    </a>
+
+                    <a class="link-listed" href="">
+                        <p>Estandar</p>
+                    </a>
+                    <a class="link-listed" href="">
+                        <p>Estandar</p>
+                    </a>
+                    <a class="link-listed" href="">
+                        <p>Estandar</p>
+                    </a>
+                </div>
+            </ul>
+            <ul role="planes">
+                <div class="list-of-links">
+                    <p>Gasto Inteligente</p>
+                    <a class="link-listed" href="">
+                        <p>Estandar</p>
+                    </a>
+                    <a class="link-listed" href="">
+                        <p>Estandar</p>
+                    </a>
+
+                    <a class="link-listed" href="">
+                        <p>Estandar</p>
+                    </a>
+
+                    <a class="link-listed" href="">
+                        <p>Estandar</p>
+                    </a>
+
+                    <a class="link-listed" href="">
+                        <p>Estandar</p>
+                    </a>
+                    <a class="link-listed" href="">
+                        <p>Estandar</p>
+                    </a>
+                    <a class="link-listed" href="">
+                        <p>Estandar</p>
+                    </a>
+                    <a class="link-listed" href="">
+                        <p>Estandar</p>
+                    </a>
+                </div>
+            </ul>
+            <ul role="planes">
+                <div class="list-of-links">
+                    <p>Seguridad y Protección</p>
+                    <a class="link-listed" href="">
+                        <p>Estandar</p>
+                    </a>
+                    <a class="link-listed" href="">
+                        <p>Estandar</p>
+                    </a>
+
+                    <a class="link-listed" href="">
+                        <p>Estandar</p>
+                    </a>
+
+                    <a class="link-listed" href="">
+                        <p>Estandar</p>
+                    </a>
+
+                    <a class="link-listed" href="">
+                        <p>Estandar</p>
+                    </a>
+                </div>
+            </ul>
+            <ul role="planes">
+                <div class="list-of-links">
+                    <p>Cuentas</p>
+                    <a class="link-listed" href="">
+                        <p>Estandar</p>
+                    </a>
+                    <a class="link-listed" href="">
+                        <p>Estandar</p>
+                    </a>
+
+                    <a class="link-listed" href="">
+                        <p>Estandar</p>
+                    </a>
+
+                    <a class="link-listed" href="">
+                        <p>Estandar</p>
+                    </a>
+
+                    <a class="link-listed" href="">
+                        <p>Estandar</p>
+                    </a>
+                </div>
+            </ul>
+            <ul role="planes">
+                <div class="list-of-links">
+                    <p>Inversiones</p>
+                    <a class="link-listed" href="">
+                        <p>Estandar</p>
+                    </a>
+                    <a class="link-listed" href="">
+                        <p>Estandar</p>
+                    </a>
+
+                    <a class="link-listed" href="">
+                        <p>Estandar</p>
+                    </a>
+
+                    <a class="link-listed" href="">
+                        <p>Estandar</p>
+                    </a>
+
+                    <a class="link-listed" href="">
+                        <p>Estandar</p>
+                    </a>
+                </div>
+            </ul>
+            <ul role="planes">
+                <div class="list-of-links">
+                    <p>Crypto</p>
+                    <a class="link-listed" href="">
+                        <p>Estandar</p>
+                    </a>
+                    <a class="link-listed" href="">
+                        <p>Estandar</p>
+                    </a>
+                    <a class="link-listed" href="">
+                        <p>Estandar</p>
+                    </a>
+                </div>
+            </ul>
+            <ul role="planes">
+                <div class="list-of-links">
+                    <p>Credito y Préstamos</p>
+                    <a class="link-listed" href="">
+                        <p>Estandar</p>
+                    </a>
+                    <a class="link-listed" href="">
+                        <p>Estandar</p>
+                    </a>
+                </div>
+            </ul>
+            <ul role="planes">
+                <div class="list-of-links">
+                    <p>Ahorro y Fondos</p>
+                    <a class="link-listed" href="">
+                        <p>Estandar</p>
+                    </a>
+                    <a class="link-listed" href="">
+                        <p>Estandar</p>
+                    </a>
+                </div>
+            </ul>
+
+            <ul role="planes">
+                <div class="list-of-links">
+                    <p>Sobre Nosotros</p>
+                    <a class="link-listed" href="">
+                        <p>Estandar</p>
+                    </a>
+                    <a class="link-listed" href="">
+                        <p>Estandar</p>
+                    </a>
+
+                </div>
+            </ul>
+        </section>
+        <section></section>
+        <div></div>
+        <ul></ul>
+        <div></div>
+    </footer>
+
+
+    <script src="HeroAnim.js"></script>
 </body>
+
 </html>
