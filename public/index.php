@@ -42,6 +42,7 @@
     </footer>
 
     <script src="HeroAnim.js"></script>
+    <script src="sections.js"></script>
 </body>
 
 </html>
