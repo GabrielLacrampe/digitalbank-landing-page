@@ -22,35 +22,26 @@
         <div class="contenido-hero testing-box">
             <?php include '../includes/section-hero.php'; ?>
         </div>
-
         <div class="testing-box">
             <?php include '../includes/section-risk.php'; ?>
         </div>
-
         <div class="testing-box">
             <?php include '../includes/section-moreinfo.php'; ?>
         </div>
-
         <div class="testing-box">
-            <h1>OTRA SECCIÓN CON VIDEO Y OPCIONES</h1>
-            <img class="placeholder-image" src="../assets/media/<?php echo $contenido[5]['nombre_archivo']; ?>" alt="<?php echo $contenido[5]['titulo']; ?>">
-        </div>
-
-        <div class="testing-box">
-            <h1>OTRA SECCIÓN CON VIDEO Y OPCIONES</h1>
-            <img class="placeholder-image" src="../assets/media/<?php echo $contenido[2]['nombre_archivo']; ?>" alt="<?php echo $contenido[2]['titulo']; ?>">
+            <?php include '../includes/section-placeholder1.php'; ?>
         </div>
         <div class="testing-box">
-            <h1>OTRA SECCIÓN CON VIDEO Y OPCIONES</h1>
-            <img class="placeholder-image" src="../assets/media/<?php echo $contenido[1]['nombre_archivo']; ?>" alt="<?php echo $contenido[1]['titulo']; ?>">
+            <?php include '../includes/section-placeholder2.php'; ?>
         </div>
         <div class="testing-box">
-            <h1>OTRA SECCIÓN CON VIDEO Y OPCIONES</h1>
-            <img class="placeholder-image" src="../assets/media/<?php echo $contenido[5]['nombre_archivo']; ?>" alt="<?php echo $contenido[5]['titulo']; ?>">
+            <?php include '../includes/section-placeholder3.php'; ?>
         </div>
         <div class="testing-box">
-            <h1>SECCION CON MUCHO TEXTO</h1>
-            <p>Únete a los Más de 65 millones de personas que ya utilizan Revolut
+            <?php include '../includes/section-placeholder4.php'; ?>
+        </div>
+        <div class="testing-box">
+            <?php include '../includes/section-placeholder5.php'; ?>
         </div>
     </main>
     
