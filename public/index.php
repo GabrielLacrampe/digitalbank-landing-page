@@ -18,25 +18,22 @@
             <?php include '../includes/section-hero.php'; ?>
         </div>
         <div class="testing-box">
-            <?php include '../includes/section-risk.php'; ?>
+            <?php include '../includes/section-awards&references.php'; ?>
         </div>
         <div class="testing-box">
-            <?php include '../includes/section-moreinfo.php'; ?>
+            <?php include '../includes/section-cards.php'; ?>
         </div>
         <div class="testing-box">
-            <?php include '../includes/section-placeholder1.php'; ?>
+            <?php include '../includes/section-savings.php'; ?>
         </div>
         <div class="testing-box">
-            <?php include '../includes/section-placeholder2.php'; ?>
+            <?php include '../includes/section-safety.php'; ?>
         </div>
         <div class="testing-box">
-            <?php include '../includes/section-placeholder3.php'; ?>
+            <?php include '../includes/section-stocks&commodities.php'; ?>
         </div>
         <div class="testing-box">
-            <?php include '../includes/section-placeholder4.php'; ?>
-        </div>
-        <div class="testing-box">
-            <?php include '../includes/section-placeholder5.php'; ?>
+            <?php include '../includes/section-finalinfo.php'; ?>
         </div>
     </main>
     
