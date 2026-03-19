@@ -12,7 +12,7 @@
     <div id="display-content">
         <?php $inicial = $datos['seccion_config']['estado_inicial']; ?>
         
-        <h2 id="dinamic-title"><?php echo $datos['bloques_variables'][$inicial]['titulo']; ?></h2>
+        <h1 id="dinamic-title"><?php echo $datos['bloques_variables'][$inicial]['titulo']; ?></h1>
         <p id="dinamic-text"><?php echo $datos['bloques_variables'][$inicial]['texto']; ?></p>
     </div>
 
