@@ -1,11 +1,8 @@
 <h1>Únete a los Más de 70+ millones de personas que ya utilizan Revolut</h1>
-
 <div>
     <div class="button-style hidden-mobile"><a href=""><span>Download</span></a></div>
 </div>
-
 <p>
-
 ¹The Annual Equivalent Rate (AER) shows the interest you can earn over 1 year. AER is compounded, so you’ll earn interest on interest already earned. Rates depend on your plan type and savings' currency, from up to 3% on our Standard plan to up to 4% on our Ultra plan. Paid plan subscription fees and T&Cs apply. Interest offered is subject to change and any interest earned is liable to the applicable taxes. Instant Access Savings T&Cs apply.
 
 ²FOR STOCK TRADING: Capital at risk.

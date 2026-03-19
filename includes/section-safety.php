@@ -3,7 +3,6 @@
 <p> 
 With Revolut Secure, you’re entering a new era of money security — where our proactive, purpose-built defences and team of fraud specialists help protect every account, 24/7.
 </p>
-
 <div>
     <div class="button-style hidden-mobile"><a href=""><span>learn more</span></a></div>
 </div>
