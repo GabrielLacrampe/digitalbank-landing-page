@@ -1,6 +1,6 @@
 <div class="horizontal-container">
             <div class="">
-                <img class="main-icon" src="../assets/media/Revolut_logo.svg.png" alt="NombreBanco">
+                <img class="main-icon" src="../assets/media/<?php echo $contenido[4]['nombre_archivo']; ?>" alt="<?php echo $contenido[4]['titulo']; ?>">
             </div>
 
             <!-- Aquí tienen dos div separados que se muestran

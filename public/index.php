@@ -33,24 +33,20 @@
 
         <div class="testing-box">
             <h1>OTRA SECCIÓN CON VIDEO Y OPCIONES</h1>
-            <img class=" placeholder-image" src="../assets/media/plant-8338691_1280.jpg" alt="Fondo">
-
+            <img class="placeholder-image" src="../assets/media/<?php echo $contenido[5]['nombre_archivo']; ?>" alt="<?php echo $contenido[5]['titulo']; ?>">
         </div>
 
         <div class="testing-box">
             <h1>OTRA SECCIÓN CON VIDEO Y OPCIONES</h1>
-            <img class=" placeholder-image" src="../assets/media/children-4894710_1280.jpg" alt="Fondo">
-
+            <img class="placeholder-image" src="../assets/media/<?php echo $contenido[2]['nombre_archivo']; ?>" alt="<?php echo $contenido[2]['titulo']; ?>">
         </div>
         <div class="testing-box">
             <h1>OTRA SECCIÓN CON VIDEO Y OPCIONES</h1>
-            <img class=" placeholder-image" src="../assets/media/credit-card-2439141_1280.jpg" alt="Fondo">
-
+            <img class="placeholder-image" src="../assets/media/<?php echo $contenido[1]['nombre_archivo']; ?>" alt="<?php echo $contenido[1]['titulo']; ?>">
         </div>
         <div class="testing-box">
             <h1>OTRA SECCIÓN CON VIDEO Y OPCIONES</h1>
-            <img class=" placeholder-image" src="../assets/media/plant-8338691_1280.jpg" alt="Fondo">
-
+            <img class="placeholder-image" src="../assets/media/<?php echo $contenido[5]['nombre_archivo']; ?>" alt="<?php echo $contenido[5]['titulo']; ?>">
         </div>
         <div class="testing-box">
             <h1>SECCION CON MUCHO TEXTO</h1>
