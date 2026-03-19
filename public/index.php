@@ -13,22 +13,17 @@
     <?php
     require '../config/db.php';
 
-    $sql = "SELECT id, titulo, nombre_archivo, descripcion FROM fotos ORDER BY id DESC";
+    $sql = "SELECT id, titulo, nombre_archivo, descripcion FROM fotos";
     $stmt = $pdo->query($sql);
-    $fotos = $stmt->fetchAll();
+    $fotos = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+    $contenido = [];
+        foreach ($fotos as $foto) {
+            $contenido[$foto['id']] = $foto;
+        }
     ?>
 
-    <!-- Pintamos las fotos (EJEMPLO)-->
-    <div class="galeria">
-        <?php foreach ($fotos as $foto): ?>
-            <div class="foto">
-                <h3><?= htmlspecialchars($foto['titulo']) ?></h3>
-                <img src="../assets/media/<?= htmlspecialchars($foto['nombre_archivo']) ?>"
-                    alt="<?= htmlspecialchars($foto['titulo']) ?>">
-                <p><?= htmlspecialchars($foto['descripcion']) ?></p>
-            </div>
-        <?php endforeach; ?>
-    </div>
+
 
     <header>
         <div class="horizontal-container">
@@ -67,7 +62,7 @@
     
     <main>
         <div class="contenido-hero testing-box">
-            <img src="../assets/media/heron.jpg" class="fondo-animado" alt="Fondo">
+            <img src="../assets/media/<?php echo $contenido[3]['nombre_archivo']; ?>" class="fondo-animado" alt="<?php echo $contenido[3]['titulo']; ?>">
 
             <div class="testing-box hero-30"></div>
             <div class="testing-box hero-content-interior">
@@ -88,7 +83,7 @@
 
         <div class="testing-box">
             <div>
-                <img class="width100" src="../assets/IndicadorRiesgo.png" alt="indicador de riesgo">
+                <img class="width100" src="../assets/media/riesgo.png" alt="indicador de riesgo">
             </div>
         </div>
 
@@ -441,7 +436,7 @@
                 </div>
             </ul>
         </section>
-        
+
     </footer>
 
     
