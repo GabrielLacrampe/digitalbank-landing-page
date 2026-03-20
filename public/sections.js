@@ -16,11 +16,12 @@ document.addEventListener('DOMContentLoaded', () => {
             const titulo = section.querySelector('.dinamic-title');
             const texto = section.querySelector('.dinamic-text');
             const imagen = section.querySelector('.dinamic-img'); // Por si quieres cambiar la foto
-
+            const butons = section.querySelector('.dinamic-button');
             // 5. Animación y cambio
             if(titulo) titulo.style.opacity = 0;
             if(texto) texto.style.opacity = 0;
             if(imagen) imagen.style.opacity = 0;
+            if(butons) butons.style.opacity = 0;
 
             setTimeout(() => {
                 if(titulo) {
@@ -34,6 +35,23 @@ document.addEventListener('DOMContentLoaded', () => {
                 if(imagen && nuevosDatos.imagen) {
                     imagen.src = `../assets/media/${nuevosDatos.imagen}`;
                     imagen.style.opacity = 1;
+                }
+                // Esto puede contener errores. revisar
+                if (butons && nuevosDatos.button) {
+                    // 1. Buscamos el enlace y el span específicos dentro del div dinámico
+                    const enlace = butons.querySelector('a');
+                    const spanTexto = butons.querySelector('span');
+
+                    if (enlace) {
+                        enlace.href = nuevosDatos.button.url;
+                    }
+                    
+                    if (spanTexto) {
+                        // Usamos el nombre exacto que pusiste en el JSON
+                        spanTexto.textContent = nuevosDatos.button.texto_button;
+                    }
+
+                    butons.style.opacity = 1;
                 }
             }, 300);
         });
