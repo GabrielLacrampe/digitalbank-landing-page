@@ -6,29 +6,29 @@ $datos = $mi_seccion['contenido'];
 
 <section id="awards-references">
 
-    <h1 class="static-title"><?php echo $datos['bloques_fijos']['title']; ?></h1>
+    <h1 class="static-title"><?php echo $datos['static_blocks']['title']; ?></h1>
     <div> 
-        <p class="static-text"><?php echo $datos['bloques_fijos']['award_a']['description']; ?></p>
-        <img class="static-image" src="../assets/media/<?php echo $datos['bloques_fijos']['award_a']['image']; ?>" alt="<?php echo $datos['bloques_fijos']['award_a']['alt']; ?>">
+        <p class="static-text"><?php echo $datos['static_blocks']['award_a']['description']; ?></p>
+        <img class="static-image" src="../assets/media/<?php echo $datos['static_blocks']['award_a']['image']; ?>" alt="<?php echo $datos['static_blocks']['award_a']['alt']; ?>">
     </div>
     <div> 
-        <p class="static-text"><?php echo $datos['bloques_fijos']['award_b']['description']; ?></p>
-        <img class="static-image" src="../assets/media/<?php echo $datos['bloques_fijos']['award_b']['image']; ?>" alt="<?php echo $datos['bloques_fijos']['award_b']['alt']; ?>">
+        <p class="static-text"><?php echo $datos['static_blocks']['award_b']['description']; ?></p>
+        <img class="static-image" src="../assets/media/<?php echo $datos['static_blocks']['award_b']['image']; ?>" alt="<?php echo $datos['static_blocks']['award_b']['alt']; ?>">
     </div>
     <div> 
-        <p class="static-text"><?php echo $datos['bloques_fijos']['award_c']['description']; ?></p>
-        <img class="static-image" src="../assets/media/<?php echo $datos['bloques_fijos']['award_c']['image']; ?>" alt="<?php echo $datos['bloques_fijos']['award_c']['alt']; ?>">
+        <p class="static-text"><?php echo $datos['static_blocks']['award_c']['description']; ?></p>
+        <img class="static-image" src="../assets/media/<?php echo $datos['static_blocks']['award_c']['image']; ?>" alt="<?php echo $datos['static_blocks']['award_c']['alt']; ?>">
     </div>
     <div> 
-        <p class="static-text"><?php echo $datos['bloques_fijos']['award_d']['description']; ?></p>
-        <img class="static-image" src="../assets/media/<?php echo $datos['bloques_fijos']['award_d']['image']; ?>" alt="<?php echo $datos['bloques_fijos']['award_d']['alt']; ?>">
+        <p class="static-text"><?php echo $datos['static_blocks']['award_d']['description']; ?></p>
+        <img class="static-image" src="../assets/media/<?php echo $datos['static_blocks']['award_d']['image']; ?>" alt="<?php echo $datos['static_blocks']['award_d']['alt']; ?>">
     </div>
     <div> 
-        <p class="static-text"><?php echo $datos['bloques_fijos']['award_e']['description']; ?></p>
-        <img class="static-image" src="../assets/media/<?php echo $datos['bloques_fijos']['award_e']['image']; ?>" alt="<?php echo $datos['bloques_fijos']['award_e']['alt']; ?>">
+        <p class="static-text"><?php echo $datos['static_blocks']['award_e']['description']; ?></p>
+        <img class="static-image" src="../assets/media/<?php echo $datos['static_blocks']['award_e']['image']; ?>" alt="<?php echo $datos['static_blocks']['award_e']['alt']; ?>">
     </div>
     <div> 
-        <p class="static-text"><?php echo $datos['bloques_fijos']['award_f']['description']; ?></p>
-        <img class="static-image" src="../assets/media/<?php echo $datos['bloques_fijos']['award_f']['image']; ?>" alt="<?php echo $datos['bloques_fijos']['award_f']['alt']; ?>">
+        <p class="static-text"><?php echo $datos['static_blocks']['award_f']['description']; ?></p>
+        <img class="static-image" src="../assets/media/<?php echo $datos['static_blocks']['award_f']['image']; ?>" alt="<?php echo $datos['static_blocks']['award_f']['alt']; ?>">
     </div>
 </section>

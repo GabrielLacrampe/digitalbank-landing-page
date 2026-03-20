@@ -1,38 +1,38 @@
 {
-  "seccion_config": {
-    "id_contenedor": "section-awards_references"
+  "section_config": {
+    "id_container": "section-awards_references"
   },
-  "bloques_fijos": {
+  "static_blocks": {
     "title": "Join 70+ million customers worldwide",
     "award_a": {
         "description": "#3 most downloaded finance app",
         "image": "card.jpg",
-        "alt": ""
+        "alt": "Image of a card"
     },
     "award_b": {
         "description": "4.7 out of 5 on Trustpilot",
         "image": "children.jpg",
-        "alt": ""
+        "alt": "Image of children"
     },
     "award_c": {
         "description": "Best International Payments Provider 2025",
         "image": "heron.jpg",
-        "alt": ""
+        "alt": "Image of a heron"
     },
     "award_d": {
         "description": "Best Consumer Banking Mobile App 2025",
         "image": "logo.png",
-        "alt": ""
+        "alt": "Company logo"
     },
     "award_e": {
         "description": "Customer Satisfaction — Gold",
         "image": "plant.jpg",
-        "alt": ""
+        "alt": "Image of a plant"
     },
     "award_f": {
         "description": "Consumer Guardian Badge 2025",
-        "image": "riesgo.jpg",
-        "alt": ""
+        "image": "riesgo.png",
+        "alt": "Image of a risk assessment"
     }
   }
 }
