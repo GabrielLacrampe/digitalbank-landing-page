@@ -38,7 +38,8 @@
     </main>
     
     <footer role="contentinfo" class="content-info">
-        <?php include '../includes/footer.php'; ?>
+        <?php include '../includes/section-plans.php'; 
+        include '../includes/section-links.php'; ?>
     </footer>
 
     <script src="HeroAnim.js"></script>
