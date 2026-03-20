@@ -1,0 +1,34 @@
+{
+  "section_config": {
+    "id_container": "section-master",
+    "initial_state": "option_a"
+  },
+  "controllers": [
+    { "id": "btnA", "label": "A", "target_data": "option_a" }
+  ],
+  "dynamic_blocks": {
+    "option_a": {
+      "title": "Title A",
+      "description": "Option A text sample",
+      "image": "image.jpg",
+      "button": {
+        "button_text": "Option A Button",
+        "url": "#"
+      }
+    }
+  },
+  "static_blocks": {
+    "title": "Static Title",
+    "description": "Static description text sample",
+    "image": "image.jpg",
+    "button_a": { 
+        "text": "Button A", 
+        "url": "#" 
+    },
+    "award_a": {
+        "description": "Static award description",
+        "image": "image.jpg",
+        "alt": ""
+    }
+  }
+}
