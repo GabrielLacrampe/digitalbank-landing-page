@@ -1,0 +1,44 @@
+INSERT INTO secciones_dinamicas (nombre_interno, html_id, orden, contenido_json)
+VALUES (
+'Awards Section',
+'section-awards_references',
+3,
+'{
+  "seccion_config": {
+    "id_contenedor": "section-awards_references"
+  },
+  "bloques_fijos": {
+    "title": "Join 70+ million customers worldwide",
+    "award_a": {
+        "description": "#3 most downloaded finance app",
+        "image": "card.jpg",
+        "alt": ""
+    },
+    "award_b": {
+        "description": "4.7 out of 5 on Trustpilot",
+        "image": "children.jpg",
+        "alt": ""
+    },
+    "award_c": {
+        "description": "Best International Payments Provider 2025",
+        "image": "heron.jpg",
+        "alt": ""
+    },
+    "award_d": {
+        "description": "Best Consumer Banking Mobile App 2025",
+        "image": "logo.png",
+        "alt": ""
+    },
+    "award_e": {
+        "description": "Customer Satisfaction — Gold",
+        "image": "plant.jpg",
+        "alt": ""
+    },
+    "award_f": {
+        "description": "Consumer Guardian Badge 2025",
+        "image": "riesgo.jpg",
+        "alt": ""
+    }
+  }
+}'
+);
