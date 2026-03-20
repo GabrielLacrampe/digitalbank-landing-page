@@ -1,16 +1,34 @@
-<h1>Stocks & Commodities</h1>
-<p>
-Explore 2,500+ stocks
-From Apple to Zoom, invest in some of the biggest and most influential companies in the world, commission-free within your monthly allowance.² Other fees may apply. Capital at risk.
+<?php 
+// Accedemos directamente a la sección que nos interesa mediante su llave
+$mi_seccion = $web_data['section-stocks-commodities']; 
+$datos = $mi_seccion['contenido']; 
+?>
 
-Discover Commodities
-Add more balance to your portfolio with gold, silver, platinum, and palladium. And invest as you spend with automatic round ups.³ Other fees may apply. Capital at risk. Service is not regulated by the FCA.
-</p>
-<div>
-    <div class="button-style hidden-mobile"><a href=""><span>Try it out</span></a></div>
-</div>
-<img class="placeholder-image" src="../assets/media/<?php echo $contenido[5]['nombre_archivo']; ?>" alt="<?php echo $contenido[5]['titulo']; ?>">
-<div>
-    <div class="button-style hidden-mobile"><a href=""><span>Stocks</span></a></div>
-    <div class="button-style hidden-mobile"><a href=""><span>Commodities</span></a></div>
-</div>
+<section id="stocks-commodities">
+    
+    <div id="display-content">
+        <?php $inicial = $datos['seccion_config']['estado_inicial']; ?>
+        
+        <h1 class="dinamic-title"><?php echo $datos['bloques_variables'][$inicial]['titulo']; ?></h1>
+        <p class="dinamic-text"><?php echo $datos['bloques_variables'][$inicial]['texto']; ?></p>
+    </div>
+
+    <div>
+        <div class="button-style hidden-mobile"><a href="<?php echo $datos['bloques_fijos']['boton_principal']['url']; ?>"><span><?php echo $datos['bloques_fijos']['boton_principal']['texto']; ?></span></a></div>  
+    </div>
+    <!-- TODO: falta agregar al json el texto alt de las imagenes-->
+    <img class="dinamic-img placeholder-image" src="../assets/media/<?php echo $datos['bloques_variables'][$inicial]['imagen']; ?>" alt="<?php echo $datos['bloques_variables'][$inicial]['titulo']; ?>">
+
+    <div class="tabs">
+        <?php foreach ($datos['controles'] as $btn): ?>
+            <button class="tab-btn" data-target="<?php echo $btn['target_data']; ?>">
+                <?php echo $btn['label']; ?>
+            </button>
+        <?php endforeach; ?>
+    </div>
+
+    
+    <script class="data-json" type="application/json">
+        <?php echo json_encode($datos['bloques_variables']); ?>
+    </script>
+</section>
