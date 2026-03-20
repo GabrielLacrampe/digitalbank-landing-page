@@ -1,28 +1,30 @@
 {
-  "seccion_config": {
-    "id_contenedor": "section-cards",
-    "estado_inicial": "option_a"
+  "section_config": {
+    "id_container": "section-cards",
+    "initial_state": "option_a"
   },
-  "controles": [
+  "controllers": [
     { "id": "btnA", "label": "Physical cards", "target_data": "option_a" },
     { "id": "btnB", "label": "Virtual cards", "target_data": "option_b" }
   ],
-  "bloques_variables": {
+  "dynamic_blocks": {
     "option_a": {
-      "titulo": "Elevate your spend",
-      "texto": "Earn points on your purchases with one of our debit cards. Then redeem them for Airline Miles and more. RevPoints T&Cs apply. Some cards available on paid plans only. Fees may apply.",
-      "imagen": "card.jpg",
+      "title": "Elevate your spend",
+      "description": "Earn points on your purchases with one of our debit cards. Then redeem them for Airline Miles and more. RevPoints T&Cs apply. Some cards available on paid plans only. Fees may apply.",
+      "image": "card.jpg",
+      "alt": "Image of a card",
       "button": {
-        "texto_button": "Start Earning",
+        "button_text": "Start Earning",
         "url": "#"
       }
     },
     "option_b": {
-      "titulo": "Go virtual",
-      "texto": "Create and add virtual cards to your Apple Wallet or Google Wallet to start paying right away.",
-      "imagen": "plant.jpg",
+      "title": "Go virtual",
+      "description": "Create and add virtual cards to your Apple Wallet or Google Wallet to start paying right away.",
+      "image": "plant.jpg",
+      "alt": "Image of a plant",
       "button": {
-        "texto_button": "Create a Card",
+        "button_text": "Create a Card",
         "url": "#"
       }
     }
