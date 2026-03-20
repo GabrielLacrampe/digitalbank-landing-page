@@ -1,8 +1,19 @@
-<h1>Your money’s safe space</h1>
-<img class="placeholder-image" src="../assets/media/<?php echo $contenido[1]['nombre_archivo']; ?>" alt="<?php echo $contenido[1]['titulo']; ?>">
-<p> 
-With Revolut Secure, you’re entering a new era of money security — where our proactive, purpose-built defences and team of fraud specialists help protect every account, 24/7.
-</p>
-<div>
-    <div class="button-style hidden-mobile"><a href=""><span>learn more</span></a></div>
-</div>
+<?php 
+// Accedemos directamente a la sección que nos interesa mediante su llave
+$mi_seccion = $web_data['section-safety']; 
+$datos = $mi_seccion['contenido']; 
+?>
+
+<section id="safety">
+
+    <h1 class="static-title"><?php echo $datos['bloques_fijos']['title']; ?></h1>
+    
+    <img class="placeholder-image" src="../assets/media/<?php echo $datos['bloques_fijos']['imagen']; ?>" alt="<?php echo $datos['bloques_fijos']['title']; ?>">
+    
+    <p class="static-text"><?php echo $datos['bloques_fijos']['description']; ?></p>
+
+    <div>
+        <div class="button-style hidden-mobile"><a href="<?php echo $datos['bloques_fijos']['boton_learnMore']['url']; ?>"><span><?php echo $datos['bloques_fijos']['boton_learnMore']['texto']; ?></span></a></div>
+    </div>
+
+</section>
