@@ -7,20 +7,20 @@ $datos = $mi_seccion['contenido'];
 <section id="stocks-commodities">
     
     <div id="display-content">
-        <?php $inicial = $datos['seccion_config']['estado_inicial']; ?>
+        <?php $inicial = $datos['section_config']['initial_state']; ?>
         
-        <h1 class="dinamic-title"><?php echo $datos['bloques_variables'][$inicial]['titulo']; ?></h1>
-        <p class="dinamic-text"><?php echo $datos['bloques_variables'][$inicial]['texto']; ?></p>
+        <h1 class="dynamic-title"><?php echo $datos['dynamic_blocks'][$inicial]['title']; ?></h1>
+        <p class="dynamic-text"><?php echo $datos['dynamic_blocks'][$inicial]['description']; ?></p>
     </div>
 
     <div>
-        <div class="button-style hidden-mobile"><a href="<?php echo $datos['bloques_fijos']['boton_principal']['url']; ?>"><span><?php echo $datos['bloques_fijos']['boton_principal']['texto']; ?></span></a></div>  
+        <div class="static-button button-style hidden-mobile"><a href="<?php echo $datos['static_blocks']['button']['url']; ?>"><span><?php echo $datos['static_blocks']['button']['button_text']; ?></span></a></div>  
     </div>
     <!-- TODO: falta agregar al json el texto alt de las imagenes-->
-    <img class="dinamic-img placeholder-image" src="../assets/media/<?php echo $datos['bloques_variables'][$inicial]['imagen']; ?>" alt="<?php echo $datos['bloques_variables'][$inicial]['titulo']; ?>">
+    <img class="dynamic-img placeholder-image" src="../assets/media/<?php echo $datos['dynamic_blocks'][$inicial]['image']; ?>" alt="<?php echo $datos['dynamic_blocks'][$inicial]['alt']; ?>">
 
     <div class="tabs">
-        <?php foreach ($datos['controles'] as $btn): ?>
+        <?php foreach ($datos['controllers'] as $btn): ?>
             <button class="tab-btn" data-target="<?php echo $btn['target_data']; ?>">
                 <?php echo $btn['label']; ?>
             </button>
@@ -29,6 +29,6 @@ $datos = $mi_seccion['contenido'];
 
     
     <script class="data-json" type="application/json">
-        <?php echo json_encode($datos['bloques_variables']); ?>
+        <?php echo json_encode($datos['dynamic_blocks']); ?>
     </script>
 </section>

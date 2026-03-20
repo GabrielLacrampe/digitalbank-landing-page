@@ -1,25 +1,30 @@
 {
-  "seccion_config": {
-    "id_contenedor": "section-stocks-commodities",
-    "estado_inicial": "option_a"
+  "section_config": {
+    "id_container": "section-stocks-commodities",
+    "initial_state": "option_a"
   },
-  "controles": [
+  "controllers": [
     { "id": "btnA", "label": "Stocks", "target_data": "option_a" },
     { "id": "btnB", "label": "Commodities", "target_data": "option_b" }
   ],
-  "bloques_variables": {
+  "dynamic_blocks": {
     "option_a": {
-      "titulo": "Explore 2,500+ stocks",
-      "texto": "From Apple to Zoom, invest in some of the biggest and most influential companies in the world, commission-free within your monthly allowance.² Other fees may apply. Capital at risk.",
-      "imagen": "card.jpg"
+      "title": "Explore 2,500+ stocks",
+      "description": "From Apple to Zoom, invest in some of the biggest and most influential companies in the world, commission-free within your monthly allowance.² Other fees may apply. Capital at risk.",
+      "image": "card.jpg",
+      "alt": "Image of a card"
     },
     "option_b": {
-      "titulo": "Discover Commodities",
-      "texto": "Add more balance to your portfolio with gold, silver, platinum, and palladium. And invest as you spend with automatic round ups.³ Other fees may apply. Capital at risk. Service is not regulated by the FCA.",
-      "imagen": "plant.jpg"
+      "title": "Discover Commodities",
+      "description": "Add more balance to your portfolio with gold, silver, platinum, and palladium. And invest as you spend with automatic round ups.³ Other fees may apply. Capital at risk. Service is not regulated by the FCA.",
+      "image": "plant.jpg",
+      "alt": "Image of a plant"
     }
   },
-  "bloques_fijos": {
-    "boton_principal": { "texto": "Try it out", "url": "#" }
+  "static_blocks": {
+    "button": { 
+      "button_text": "Try it out", 
+      "url": "#" 
+    }
   }
 }
