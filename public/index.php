@@ -30,9 +30,6 @@
             <?php include '../includes/section-safety.php'; ?>
         </div>
         <div class="testing-box">
-            <?php include '../includes/section-test.php'; ?>
-        </div>
-        <div class="testing-box">
             <?php include '../includes/section-stokscommodities.php'; ?>
         </div>
         <div class="testing-box">
