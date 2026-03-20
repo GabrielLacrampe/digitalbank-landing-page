@@ -11,6 +11,7 @@
       "title": "Title A",
       "description": "Option A text sample",
       "image": "image.jpg",
+      "alt": "Option A image alt text",
       "button": {
         "button_text": "Option A Button",
         "url": "#"
@@ -21,14 +22,15 @@
     "title": "Static Title",
     "description": "Static description text sample",
     "image": "image.jpg",
+    "alt": "Static image alt text",
     "button_a": { 
-        "text": "Button A", 
+        "button_text": "Button A", 
         "url": "#" 
     },
     "award_a": {
         "description": "Static award description",
         "image": "image.jpg",
-        "alt": ""
+        "alt": "Static award image alt text"
     }
   }
 }
