@@ -1,13 +1,14 @@
 {
-  "seccion_config": {
-    "id_contenedor": "section-safety"
+  "section_config": {
+    "id_container": "section-safety"
   },
-  "bloques_fijos": {
+  "static_blocks": {
     "title": "Your money’s safe space",
     "description": "With Revolut Secure, you’re entering a new era of money security — where our proactive, purpose-built defences and team of fraud specialists help protect every account, 24/7.",
-    "imagen": "plant.jpg",
-    "boton_learnMore": { 
-        "texto": "Learn More", 
+    "image": "plant.jpg",
+    "alt": "Image of a plant",
+    "button": { 
+        "button_text": "Learn More", 
         "url": "#" 
     }
   }

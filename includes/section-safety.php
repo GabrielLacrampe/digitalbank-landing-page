@@ -6,14 +6,14 @@ $datos = $mi_seccion['contenido'];
 
 <section id="safety">
 
-    <h1 class="static-title"><?php echo $datos['bloques_fijos']['title']; ?></h1>
+    <h1 class="static-title"><?php echo $datos['static_blocks']['title']; ?></h1>
     
-    <img class="placeholder-image" src="../assets/media/<?php echo $datos['bloques_fijos']['imagen']; ?>" alt="<?php echo $datos['bloques_fijos']['title']; ?>">
+    <img class="static-image placeholder-image" src="../assets/media/<?php echo $datos['static_blocks']['image']; ?>" alt="<?php echo $datos['static_blocks']['alt']; ?>">
     
-    <p class="static-text"><?php echo $datos['bloques_fijos']['description']; ?></p>
+    <p class="static-text"><?php echo $datos['static_blocks']['description']; ?></p>
 
     <div>
-        <div class="button-style hidden-mobile"><a href="<?php echo $datos['bloques_fijos']['boton_learnMore']['url']; ?>"><span><?php echo $datos['bloques_fijos']['boton_learnMore']['texto']; ?></span></a></div>
+        <div class="static-button button-style hidden-mobile"><a href="<?php echo $datos['static_blocks']['button']['url']; ?>"><span><?php echo $datos['static_blocks']['button']['button_text']; ?></span></a></div>
     </div>
 
 </section>
