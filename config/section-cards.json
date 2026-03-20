@@ -1,0 +1,30 @@
+{
+  "seccion_config": {
+    "id_contenedor": "section-cards",
+    "estado_inicial": "option_a"
+  },
+  "controles": [
+    { "id": "btnA", "label": "Physical cards", "target_data": "option_a" },
+    { "id": "btnB", "label": "Virtual cards", "target_data": "option_b" }
+  ],
+  "bloques_variables": {
+    "option_a": {
+      "titulo": "Elevate your spend",
+      "texto": "Earn points on your purchases with one of our debit cards. Then redeem them for Airline Miles and more. RevPoints T&Cs apply. Some cards available on paid plans only. Fees may apply.",
+      "imagen": "card.jpg",
+      "button": {
+        "texto_button": "Start Earning",
+        "url": "#"
+      }
+    },
+    "option_b": {
+      "titulo": "Go virtual",
+      "texto": "Create and add virtual cards to your Apple Wallet or Google Wallet to start paying right away.",
+      "imagen": "plant.jpg",
+      "button": {
+        "texto_button": "Create a Card",
+        "url": "#"
+      }
+    }
+  }
+}

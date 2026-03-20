@@ -1,0 +1,25 @@
+{
+  "seccion_config": {
+    "id_contenedor": "section-stocks-commodities",
+    "estado_inicial": "option_a"
+  },
+  "controles": [
+    { "id": "btnA", "label": "Stocks", "target_data": "option_a" },
+    { "id": "btnB", "label": "Commodities", "target_data": "option_b" }
+  ],
+  "bloques_variables": {
+    "option_a": {
+      "titulo": "Explore 2,500+ stocks",
+      "texto": "From Apple to Zoom, invest in some of the biggest and most influential companies in the world, commission-free within your monthly allowance.² Other fees may apply. Capital at risk.",
+      "imagen": "card.jpg"
+    },
+    "option_b": {
+      "titulo": "Discover Commodities",
+      "texto": "Add more balance to your portfolio with gold, silver, platinum, and palladium. And invest as you spend with automatic round ups.³ Other fees may apply. Capital at risk. Service is not regulated by the FCA.",
+      "imagen": "plant.jpg"
+    }
+  },
+  "bloques_fijos": {
+    "boton_principal": { "texto": "Try it out", "url": "#" }
+  }
+}

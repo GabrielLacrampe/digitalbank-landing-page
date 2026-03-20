@@ -1,0 +1,23 @@
+{
+  "seccion_config": {
+    "id_contenedor": "selector-prueba",
+    "estado_inicial": "opcion_a"
+  },
+  "controles": [
+    { "id": "btnA", "label": "Ver Particular", "target_data": "opcion_a" },
+    { "id": "btnB", "label": "Ver Business", "target_data": "opcion_b" }
+  ],
+  "bloques_variables": {
+    "opcion_a": {
+      "titulo": "Cuenta Estándar",
+      "texto": "Ideal para tus gastos del día a día sin comisiones.",
+      "imagen": "assets/media/card-blue.png"
+    },
+    "opcion_b": {
+      "titulo": "Cuenta Business",
+      "texto": "Potencia tu empresa con herramientas de facturación.",
+      "imagen": "assets/media/card-black.png"
+    }
+  }
+}
+

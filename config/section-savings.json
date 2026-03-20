@@ -1,0 +1,48 @@
+{
+  "seccion_config": {
+    "id_contenedor": "section-savings",
+    "estado_inicial": "option_a"
+  },
+  "controles": [
+    { "id": "btnA", "label": "Wedding", "target_data": "option_a" },
+    { "id": "btnB", "label": "Adventure", "target_data": "option_b" },
+    { "id": "btnC", "label": "Moving", "target_data": "option_c" }
+  ],
+  "bloques_variables": {
+    "option_a": {
+      "titulo": "Title for Wedding",
+      "texto": "Option A text sample",
+      "imagen": "card.jpg"
+    },
+    "option_b": {
+      "titulo": "Title for Adventure",
+      "texto": "Option B text sample",
+      "imagen": "plant.jpg"
+    },
+    "option_c": {
+      "titulo": "Title for Moving",
+      "texto": "Option C text sample",
+      "imagen": "children.jpg"
+    }
+  },
+  "bloques_fijos": {
+    "title": "Life, meet savings",
+    "description": "Grow your money with up to 4% AER (variable)¹ interest rate on Savings, paid every day. AER stands for Annual Equivalent Rate and illustrates what the interest rate would be if interest was paid and compounded once each year. The interest rate is variable and subject to your selected plan. T&Cs apply.",
+    "boton_exploreSavings": { 
+        "texto": "Explore Savings", 
+        "url": "#" 
+    },
+    "boton_wedding": { 
+        "texto": "Wedding", 
+        "url": "#" 
+    },
+    "boton_adventure": { 
+        "texto": "Adventure", 
+        "url": "#" 
+    },
+    "boton_moving": { 
+        "texto": "Moving", 
+        "url": "#" 
+    }
+  }
+}
