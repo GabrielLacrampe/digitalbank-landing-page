@@ -1,12 +1,34 @@
-<h3>Join 70+ million customers worldwide and 12 million in the UK</h3>
-<p>
-    Aqui va una serie de imagenes de referencias y premios, como por ejemplo:
-    La app bancaria más descargada n.º 1
-    La app bancaria más descargada n.º 1
-    4,6/5 en Trustpilot
-    4,6/5 en Trustpilot
-    Mejor banco digital del mundo en 2025
-    Mejor banco digital del mundo en 2025
-    Lista de los mejores bancos del mundo de Forbes 2025
-    Lista de los mejores bancos del mundo de Forbes 2025
-</p>
+<?php 
+// Accedemos directamente a la sección que nos interesa mediante su llave
+$mi_seccion = $web_data['section-awards_references']; 
+$datos = $mi_seccion['contenido']; 
+?>
+
+<section id="awards-references">
+
+    <h1 class="static-title"><?php echo $datos['bloques_fijos']['title']; ?></h1>
+    <div> 
+        <p class="static-text"><?php echo $datos['bloques_fijos']['award_a']['description']; ?></p>
+        <img class="static-image" src="../assets/media/<?php echo $datos['bloques_fijos']['award_a']['image']; ?>" alt="<?php echo $datos['bloques_fijos']['award_a']['alt']; ?>">
+    </div>
+    <div> 
+        <p class="static-text"><?php echo $datos['bloques_fijos']['award_b']['description']; ?></p>
+        <img class="static-image" src="../assets/media/<?php echo $datos['bloques_fijos']['award_b']['image']; ?>" alt="<?php echo $datos['bloques_fijos']['award_b']['alt']; ?>">
+    </div>
+    <div> 
+        <p class="static-text"><?php echo $datos['bloques_fijos']['award_c']['description']; ?></p>
+        <img class="static-image" src="../assets/media/<?php echo $datos['bloques_fijos']['award_c']['image']; ?>" alt="<?php echo $datos['bloques_fijos']['award_c']['alt']; ?>">
+    </div>
+    <div> 
+        <p class="static-text"><?php echo $datos['bloques_fijos']['award_d']['description']; ?></p>
+        <img class="static-image" src="../assets/media/<?php echo $datos['bloques_fijos']['award_d']['image']; ?>" alt="<?php echo $datos['bloques_fijos']['award_d']['alt']; ?>">
+    </div>
+    <div> 
+        <p class="static-text"><?php echo $datos['bloques_fijos']['award_e']['description']; ?></p>
+        <img class="static-image" src="../assets/media/<?php echo $datos['bloques_fijos']['award_e']['image']; ?>" alt="<?php echo $datos['bloques_fijos']['award_e']['alt']; ?>">
+    </div>
+    <div> 
+        <p class="static-text"><?php echo $datos['bloques_fijos']['award_f']['description']; ?></p>
+        <img class="static-image" src="../assets/media/<?php echo $datos['bloques_fijos']['award_f']['image']; ?>" alt="<?php echo $datos['bloques_fijos']['award_f']['alt']; ?>">
+    </div>
+</section>
