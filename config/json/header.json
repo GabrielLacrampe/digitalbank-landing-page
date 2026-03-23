@@ -1,0 +1,33 @@
+{
+  "section_config": {
+    "id_container": "header"
+  },
+  "static_blocks": {
+    "image": "logo.png",
+    "alt": "Logo",
+    "button_personal": { 
+        "button_text": "Personal", 
+        "url": "#" 
+    },
+    "button_business": { 
+        "button_text": "Business", 
+        "url": "#" 
+    },
+    "button_kidstens": { 
+        "button_text": "Kids & Tens", 
+        "url": "#" 
+    },
+    "button_aboutus": { 
+        "button_text": "About US", 
+        "url": "#" 
+    },
+    "button_login": { 
+        "button_text": "Login", 
+        "url": "#" 
+    },
+    "button_register": { 
+        "button_text": "Register", 
+        "url": "#" 
+    }
+  }
+}

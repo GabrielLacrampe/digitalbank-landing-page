@@ -1,6 +1,12 @@
+<?php 
+// Accedemos directamente a la sección que nos interesa mediante su llave
+$mi_seccion = $web_data['header']; 
+$datos = $mi_seccion['contenido']; 
+?>
+
 <div class="horizontal-container">
     <div class="">
-        <img class="main-icon" src="../assets/media/<?php echo $contenido[4]['nombre_archivo']; ?>" alt="<?php echo $contenido[4]['titulo']; ?>">
+        <img class="static-image placeholder-image" src="../assets/media/<?php echo $datos['static_blocks']['image']; ?>" alt="<?php echo $datos['static_blocks']['alt']; ?>">
     </div>
 
     <!-- Aquí tienen dos div separados que se muestran
@@ -12,16 +18,16 @@
     <div class="horizontal-container width100">
         <!-- Personal, Business, Kids & Tens, Sobre Nosotros -->
         <span class="horizontal-container">
-            <div class="button-style hidden-mobile"><a href=""><span>Personal</span></a></div>
-            <div class="button-style hidden-mobile"><a href=""><span>Business</span></a></div>
-            <div class="button-style hidden-mobile"><a href=""><span>Kids & Tens</span></a></div>
-            <div class="button-style hidden-mobile"><a href=""><span>Sobre Nosotros</span></a></div>
+            <div class="button-style hidden-mobile"><a href="<?php echo $datos['static_blocks']['button_personal']['url']; ?>"><span><?php echo $datos['static_blocks']['button_personal']['button_text']; ?></span></a></div>
+            <div class="button-style hidden-mobile"><a href="<?php echo $datos['static_blocks']['button_business']['url']; ?>"><span><?php echo $datos['static_blocks']['button_business']['button_text']; ?></span></a></div>
+            <div class="button-style hidden-mobile"><a href="<?php echo $datos['static_blocks']['button_kidstens']['url']; ?>"><span><?php echo $datos['static_blocks']['button_kidstens']['button_text']; ?></span></a></div>
+            <div class="button-style hidden-mobile"><a href="<?php echo $datos['static_blocks']['button_aboutus']['url']; ?>"><span><?php echo $datos['static_blocks']['button_aboutus']['button_text']; ?></span></a></div>
         </span>
 
         <!-- Iniciar sesión y Registrarse -->
         <span class="horizontal-container justify-right">
-            <div class="button-style hidden-mobile"><a href=""><span>Iniciar sesión</span></a></div>
-            <div class="button-style hidden-mobile"><a href=""><span>Registrarse</span></a></div>
+            <div class="button-style hidden-mobile"><a href="<?php echo $datos['static_blocks']['button_login']['url']; ?>"><span><?php echo $datos['static_blocks']['button_login']['button_text']; ?></span></a></div>
+            <div class="button-style hidden-mobile"><a href="<?php echo $datos['static_blocks']['button_register']['url']; ?>"><span><?php echo $datos['static_blocks']['button_register']['button_text']; ?></span></a></div>
         </span>
     </div>
 
