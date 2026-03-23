@@ -1,0 +1,40 @@
+{
+  "section_config": {
+    "id_container": "section-plans"
+  },
+  "static_blocks": {
+    "title": "Choose your plan",
+    "plans": {
+        "plan_standard": { 
+        "title": "Standard", 
+        "price": "Free",
+        "description": "For the financial basics — everything you need for better money management in one place. Sending money abroad or sticking to a budget has never been easier.",
+        "url": "#" 
+        },
+        "plan_plus": {
+        "title": "Plus",
+        "price": "$9.99",
+        "description": "For the smart spender — access additional benefits like better limits for spending abroad and insurance for your purchases, on our affordable paid plan.",
+        "url": "#" 
+        },
+        "plan_premium": {
+        "title": "Premium",
+        "price": "$14.99",
+        "description": "For elevating every day — access exclusive subscriptions, better savings rates, and exchange unlimited amounts of money.",
+        "url": "#" 
+        },
+        "plan_metal": {
+        "title": "Metal",
+        "price": "$19.99",
+        "description": "For the global travellers and traders — relax with travel insurance, enjoy enhanced limits, and subscriptions worth £2,200 annually.",
+        "url": "#" 
+        },
+        "plan_ultra": {
+        "title": "Ultra",
+        "price": "$29.99",
+        "description": "For those seeking the best of Revolut — get exceptional benefits like unlimited airport lounge access, monthly global data, partner subscriptions, and cancellation cover.",
+        "url": "#" 
+        }
+    }
+  }
+}
