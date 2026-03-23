@@ -10,7 +10,7 @@ $datos = $mi_seccion['contenido'];
             <h1 class="hero-content-title color-white"><?php echo $datos['static_blocks']['group_a']['title']; ?></h1>
             <p class="hero-content-paragraph color-white"><?php echo $datos['static_blocks']['group_a']['description']; ?>
             </p>
-            <div class="button-style hero-content-button">
+            <div class="static-button button-style hero-content-button">
                 <a class="color-white" href="<?php echo $datos['static_blocks']['group_a']['button']['url']; ?>"> <span><?php echo $datos['static_blocks']['group_a']['button']['button_text']; ?></span></a>
             </div>
         </div>
