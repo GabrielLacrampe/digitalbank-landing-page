@@ -14,31 +14,19 @@
     </header>
 
     <main>
-        <div class="contenido-hero testing-box">
-            <?php include '../includes/section-hero.php'; ?>
-        </div>
-        <div class="testing-box">
-            <?php include '../includes/section-awards&references.php'; ?>
-        </div>
-        <div class="testing-box">
-            <?php include '../includes/section-cards.php'; ?>
-        </div>
-        <div class="testing-box">
-            <?php include '../includes/section-savings.php'; ?>
-        </div>
-        <div class="testing-box">
-            <?php include '../includes/section-safety.php'; ?>
-        </div>
-        <div class="testing-box">
-            <?php include '../includes/section-stokscommodities.php'; ?>
-        </div>
-        <div class="testing-box">
-            <?php include '../includes/section-finalinfo.php'; ?>
-        </div>
+        <?php 
+        include '../includes/section-hero.php'; 
+        include '../includes/section-awards&references.php';
+        include '../includes/section-cards.php'; 
+        include '../includes/section-savings.php'; 
+        include '../includes/section-safety.php';
+        include '../includes/section-stokscommodities.php';
+        include '../includes/section-finalinfo.php'; ?>
     </main>
     
     <footer role="contentinfo" class="content-info">
-        <?php include '../includes/section-plans.php'; 
+        <?php 
+        include '../includes/section-plans.php'; 
         include '../includes/section-links.php'; ?>
     </footer>
 
