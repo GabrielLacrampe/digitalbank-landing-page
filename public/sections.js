@@ -13,28 +13,28 @@ document.addEventListener('DOMContentLoaded', () => {
             const nuevosDatos = todasLasOpciones[target];
 
             // 4. Seleccionamos los elementos a cambiar DENTRO de esta sección únicamente
-            const titulo = section.querySelector('.dynamic-title');
-            const texto = section.querySelector('.dynamic-text');
-            const imagen = section.querySelector('.dynamic-image'); // Por si quieres cambiar la foto
+            const title = section.querySelector('.dynamic-title');
+            const text = section.querySelector('.dynamic-text');
+            const image = section.querySelector('.dynamic-image'); // Por si quieres cambiar la foto
             const butons = section.querySelector('.dynamic-button');
             // 5. Animación y cambio
-            if(titulo) titulo.style.opacity = 0;
-            if(texto) texto.style.opacity = 0;
-            if(imagen) imagen.style.opacity = 0;
+            if(title) title.style.opacity = 0;
+            if(text) text.style.opacity = 0;
+            if(image) image.style.opacity = 0;
             if(butons) butons.style.opacity = 0;
 
             setTimeout(() => {
-                if(titulo) {
-                    titulo.textContent = nuevosDatos.titulo;
-                    titulo.style.opacity = 1;
+                if(title) {
+                    title.textContent = nuevosDatos.title;
+                    title.style.opacity = 1;
                 }
-                if(texto) {
-                    texto.textContent = nuevosDatos.texto;
-                    texto.style.opacity = 1;
+                if(text) {
+                    text.textContent = nuevosDatos.text;
+                    text.style.opacity = 1;
                 }
-                if(imagen && nuevosDatos.imagen) {
-                    imagen.src = `../assets/media/${nuevosDatos.imagen}`;
-                    imagen.style.opacity = 1;
+                if(image && nuevosDatos.image) {
+                    image.src = `../assets/media/${nuevosDatos.image}`;
+                    image.style.opacity = 1;
                 }
                 // Esto puede contener errores. revisar
                 if (butons && nuevosDatos.button) {
@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     
                     if (spanTexto) {
                         // Usamos el nombre exacto que pusiste en el JSON
-                        spanTexto.textContent = nuevosDatos.button.texto_button;
+                        spanTexto.textContent = nuevosDatos.button.button_text;
                     }
 
                     butons.style.opacity = 1;
