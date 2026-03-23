@@ -1,21 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php require_once '../config/db.php'; ?>
 
 <head>
     <?php include '../includes/head.php'; ?>
 </head>
 
 <body>   
-    <?php require_once '../config/queries.php'; ?>
-
     <header>
         <?php include '../includes/header.php'; ?>
     </header>
 
     <main>
-        <?php 
-        include '../includes/section-hero.php'; 
+        <?php include '../includes/section-hero.php'; 
         include '../includes/section-awards&references.php';
         include '../includes/section-cards.php'; 
         include '../includes/section-savings.php'; 
@@ -25,8 +21,7 @@
     </main>
     
     <footer role="contentinfo" class="content-info">
-        <?php 
-        include '../includes/section-plans.php'; 
+        <?php include '../includes/section-plans.php'; 
         include '../includes/section-links.php'; ?>
     </footer>
 
