@@ -26,6 +26,10 @@ ul {
   object-fit: contain;
 }
 
+.header-logo {
+  width: 120px;
+  object-fit: contain;
+}
 
 .testing-box {
   border: 2px solid #db3455;

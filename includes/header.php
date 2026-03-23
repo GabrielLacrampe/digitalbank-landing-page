@@ -6,7 +6,7 @@ $datos = $mi_seccion['contenido'];
 
 <div class="horizontal-container">
     <div class="">
-        <img class="static-image" src="../assets/media/<?php echo $datos['static_blocks']['image']; ?>" alt="<?php echo $datos['static_blocks']['alt']; ?>">
+        <img class="header-logo" src="../assets/media/<?php echo $datos['static_blocks']['image']; ?>" alt="<?php echo $datos['static_blocks']['alt']; ?>">
     </div>
 
     <!-- Aquí tienen dos div separados que se muestran
