@@ -1,0 +1,294 @@
+{
+  "section_config": {
+    "id_container": "section-links"
+  },
+  "static_blocks": {
+    "list_a":{    
+        "title": "Planes",
+        "link_a": { 
+            "button_text": "Estandar", 
+            "url": "#" 
+        },
+        "link_b": { 
+            "button_text": "Estandar", 
+            "url": "#" 
+        },
+        "link_c": { 
+            "button_text": "Estandar", 
+            "url": "#" 
+        },
+        "link_d": { 
+            "button_text": "Estandar", 
+            "url": "#" 
+        },
+        "link_e": { 
+            "button_text": "Estandar", 
+            "url": "#" 
+        },
+        "link_f": { 
+            "button_text": "Estandar", 
+            "url": "#" 
+        }
+    },"list_b":{    
+        "title": "Planes",
+        "link_a": { 
+            "button_text": "Estandar", 
+            "url": "#" 
+        },
+        "link_b": { 
+            "button_text": "Estandar", 
+            "url": "#" 
+        },
+        "link_c": { 
+            "button_text": "Estandar", 
+            "url": "#" 
+        },
+        "link_d": { 
+            "button_text": "Estandar", 
+            "url": "#" 
+        },
+        "link_e": { 
+            "button_text": "Estandar", 
+            "url": "#" 
+        },
+        "link_f": { 
+            "button_text": "Estandar", 
+            "url": "#" 
+        }
+    },"list_c":{    
+        "title": "Planes",
+        "link_a": { 
+            "button_text": "Estandar", 
+            "url": "#" 
+        },
+        "link_b": { 
+            "button_text": "Estandar", 
+            "url": "#" 
+        },
+        "link_c": { 
+            "button_text": "Estandar", 
+            "url": "#" 
+        },
+        "link_d": { 
+            "button_text": "Estandar", 
+            "url": "#" 
+        },
+        "link_e": { 
+            "button_text": "Estandar", 
+            "url": "#" 
+        },
+        "link_f": { 
+            "button_text": "Estandar", 
+            "url": "#" 
+        }
+    },"list_d":{    
+        "title": "Planes",
+        "link_a": { 
+            "button_text": "Estandar", 
+            "url": "#" 
+        },
+        "link_b": { 
+            "button_text": "Estandar", 
+            "url": "#" 
+        },
+        "link_c": { 
+            "button_text": "Estandar", 
+            "url": "#" 
+        },
+        "link_d": { 
+            "button_text": "Estandar", 
+            "url": "#" 
+        },
+        "link_e": { 
+            "button_text": "Estandar", 
+            "url": "#" 
+        },
+        "link_f": { 
+            "button_text": "Estandar", 
+            "url": "#" 
+        }
+    },"list_e":{    
+        "title": "Planes",
+        "link_a": { 
+            "button_text": "Estandar", 
+            "url": "#" 
+        },
+        "link_b": { 
+            "button_text": "Estandar", 
+            "url": "#" 
+        },
+        "link_c": { 
+            "button_text": "Estandar", 
+            "url": "#" 
+        },
+        "link_d": { 
+            "button_text": "Estandar", 
+            "url": "#" 
+        },
+        "link_e": { 
+            "button_text": "Estandar", 
+            "url": "#" 
+        },
+        "link_f": { 
+            "button_text": "Estandar", 
+            "url": "#" 
+        }
+    },"list_f":{    
+        "title": "Planes",
+        "link_a": { 
+            "button_text": "Estandar", 
+            "url": "#" 
+        },
+        "link_b": { 
+            "button_text": "Estandar", 
+            "url": "#" 
+        },
+        "link_c": { 
+            "button_text": "Estandar", 
+            "url": "#" 
+        },
+        "link_d": { 
+            "button_text": "Estandar", 
+            "url": "#" 
+        },
+        "link_e": { 
+            "button_text": "Estandar", 
+            "url": "#" 
+        },
+        "link_f": { 
+            "button_text": "Estandar", 
+            "url": "#" 
+        }
+    },"list_g":{    
+        "title": "Planes",
+        "link_a": { 
+            "button_text": "Estandar", 
+            "url": "#" 
+        },
+        "link_b": { 
+            "button_text": "Estandar", 
+            "url": "#" 
+        },
+        "link_c": { 
+            "button_text": "Estandar", 
+            "url": "#" 
+        },
+        "link_d": { 
+            "button_text": "Estandar", 
+            "url": "#" 
+        },
+        "link_e": { 
+            "button_text": "Estandar", 
+            "url": "#" 
+        },
+        "link_f": { 
+            "button_text": "Estandar", 
+            "url": "#" 
+        }
+    },"list_h":{    
+        "title": "Planes",
+        "link_a": { 
+            "button_text": "Estandar", 
+            "url": "#" 
+        },
+        "link_b": { 
+            "button_text": "Estandar", 
+            "url": "#" 
+        },
+        "link_c": { 
+            "button_text": "Estandar", 
+            "url": "#" 
+        },
+        "link_d": { 
+            "button_text": "Estandar", 
+            "url": "#" 
+        },
+        "link_e": { 
+            "button_text": "Estandar", 
+            "url": "#" 
+        },
+        "link_f": { 
+            "button_text": "Estandar", 
+            "url": "#" 
+        }
+    },"list_i":{    
+        "title": "Planes",
+        "link_a": { 
+            "button_text": "Estandar", 
+            "url": "#" 
+        },
+        "link_b": { 
+            "button_text": "Estandar", 
+            "url": "#" 
+        },
+        "link_c": { 
+            "button_text": "Estandar", 
+            "url": "#" 
+        },
+        "link_d": { 
+            "button_text": "Estandar", 
+            "url": "#" 
+        },
+        "link_e": { 
+            "button_text": "Estandar", 
+            "url": "#" 
+        },
+        "link_f": { 
+            "button_text": "Estandar", 
+            "url": "#" 
+        }
+    },"list_j":{    
+        "title": "Planes",
+        "link_a": { 
+            "button_text": "Estandar", 
+            "url": "#" 
+        },
+        "link_b": { 
+            "button_text": "Estandar", 
+            "url": "#" 
+        },
+        "link_c": { 
+            "button_text": "Estandar", 
+            "url": "#" 
+        },
+        "link_d": { 
+            "button_text": "Estandar", 
+            "url": "#" 
+        },
+        "link_e": { 
+            "button_text": "Estandar", 
+            "url": "#" 
+        },
+        "link_f": { 
+            "button_text": "Estandar", 
+            "url": "#" 
+        }
+    },"list_k":{    
+        "title": "Planes",
+        "link_a": { 
+            "button_text": "Estandar", 
+            "url": "#" 
+        },
+        "link_b": { 
+            "button_text": "Estandar", 
+            "url": "#" 
+        },
+        "link_c": { 
+            "button_text": "Estandar", 
+            "url": "#" 
+        },
+        "link_d": { 
+            "button_text": "Estandar", 
+            "url": "#" 
+        },
+        "link_e": { 
+            "button_text": "Estandar", 
+            "url": "#" 
+        },
+        "link_f": { 
+            "button_text": "Estandar", 
+            "url": "#" 
+        }
+    }
+  }
+}
