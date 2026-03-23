@@ -1,0 +1,37 @@
+{
+  "section_config": {
+    "id_container": "section-hero"
+  },
+  "static_blocks": {
+    "images" : {
+        "image_a" : {
+            "url": "heron.jpg",
+            "alt": "main image"
+        },
+        "image_b" : {
+            "url": "card.jpg",
+            "alt": "card image"
+        },
+        "image_c" : {
+            "url": "plant.jpg",
+            "alt": "plant image"
+        }
+    },
+    "group_a": {
+        "title": "Change the way you money",
+        "description": "Home or away, local or global — move freely between countries and currencies. Sign up for free, in a tap.",
+        "button": { 
+        "button_text": "Download the app", 
+        "url": "#" 
+        }
+    },
+    "group_b": {
+        "title": "Your salary, reimagined",
+        "description": "Spend smartly, send quickly, sort your salary automatically, and watch your savings grow — all with Revolut.",
+        "button": { 
+        "button_text": "Move your salary", 
+        "url": "#" 
+        }
+    }
+  }
+}
