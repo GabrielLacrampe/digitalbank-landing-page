@@ -9,7 +9,7 @@
         <?php $inicial = $datos['section_config']['initial_state']; ?>
         <h1 class="dynamic-title"><?php echo $datos['dynamic_blocks'][$inicial]['title']; ?></h1>
         <!-- Sentencia para instanciar imagenes que pueden variar dependiendo de la opcion activa  -->
-        <img class="dynamic-img placeholder-image" src="../assets/media/<?php echo $datos['dynamic_blocks'][$inicial]['image']; ?>" alt="<?php echo $datos['dynamic_blocks'][$inicial]['alt']; ?>">
+        <img class="dynamic-image placeholder-image" src="../assets/media/<?php echo $datos['dynamic_blocks'][$inicial]['image']; ?>" alt="<?php echo $datos['dynamic_blocks'][$inicial]['alt']; ?>">
         <p class="dynamic-description placeholder-text"><?php echo $datos['dynamic_blocks'][$inicial]['description']; ?></p>
         <div>
             <div class="dynamic-button button-style hidden-mobile"><a href="<?php echo $datos['dynamic_blocks'][$inicial]['button']['url']; ?>"><span><?php echo $datos['dynamic_blocks'][$inicial]['button']['button_text']; ?></span></a></div>  
