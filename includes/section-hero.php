@@ -8,7 +8,7 @@ $datos = $mi_seccion['contenido'];
     <div class="testing-box hero-30"></div>
         <div class="testing-box hero-content-interior">
             <h1 class="hero-content-title"><?php echo $datos['static_blocks']['group_a']['title']; ?></h1>
-            <p class="hero-content-paragraph"><?php echo $datos['static_blocks']['group_a']['description']; ?></p>
+            <?php renderText($datos['static_blocks']['group_a'], false, 'hero-content-paragraph'); ?>
             <?php renderButton($datos['static_blocks']['group_a']['button'], false, 'hero-content-button'); ?>
         </div>
     <div class="testing-box hero-30"></div>     
