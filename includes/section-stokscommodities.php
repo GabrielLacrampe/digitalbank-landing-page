@@ -11,10 +11,11 @@ $datos = $mi_seccion['contenido'];
             <p class="dynamic-text"><?php echo $datos['dynamic_blocks'][$inicial]['description']; ?></p>
         </div>
         <div>
-            <div class="static-button button-style hidden-mobile"><a href="<?php echo $datos['static_blocks']['button']['url']; ?>"><span><?php echo $datos['static_blocks']['button']['button_text']; ?></span></a></div>  
+            <?php renderButton($datos['static_blocks']['button'], false, 'hidden-mobile'); ?>
         </div>
-        <!-- TODO: falta agregar al json el texto alt de las imagenes-->
-        <img class="dynamic-image" src="../assets/media/<?php echo $datos['dynamic_blocks'][$inicial]['image']; ?>" alt="<?php echo $datos['dynamic_blocks'][$inicial]['alt']; ?>">
+
+        <?php renderImage($datos['dynamic_blocks'][$inicial], true); ?>
+
         <div class="tabs">
             <?php foreach ($datos['controllers'] as $btn): ?>
                 <button class="tab-btn" data-target="<?php echo $btn['target_data']; ?>">
