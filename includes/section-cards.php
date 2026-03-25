@@ -11,8 +11,8 @@
 
         <?php renderImage($datos['dynamic_blocks'][$inicial], true); ?>
 
-        <p class="dynamic-description"><?php echo $datos['dynamic_blocks'][$inicial]['description']; ?></p>
-        
+        <?php renderText($datos['dynamic_blocks'][$inicial], true); ?>
+
         <div>
             <?php renderButton($datos['dynamic_blocks'][$inicial]['button'], true, 'hidden-desktop'); ?>
         </div>
