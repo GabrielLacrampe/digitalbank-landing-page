@@ -13,7 +13,7 @@ $datos = $mi_seccion['contenido'];
         
         <p class="static-text"><?php echo $datos['static_blocks']['description']; ?></p>
         
-        <p class="dynamic-text placeholder-text"><?php echo $datos['dynamic_blocks'][$inicial]['description']; ?></p>
+        <p class="dynamic-text"><?php echo $datos['dynamic_blocks'][$inicial]['description']; ?></p>
         
         <div>
             <?php renderButton($datos['static_blocks']['button'], false, 'hidden-mobile'); ?>
