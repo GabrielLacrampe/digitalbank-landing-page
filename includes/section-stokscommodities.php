@@ -10,19 +10,14 @@ $datos = $mi_seccion['contenido'];
             <h1 class="dynamic-title"><?php echo $datos['dynamic_blocks'][$inicial]['title']; ?></h1>
             <p class="dynamic-text"><?php echo $datos['dynamic_blocks'][$inicial]['description']; ?></p>
         </div>
+        
         <div>
             <?php renderButton($datos['static_blocks']['button'], false, 'hidden-mobile'); ?>
         </div>
 
         <?php renderImage($datos['dynamic_blocks'][$inicial], true); ?>
 
-        <div class="tabs">
-            <?php foreach ($datos['controllers'] as $btn): ?>
-                <button class="tab-btn" data-target="<?php echo $btn['target_data']; ?>">
-                    <?php echo $btn['label']; ?>
-                </button>
-            <?php endforeach; ?>
-        </div>
+        <?php renderControllers($datos['controllers']); ?>
         <script class="data-json" type="application/json">
             <?php echo json_encode($datos['dynamic_blocks']); ?>
         </script>
