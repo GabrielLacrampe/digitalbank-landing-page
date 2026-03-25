@@ -9,8 +9,7 @@ $datos = $mi_seccion['contenido'];
 
         <?php renderImage($datos['static_blocks'], false); ?>
 
-        <p class="static-text"><?php echo $datos['static_blocks']['description']; ?></p>
-
+        <?php renderText($datos['static_blocks'], false); ?>
         <div>
             <?php renderButton($datos['static_blocks']['button'], false); ?>
         </div>
