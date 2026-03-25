@@ -5,15 +5,15 @@
   "static_blocks": {
     "images" : {
         "image_a" : {
-            "url": "heron.jpg",
+            "image": "heron.jpg",
             "alt": "main image"
         },
         "image_b" : {
-            "url": "card.jpg",
+            "image": "card.jpg",
             "alt": "card image"
         },
         "image_c" : {
-            "url": "plant.jpg",
+            "image": "plant.jpg",
             "alt": "plant image"
         }
     },

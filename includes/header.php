@@ -5,7 +5,7 @@ $datos = $mi_seccion['contenido'];
 
 <div class="horizontal-container">
     <div class="">
-        <img class="header-logo" src="../assets/media/<?php echo $datos['static_blocks']['image']; ?>" alt="<?php echo $datos['static_blocks']['alt']; ?>">
+        <?php renderImage($datos['static_blocks'], false, 'header-logo'); ?>
     </div>
 
     <div class="horizontal-container width100">

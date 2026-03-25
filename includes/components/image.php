@@ -9,10 +9,10 @@ function renderImage($imageData, $isDynamic = false, $extraClasses = '') {
     $allClasses = "{$typeClass} {$extraClasses}";
 
     // Limpiamos los datos para evitar errores
-    $url = $imageData['url'] ?? '#';
-    $alt = $imageData['alt'] ?? 'Image';
+    $image = $imageData['image'] ?? '#';
+    $alt = $imageData['alt'] ?? 'alt text';
 
     ?>
-    <img class="<?php echo trim($allClasses); ?>" src="../assets/media/<?php echo $url; ?>" alt="<?php echo $alt; ?>">
+    <img class="<?php echo trim($allClasses); ?>" src="../assets/media/<?php echo $image; ?>" alt="<?php echo $alt; ?>">
     <?php
 }
