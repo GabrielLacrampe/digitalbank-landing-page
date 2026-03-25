@@ -8,27 +8,27 @@
         <h1 class="static-title"><?php echo $datos['static_blocks']['title']; ?></h1>
         <div> 
             <p class="static-text"><?php echo $datos['static_blocks']['award_a']['description']; ?></p>
-            <img class="static-image" src="../assets/media/<?php echo $datos['static_blocks']['award_a']['image']; ?>" alt="<?php echo $datos['static_blocks']['award_a']['alt']; ?>">
+            <?php renderImage($datos['static_blocks']['award_a'], false); ?>
         </div>
         <div> 
             <p class="static-text"><?php echo $datos['static_blocks']['award_b']['description']; ?></p>
-            <img class="static-image" src="../assets/media/<?php echo $datos['static_blocks']['award_b']['image']; ?>" alt="<?php echo $datos['static_blocks']['award_b']['alt']; ?>">
+            <?php renderImage($datos['static_blocks']['award_b'], false); ?>
         </div>
         <div> 
             <p class="static-text"><?php echo $datos['static_blocks']['award_c']['description']; ?></p>
-            <img class="static-image" src="../assets/media/<?php echo $datos['static_blocks']['award_c']['image']; ?>" alt="<?php echo $datos['static_blocks']['award_c']['alt']; ?>">
+            <?php renderImage($datos['static_blocks']['award_c'], false); ?>
         </div>
         <div> 
             <p class="static-text"><?php echo $datos['static_blocks']['award_d']['description']; ?></p>
-            <img class="static-image" src="../assets/media/<?php echo $datos['static_blocks']['award_d']['image']; ?>" alt="<?php echo $datos['static_blocks']['award_d']['alt']; ?>">
+            <?php renderImage($datos['static_blocks']['award_d'], false); ?>
         </div>
         <div> 
             <p class="static-text"><?php echo $datos['static_blocks']['award_e']['description']; ?></p>
-            <img class="static-image" src="../assets/media/<?php echo $datos['static_blocks']['award_e']['image']; ?>" alt="<?php echo $datos['static_blocks']['award_e']['alt']; ?>">
+            <?php renderImage($datos['static_blocks']['award_e'], false); ?>
         </div>
         <div> 
             <p class="static-text"><?php echo $datos['static_blocks']['award_f']['description']; ?></p>
-            <img class="static-image" src="../assets/media/<?php echo $datos['static_blocks']['award_f']['image']; ?>" alt="<?php echo $datos['static_blocks']['award_f']['alt']; ?>">
+            <?php renderImage($datos['static_blocks']['award_f'], false); ?>
         </div>
     </section>
 </div>
