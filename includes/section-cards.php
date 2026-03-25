@@ -7,14 +7,18 @@
     <section id="cards">
         <!-- Define el estado inicial  -->
         <?php $inicial = $datos['section_config']['initial_state']; ?>
+        
         <h1 class="dynamic-title"><?php echo $datos['dynamic_blocks'][$inicial]['title']; ?></h1>
-        <!-- Sentencia para instanciar imagenes que pueden variar dependiendo de la opcion activa  -->
-        <img class="dynamic-image" src="../assets/media/<?php echo $datos['dynamic_blocks'][$inicial]['image']; ?>" alt="<?php echo $datos['dynamic_blocks'][$inicial]['alt']; ?>">
+
+        <?php renderImage($datos['dynamic_blocks'][$inicial], true); ?>
+
         <p class="dynamic-description placeholder-text"><?php echo $datos['dynamic_blocks'][$inicial]['description']; ?></p>
+        
         <div>
-            <div class="dynamic-button button-style hidden-mobile"><a href="<?php echo $datos['dynamic_blocks'][$inicial]['button']['url']; ?>"><span><?php echo $datos['dynamic_blocks'][$inicial]['button']['button_text']; ?></span></a></div>  
+            <?php renderButton($datos['dynamic_blocks'][$inicial]['button'], true, 'hidden-desktop'); ?>
         </div>
-        <!-- Crea los botones extraidos desde el JSON-->
+
+        <!-- Crea los botones extraidos desde el JSON (esto es otro componente)-->
         <div class="tabs">
             <?php foreach ($datos['controllers'] as $btn): ?>
                 <button class="tab-btn" data-target="<?php echo $btn['target_data']; ?>">
