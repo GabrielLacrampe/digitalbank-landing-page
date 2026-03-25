@@ -5,7 +5,6 @@
 ?>
 <div class="testing-box">
     <section id="cards">
-        <!-- Define el estado inicial  -->
         <?php $inicial = $datos['section_config']['initial_state']; ?>
         
         <h1 class="dynamic-title"><?php echo $datos['dynamic_blocks'][$inicial]['title']; ?></h1>
@@ -18,15 +17,7 @@
             <?php renderButton($datos['dynamic_blocks'][$inicial]['button'], true, 'hidden-desktop'); ?>
         </div>
 
-        <!-- Crea los botones extraidos desde el JSON (esto es otro componente)-->
-        <div class="tabs">
-            <?php foreach ($datos['controllers'] as $btn): ?>
-                <button class="tab-btn" data-target="<?php echo $btn['target_data']; ?>">
-                    <?php echo $btn['label']; ?>
-                </button>
-            <?php endforeach; ?>
-        </div>
-        <!-- Necesario para que funcionen los botones-->
+        <?php renderControllers($datos['controllers']); ?>
         <script class="data-json" type="application/json">
             <?php echo json_encode($datos['dynamic_blocks']); ?>
         </script>
