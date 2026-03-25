@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // 4. Seleccionamos los elementos a cambiar DENTRO de esta sección únicamente
             const title = section.querySelector('.dynamic-title');
             const text = section.querySelector('.dynamic-text');
-            const image = section.querySelector('.dynamic-image'); // Por si quieres cambiar la foto
+            const image = section.querySelector('.dynamic-image');
             const butons = section.querySelector('.dynamic-button');
             // 5. Animación y cambio
             if(title) title.style.opacity = 0;
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     title.style.opacity = 1;
                 }
                 if(text) {
-                    text.textContent = nuevosDatos.text;
+                    text.textContent = nuevosDatos.description;
                     text.style.opacity = 1;
                 }
                 if(image && nuevosDatos.image) {
