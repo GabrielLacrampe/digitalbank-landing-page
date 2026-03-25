@@ -7,12 +7,9 @@ $datos = $mi_seccion['contenido'];
     <img class="fondo-animado" src="../assets/media/<?php echo $datos['static_blocks']['images']['image_a']['url']; ?>" alt="<?php echo $datos['static_blocks']['images']['image_a']['alt']; ?>">
     <div class="testing-box hero-30"></div>
         <div class="testing-box hero-content-interior">
-            <h1 class="hero-content-title color-white"><?php echo $datos['static_blocks']['group_a']['title']; ?></h1>
-            <p class="hero-content-paragraph color-white"><?php echo $datos['static_blocks']['group_a']['description']; ?>
-            </p>
-            <div class="static-button button-style hero-content-button">
-                <a class="color-white" href="<?php echo $datos['static_blocks']['group_a']['button']['url']; ?>"> <span><?php echo $datos['static_blocks']['group_a']['button']['button_text']; ?></span></a>
-            </div>
+            <h1 class="hero-content-title"><?php echo $datos['static_blocks']['group_a']['title']; ?></h1>
+            <p class="hero-content-paragraph"><?php echo $datos['static_blocks']['group_a']['description']; ?></p>
+            <?php renderButton($datos['static_blocks']['group_a']['button'], false, 'hero-content-button'); ?>
         </div>
     <div class="testing-box hero-30"></div>     
 </div>

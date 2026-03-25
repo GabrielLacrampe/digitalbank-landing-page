@@ -14,7 +14,7 @@ function renderButton($buttonData, $isDynamic = false, $extraClasses = '') {
 
     ?>
     <div class="<?php echo trim($allClasses); ?>">
-        <a href="<?php echo $url; ?>">
+        <a class="<?php echo $extraClasses; ?>" href="<?php echo $url; ?>">
             <span><?php echo $text; ?></span>
         </a>
     </div>
