@@ -1,10 +1,10 @@
 a {
   text-decoration: none;
 }
-
+/*
 main{
   
-}
+}*/
 
 html {
   /* Reserva el espacio de la barra de scroll siempre */
@@ -156,16 +156,19 @@ ul {
   height: 20%;
 }
 
-.color-white {
-  color: white;
+
+
+.hero-content-title {
+    color: white;
 }
 
-.hero-content-title {}
-
-.hero-content-paragraph {}
+.hero-content-paragraph {
+    color: white;
+}
 
 .hero-content-button {
-  align-self: left;
+  align-self: center;
+  color: white;
 }
 
 .fondo-animado {
