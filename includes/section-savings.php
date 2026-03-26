@@ -7,13 +7,13 @@ $datos = $mi_seccion['contenido'];
     <section id="savings">
         <?php $inicial = $datos['section_config']['initial_state']; ?>
         
-        <h1 class="static-title"><?php echo $datos['static_blocks']['title']; ?></h1>
+        <?php renderTitle($datos['static_blocks'], false); ?>
 
         <?php renderImage($datos['dynamic_blocks'][$inicial], true); ?>
         
         <?php renderText($datos['static_blocks'], false); ?>
         
-        <h1 class="dynamic-title"><?php echo $datos['dynamic_blocks'][$inicial]['title']; ?></h1>
+        <?php renderTitle($datos['dynamic_blocks'][$inicial], true); ?>
 
         <?php renderText($datos['dynamic_blocks'][$inicial], true); ?>
 
