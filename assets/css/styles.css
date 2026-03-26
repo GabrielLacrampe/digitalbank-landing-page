@@ -35,8 +35,17 @@ ul {
   border: 2px solid #db3455;
 }
 
-.dynamic-image .static-image {
-  width: 20%;
+.dynamic-image {
+    width: 300px;  /* Or 100% of the container */
+    height: 200px; /* Set your desired fixed height */
+    object-fit: cover; /* This prevents stretching */
+    object-position: center; /* Keeps the focus in the middle */
+}
+.static-image {
+    width: 300px;  /* Or 100% of the container */
+    height: 200px; /* Set your desired fixed height */
+    object-fit: cover; /* This prevents stretching */
+    object-position: center; /* Keeps the focus in the middle */
 }
 
 .horizontal-container {
@@ -105,17 +114,6 @@ ul {
 
 
 
-/* El método "Mobile First" (Ocultar en escritorio)
-    Es la práctica más recomendada hoy en día
-    Muchos desarrolladores crean clases genéricas 
-    para usarlas rápido en el HTML
-
-    Dispositivo,Ancho (Breakpoint)
-    Móviles,Menos de 576px
-    Tablets,Entre 576px y 992px
-    Laptops/PC,Más de 992px
-    Pantallas Grandes,Más de 1200px
-*/
 /* Cuando la pantalla mide 760px o MÁS, desaparece */
 @media (min-width: 710px) {
   .solo-desktop {
