@@ -7,7 +7,8 @@ $datos = $mi_seccion['contenido'];
     <?php renderImage($datos['static_blocks']['images']['image_a'], false, 'fondo-animado'); ?>
     <div class="testing-box hero-30"></div>
         <div class="testing-box hero-content-interior">
-            <h1 class="hero-content-title"><?php echo $datos['static_blocks']['group_a']['title']; ?></h1>
+            <?php renderTitle($datos['static_blocks']['group_a'], false, 'hero-content-title'); ?>
+
             <?php renderText($datos['static_blocks']['group_a'], false, 'hero-content-paragraph'); ?>
             <?php renderButton($datos['static_blocks']['group_a']['button'], false, 'hero-content-button'); ?>
         </div>
