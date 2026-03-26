@@ -7,7 +7,7 @@
     <section id="cards">
         <?php $inicial = $datos['section_config']['initial_state']; ?>
         
-        <h1 class="dynamic-title"><?php echo $datos['dynamic_blocks'][$inicial]['title']; ?></h1>
+        <?php renderTitle($datos['dynamic_blocks'][$inicial], true); ?>
 
         <?php renderImage($datos['dynamic_blocks'][$inicial], true); ?>
 
