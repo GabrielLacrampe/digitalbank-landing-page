@@ -10,3 +10,4 @@
 <?php require_once '../includes/components/controllers.php'; ?>
 <?php require_once '../includes/components/text.php'; ?>
 <?php require_once '../includes/components/title.php'; ?>
+<?php require_once '../includes/components/plan.php'; ?>
