@@ -7,7 +7,7 @@ $datos = $mi_seccion['contenido'];
     <section id="stocks-commodities">
         <div id="display-content">
             <?php $inicial = $datos['section_config']['initial_state']; ?>
-            <h1 class="dynamic-title"><?php echo $datos['dynamic_blocks'][$inicial]['title']; ?></h1>
+            <?php renderTitle($datos['dynamic_blocks'][$inicial], true); ?>
             <?php renderText($datos['dynamic_blocks'][$inicial], true); ?>
         </div>
         
