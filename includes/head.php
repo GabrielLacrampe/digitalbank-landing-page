@@ -9,3 +9,4 @@
 <?php require_once '../includes/components/image.php'; ?>
 <?php require_once '../includes/components/controllers.php'; ?>
 <?php require_once '../includes/components/text.php'; ?>
+<?php require_once '../includes/components/title.php'; ?>
