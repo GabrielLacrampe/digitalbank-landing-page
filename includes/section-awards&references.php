@@ -5,7 +5,7 @@
 ?>
 <div class="testing-box">
     <section id="awards-references">
-        <h1 class="static-title"><?php echo $datos['static_blocks']['title']; ?></h1>
+        <?php renderTitle($datos['static_blocks'], false); ?>
         <div> 
             <?php renderText($datos['static_blocks']['award_a'], false); ?>
             <?php renderImage($datos['static_blocks']['award_a'], false); ?>
