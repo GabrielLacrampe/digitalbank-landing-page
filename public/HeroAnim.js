@@ -1,6 +1,11 @@
 let isAtTop = true; // Estado: ¿Estamos en el punto inicial?
 let isAnimating = false; // Bloqueo para evitar disparos múltiples
-const imagen = document.querySelector('.fondo-animado');
+const imagenMain = document.querySelector('.fondo-animado');
+const imagenLeft = document.querySelector('.hero-image-left');
+const imagenRight = document.querySelector('.hero-image-right');
+const groupA = document.querySelectorAll('.group-a');
+const groupB = document.querySelectorAll('.group-b');
+
 const body = document.body;
 
 // 1. Bloqueo inicial
@@ -24,7 +29,20 @@ window.addEventListener('wheel', function (event) {
 
 function animarHaciaAbajo() {
   isAnimating = true;
-  imagen.style.transform = `translateY(0px) scale(1)`; // Estado B
+  imagenMain.style.transform = `translateY(0px) scale(1)`; // Estado B
+  imagenLeft.style.transform = `translateX(0px) scale(1)`;
+  imagenLeft.style.opacity = '1';
+  imagenRight.style.transform = `translateX(0px) scale(1)`;
+  imagenRight.style.opacity = '1';
+
+  groupA.forEach(el => {
+    el.style.transform = `translateY(0px)`;
+    el.style.opacity = '0';
+  });
+  groupB.forEach(el => {
+    el.style.transform = `translateY(0px)`;
+    el.style.opacity = '1';
+  });
 
   setTimeout(() => {
     body.classList.remove('no-scroll');
@@ -36,7 +54,20 @@ function animarHaciaAbajo() {
 function animarHaciaArriba() {
   isAnimating = true;
   body.classList.add('no-scroll'); // Volvemos a bloquear el scroll
-  imagen.style.transform = `translateY(100px) scale(1.3)`; // Estado A
+  imagenMain.style.transform = `translateY(100px) scale(1.3)`; // Estado A
+  imagenLeft.style.transform = `translateX(-500px) scale(0.7)`;
+  imagenLeft.style.opacity = '0';
+  imagenRight.style.transform = `translateX(500px) scale(0.7)`;
+  imagenRight.style.opacity = '0';
+
+  groupA.forEach(el => {
+    el.style.transform = `translateY(0px)`;
+    el.style.opacity = '1';
+  });
+  groupB.forEach(el => {
+    el.style.transform = `translateY(50px)`;
+    el.style.opacity = '0';
+  });
 
   setTimeout(() => {
     isAtTop = true;

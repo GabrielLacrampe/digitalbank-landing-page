@@ -1,10 +1,6 @@
 a {
   text-decoration: none;
 }
-/*
-main{
-  
-}*/
 
 html {
   /* Reserva el espacio de la barra de scroll siempre */
@@ -27,26 +23,9 @@ ul {
 }
 
 .header-logo {
-  width: 120px;
-  object-fit: contain;
+  height: 20px;
 }
 
-.testing-box {
-  border: 2px solid #db3455;
-}
-
-.dynamic-image {
-    width: 300px;  /* Or 100% of the container */
-    height: 200px; /* Set your desired fixed height */
-    object-fit: cover; /* This prevents stretching */
-    object-position: center; /* Keeps the focus in the middle */
-}
-.static-image {
-    width: 300px;  /* Or 100% of the container */
-    height: 200px; /* Set your desired fixed height */
-    object-fit: cover; /* This prevents stretching */
-    object-position: center; /* Keeps the focus in the middle */
-}
 
 .horizontal-container {
   display: flex;
@@ -131,7 +110,7 @@ ul {
 
 
 /* El "marco" donde vive el efecto parallax */
-.contenido-hero {
+.hero-section {
   position: relative;
   /* Para que esté por encima de la imagen */
   overflow: hidden;
@@ -143,30 +122,21 @@ ul {
   height: 100vh;
 }
 
-.hero-content-interior {
-  align-self: center;
-  width: 80%;
-  height: 60%
-}
 .hero-30{
   align-self: center;
   width:  80%;
   height: 20%;
 }
 
-
-
-.hero-content-title {
-    color: white;
-}
-
-.hero-content-paragraph {
-    color: white;
-}
-
-.hero-content-button {
+.hero-content {
   align-self: center;
   color: white;
+}
+
+.hero-content-interior {
+  align-self: center;
+  width: 80%;
+  height: 60%
 }
 
 .fondo-animado {
@@ -180,6 +150,58 @@ ul {
   /* Transición suave para cuando JS cambie los valores */
   transition: transform 1.2s cubic-bezier(0.25, 1, 0.5, 1);
   will-change: transform;
+}
+.hero-image-right {
+  position: relative;
+  width: 20%;
+
+  /* Empezamos con los valores iniciales */
+  transform: translateX(500px) scale(0.7);
+  opacity: 0;
+  /* Transición suave para cuando JS cambie los valores */
+  transition: 
+  transform 1.2s cubic-bezier(0.25, 1, 0.5, 1), 
+  opacity 1.2s cubic-bezier(0.25, 1, 0.5, 1);
+  will-change: transform opacity;
+}
+.hero-image-left {
+  position: relative;
+  width: 20%;
+
+  /* Empezamos con los valores iniciales */
+  transform: translateX(-500px) scale(0.7);
+  opacity: 0;
+  /* Transición suave para cuando JS cambie los valores */
+  transition: 
+  transform 1.2s cubic-bezier(0.25, 1, 0.5, 1), 
+  opacity 1.2s cubic-bezier(0.25, 1, 0.5, 1);
+  will-change: transform opacity;
+}
+.group-a {
+  position: relative;
+
+  /* Empezamos con los valores iniciales */
+  transform: translateY(0px);
+  opacity: 1;
+  
+  /* Transición suave para cuando JS cambie los valores */
+  transition: 
+  transform 1.2s cubic-bezier(0.25, 1, 0.5, 1), 
+  opacity 1.2s cubic-bezier(0.25, 1, 0.5, 1);
+  will-change: transform opacity;
+}
+.group-b {
+  position: relative;
+
+  /* Empezamos con los valores iniciales */
+  transform: translateY(50px);
+  opacity: 0;
+  
+  /* Transición suave para cuando JS cambie los valores */
+  transition: 
+  transform 1.2s cubic-bezier(0.25, 1, 0.5, 1), 
+  opacity 1.2s cubic-bezier(0.25, 1, 0.5, 1);
+  will-change: transform opacity;
 }
 
 /* Clase para bloquear el scroll del cuerpo */
@@ -202,10 +224,35 @@ ul {
   from {
     transform: translateY(0);
   }
-
   to {
     transform: translateY(-50%);
   }
-
+  /* Sube un 15% mientras bajas */
+}
+@keyframes mover-abajo {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(50%);
+  }
+  /* Sube un 15% mientras bajas */
+}
+@keyframes mover-izquierda {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+  /* Sube un 15% mientras bajas */
+}
+@keyframes mover-derecha {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(50%);
+  }
   /* Sube un 15% mientras bajas */
 }
