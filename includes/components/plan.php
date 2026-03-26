@@ -20,3 +20,14 @@ function renderPlan($planData, $isDynamic = false, $extraClasses = '') {
     </a>
     <?php
 }
+
+// Función para renderizar un grupo de planes
+function renderPlanGroup($plans_group, $datos) {
+    foreach ($plans_group as $plan_key) {
+        if (isset($datos['static_blocks']['plans'][$plan_key])) {
+            echo '<li>';
+            renderPlan($datos['static_blocks']['plans'][$plan_key]);
+            echo '</li>';
+        }
+    }
+}
