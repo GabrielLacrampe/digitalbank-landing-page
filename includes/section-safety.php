@@ -5,7 +5,7 @@ $datos = $mi_seccion['contenido'];
 ?>
 <div class="testing-box">
     <section id="safety">
-        <h1 class="static-title"><?php echo $datos['static_blocks']['title']; ?></h1>
+        <?php renderTitle($datos['static_blocks'], false); ?>
 
         <?php renderImage($datos['static_blocks'], false); ?>
 
