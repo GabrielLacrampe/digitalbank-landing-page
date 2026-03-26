@@ -1,10 +1,12 @@
 <?php
 // COMPONENTE HIJO: Renderiza un solo enlace
-function renderLink($linkData) {
+// TODO necesito modificar el json de la section-links para incluir la class
+// así podría usar el mismo componente para los enlaces del header y del footer, por ejemplo
+function renderLink($linkData, $isDynamic = false, $extraClasses = '') {
     if (empty($linkData)) return;
     ?>
     <li>
-        <a class="link-listed" href="<?php echo $linkData['url']; ?>">
+        <a class="<?php echo $extraClasses; ?>" href="<?php echo $linkData['url']; ?>">
             <span><?php echo $linkData['button_text']; ?></span>
         </a>
     </li>
@@ -12,7 +14,7 @@ function renderLink($linkData) {
 }
 
 // COMPONENTE PADRE: Renderiza la lista completa y llama a los hijos
-function renderListGroup($listData) {
+function renderListGroup($listData, $isDynamic = false, $extraClasses = 'link-listed') {
     if (empty($listData)) return;
     ?>
     <div class="list-of-links">

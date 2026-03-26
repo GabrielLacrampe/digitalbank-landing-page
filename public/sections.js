@@ -15,26 +15,26 @@ document.addEventListener('DOMContentLoaded', () => {
             // 4. Seleccionamos los elementos a cambiar DENTRO de esta sección únicamente
             const title = section.querySelector('.dynamic-title');
             const text = section.querySelector('.dynamic-text');
-            const image = section.querySelector('.dynamic-image'); // Por si quieres cambiar la foto
+            const image = section.querySelector('.dynamic-image');
             const butons = section.querySelector('.dynamic-button');
             // 5. Animación y cambio
-            if(title) title.style.opacity = 0;
-            if(text) text.style.opacity = 0;
-            if(image) image.style.opacity = 0;
-            if(butons) butons.style.opacity = 0;
+            //if(title) title.style.opacity = 0;
+            //if(text) text.style.opacity = 0;
+            //if(image) image.style.opacity = 0;
+            //if(butons) butons.style.opacity = 0;
 
             setTimeout(() => {
                 if(title) {
                     title.textContent = nuevosDatos.title;
-                    title.style.opacity = 1;
+                    //title.style.opacity = 1;
                 }
                 if(text) {
-                    text.textContent = nuevosDatos.text;
-                    text.style.opacity = 1;
+                    text.textContent = nuevosDatos.description;
+                    //text.style.opacity = 1;
                 }
                 if(image && nuevosDatos.image) {
                     image.src = `../assets/media/${nuevosDatos.image}`;
-                    image.style.opacity = 1;
+                    //image.style.opacity = 1;
                 }
                 // Esto puede contener errores. revisar
                 if (butons && nuevosDatos.button) {
@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         spanTexto.textContent = nuevosDatos.button.button_text;
                     }
 
-                    butons.style.opacity = 1;
+                    //butons.style.opacity = 1;
                 }
             }, 300);
         });

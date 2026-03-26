@@ -6,3 +6,7 @@
 <?php require_once '../config/queries.php'; ?>
 <?php require_once '../includes/components/link.php'; ?>
 <?php require_once '../includes/components/button.php'; ?>
+<?php require_once '../includes/components/image.php'; ?>
+<?php require_once '../includes/components/controllers.php'; ?>
+<?php require_once '../includes/components/text.php'; ?>
+<?php require_once '../includes/components/title.php'; ?>

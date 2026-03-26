@@ -1,18 +1,19 @@
 <?php 
-// Accedemos directamente a la sección que nos interesa mediante su llave
 $mi_seccion = $web_data['section-hero']; 
 $datos = $mi_seccion['contenido']; 
 ?>
-<div class="contenido-hero testing-box">
-    <img class="fondo-animado" src="../assets/media/<?php echo $datos['static_blocks']['images']['image_a']['url']; ?>" alt="<?php echo $datos['static_blocks']['images']['image_a']['alt']; ?>">
-    <div class="testing-box hero-30"></div>
-        <div class="testing-box hero-content-interior">
-            <h1 class="hero-content-title color-white"><?php echo $datos['static_blocks']['group_a']['title']; ?></h1>
-            <p class="hero-content-paragraph color-white"><?php echo $datos['static_blocks']['group_a']['description']; ?>
-            </p>
-            <div class="static-button button-style hero-content-button">
-                <a class="color-white" href="<?php echo $datos['static_blocks']['group_a']['button']['url']; ?>"> <span><?php echo $datos['static_blocks']['group_a']['button']['button_text']; ?></span></a>
-            </div>
-        </div>
-    <div class="testing-box hero-30"></div>     
+<div class="contenido-hero">
+    <?php renderImage($datos['static_blocks']['images']['image_a'], false, 'fondo-animado'); ?>
+    
+    <div class="hero-30"></div>
+
+    <div class="hero-content-interior">
+        <?php renderTitle($datos['static_blocks']['group_a'], false, 'hero-content-title'); ?>
+
+        <?php renderText($datos['static_blocks']['group_a'], false, 'hero-content-paragraph'); ?>
+        
+        <?php renderButton($datos['static_blocks']['group_a']['button'], false, 'hero-content-button'); ?>
+    </div>
+
+    <div class="hero-30"></div>     
 </div>
