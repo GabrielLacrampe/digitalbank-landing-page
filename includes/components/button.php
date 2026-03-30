@@ -6,7 +6,7 @@ function renderButton($buttonData, $isDynamic = false, $extraClasses = '') {
     $typeClass = $isDynamic ? 'dynamic-button' : 'static-button';
     
     // Construimos el string de clases final
-    $allClasses = "{$typeClass} button-style {$extraClasses}";
+    $allClasses = "{$typeClass} btn {$extraClasses}";
 
     // Limpiamos los datos para evitar errores
     $url = $buttonData['url'] ?? '#';
