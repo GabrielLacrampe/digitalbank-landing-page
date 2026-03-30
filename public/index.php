@@ -20,7 +20,7 @@
         include '../includes/section-finalinfo.php'; ?>
     </main>
     
-    <footer role="contentinfo" class="content-info">
+    <footer role="contentinfo" class="section--dark">
         <?php include '../includes/section-plans.php'; 
         include '../includes/section-links.php'; ?>
     </footer>
