@@ -16,7 +16,7 @@ function renderListGroup($listData, $isDynamic = false, $extraClasses = '') {
     if (empty($listData)) return;
     ?>
     <div class="links__list">
-        <p><?php echo htmlspecialchars($listData['title']); ?></p>
+        <p class="hero__content"><?php echo htmlspecialchars($listData['title']); ?></p>
         <ul>
             <?php 
             // Recorremos todos los elementos de la lista que empiecen por 'link_'

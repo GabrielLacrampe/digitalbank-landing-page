@@ -7,7 +7,7 @@ $plans_group1 = ['plan_standard', 'plan_plus', 'plan_premium'];
 $plans_group2 = ['plan_metal', 'plan_ultra'];
 ?>
 <section id="section-plans">
-    <?php renderTitle(['title' => $datos['static_blocks']['title']], false, 'hero-content-title', 2); ?>
+    <?php renderTitle(['title' => $datos['static_blocks']['title']], false, 'hero__content', 2); ?>
     <ul class="u-flex-row">
         <?php renderPlanGroup($plans_group1, $datos); ?>
     </ul>
