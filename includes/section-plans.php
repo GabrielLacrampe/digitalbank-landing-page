@@ -8,11 +8,11 @@ $plans_group2 = ['plan_metal', 'plan_ultra'];
 ?>
 <section id="section-plans">
     <?php renderTitle(['title' => $datos['static_blocks']['title']], false, 'hero-content-title', 2); ?>
-    <ul class="plan-container">
+    <ul class="u-flex-row">
         <?php renderPlanGroup($plans_group1, $datos); ?>
     </ul>
 
-    <ul class="plan-container">
+    <ul class="u-flex-row">
         <?php renderPlanGroup($plans_group2, $datos); ?>
     </ul>
 </section>
