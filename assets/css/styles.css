@@ -102,8 +102,10 @@
   --button-width-min: 120px;
   --button-width-max: 300px;
   --button-height-min: 44px;
+  --button-height-max: 66px;
   --button-padding-vertical: 12px;
   --button-padding-horizontal: 20px;
+  --button-margin: 4px;
   --button-font-size: var(--font-size-base);
   --button-font-weight: var(--font-weight-semibold);
   --button-text-color: var(--color-text-light);
@@ -423,10 +425,12 @@ main {
   min-width: var(--button-width-min);
   max-width: var(--button-width-max);
   min-height: var(--button-height-min);
+  max-height: var(--button-height-max);
   height: auto;
   
   /* Spacing */
   padding: var(--button-padding-vertical) var(--button-padding-horizontal);
+  margin: var(--button-margin);
   
   /* Styling */
   background-color: var(--color-primary);
@@ -486,10 +490,12 @@ main {
   min-width: var(--button-width-min);
   max-width: var(--button-width-max);
   min-height: var(--button-height-min);
+  max-height: var(--button-height-max);
   height: auto;
   
   /* Spacing */
   padding: var(--button-padding-vertical) var(--button-padding-horizontal);
+  margin: var(--button-margin);
   
   /* Styling */
   background-color: var(--color-primary);
