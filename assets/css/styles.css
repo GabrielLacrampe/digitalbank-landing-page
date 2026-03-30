@@ -98,6 +98,17 @@
   --ease-smooth: cubic-bezier(0.25, 1, 0.5, 1);
   --timing-standard: 1.2s;
 
+  /* ---- BUTTON COMPONENT TOKENS ---- */
+  --button-width-min: 120px;
+  --button-width-max: 300px;
+  --button-height-min: 44px;
+  --button-padding-vertical: 12px;
+  --button-padding-horizontal: 20px;
+  --button-font-size: var(--font-size-base);
+  --button-font-weight: var(--font-weight-semibold);
+  --button-text-color: var(--color-text-light);
+  --button-text-color-visited: var(--color-text-light);
+
   /* ---- TRANSFORM VALUES ---- */
   --transform-translate-x-large: 500px;
   --transform-translate-y-large: 100px;
@@ -402,24 +413,117 @@ main {
 
 /* BUTTON COMPONENT */
 .btn {
+  /* Display & Layout */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  
+  /* Dimensions with constraints */
+  width: auto;
+  min-width: var(--button-width-min);
+  max-width: var(--button-width-max);
+  min-height: var(--button-height-min);
+  height: auto;
+  
+  /* Spacing */
+  padding: var(--button-padding-vertical) var(--button-padding-horizontal);
+  
+  /* Styling */
   background-color: var(--color-primary);
+  color: var(--button-text-color);
   border: var(--border-width) solid transparent;
   border-radius: var(--radius-button);
-  padding: var(--spacing-sm);
-  transition: all var(--timing-standard) var(--ease-smooth);
+  
+  /* Typography */
+  font-family: var(--font-family-base);
+  font-size: var(--button-font-size);
+  font-weight: var(--button-font-weight);
+  line-height: 1;
+  text-decoration: none;
+  white-space: nowrap;
+  
+  /* Behavior */
   cursor: pointer;
+  transition: all var(--timing-standard) var(--ease-smooth);
+  
+  /* Remove default link styles */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* Visited state: mantiene el mismo color (no es azul como enlace típico) */
+.btn:visited {
+  color: var(--button-text-color-visited);
 }
 
 .btn:hover {
   border-color: var(--color-primary);
   opacity: 0.8;
+  text-decoration: none;
 }
 
 .btn:active {
   opacity: 0.7;
+  text-decoration: none;
 }
 
 .btn:focus-visible {
+  outline: var(--border-width) solid var(--color-primary);
+  outline-offset: 2px;
+  text-decoration: none;
+}
+
+/* TAB BUTTON COMPONENT - Replica estilos de .btn pero es <button> para acciones */
+.tab-btn {
+  /* Display & Layout */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  
+  /* Dimensions with constraints - IGUAL QUE .btn */
+  width: auto;
+  min-width: var(--button-width-min);
+  max-width: var(--button-width-max);
+  min-height: var(--button-height-min);
+  height: auto;
+  
+  /* Spacing */
+  padding: var(--button-padding-vertical) var(--button-padding-horizontal);
+  
+  /* Styling */
+  background-color: var(--color-primary);
+  color: var(--button-text-color);
+  border: var(--border-width) solid transparent;
+  border-radius: var(--radius-button);
+  
+  /* Typography */
+  font-family: var(--font-family-base);
+  font-size: var(--button-font-size);
+  font-weight: var(--button-font-weight);
+  line-height: 1;
+  white-space: nowrap;
+  
+  /* Behavior */
+  cursor: pointer;
+  transition: all var(--timing-standard) var(--ease-smooth);
+  
+  /* Remove default button styles */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.tab-btn:hover {
+  border-color: var(--color-primary);
+  opacity: 0.8;
+}
+
+.tab-btn:active {
+  opacity: 0.7;
+}
+
+.tab-btn:focus-visible {
   outline: var(--border-width) solid var(--color-primary);
   outline-offset: 2px;
 }
