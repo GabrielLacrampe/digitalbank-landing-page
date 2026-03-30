@@ -2,17 +2,17 @@
 $mi_seccion = $web_data['header']; 
 $datos = $mi_seccion['contenido']; 
 ?>
-<div class="horizontal-container">
+<div class="u-flex-row">
     <div>
-        <?php renderImage($datos['static_blocks'], false, 'header-logo'); ?>
+        <?php renderImage($datos['static_blocks'], false, 'logo'); ?>
     </div>
 
-    <div class="horizontal-container width100">
-        <span class="horizontal-container">
+    <div class="u-flex-row u-width-full">
+        <span class="u-flex-row">
             <?php renderAllButtons($datos['static_blocks'], false); ?>
         </span>
     </div>
     <div>
-        <i class="bi bi-menu-button-wide solo-desktop"></i>
+        <i class="bi bi-menu-button-wide is-hidden-desktop"></i>
     </div>
 </div>
