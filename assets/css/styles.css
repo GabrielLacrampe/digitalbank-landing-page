@@ -6,6 +6,7 @@
  * Standards: WCAG AA contrast compliance
  *
  * CONTENT:
+ * 0. CSS VARIABLES & TOKENS
  * 1. CSS RESET & BROWSER NORMALIZATION
  * 2. BASE STYLES
  * 3. COMPONENT STYLES
@@ -13,6 +14,64 @@
  * 5. ANIMATIONS
  * 6. MEDIA QUERIES
  */
+
+/* ============================================================
+   0. CSS VARIABLES & DESIGN TOKENS
+   Central configuration point for colors, spacing, and animations
+   ============================================================ */
+
+:root {
+  /* ---- COLORS ---- */
+  --color-primary: #232323;
+  --color-primary-hover: rgba(35, 35, 35, 0.8);
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-border: #474747;
+  --color-text-default: #333;
+  --color-text-light: #ffffff;
+  --color-background-default: #fff;
+
+  /* ---- SPACING SCALE ---- */
+  --spacing-xs: 3px;
+  --spacing-sm: 5px;
+  --spacing-md: 10px;
+  --spacing-lg: 40px;
+  --spacing-xl: 110px;
+
+  /* ---- COMPONENT-SPECIFIC SIZES ---- */
+  --size-icon-base: 40px;
+  --size-icon-large: 110px;
+  --size-logo-height: 20px;
+
+  /* ---- LAYOUT DIMENSIONS ---- */
+  --layout-hero-width: 80%;
+  --layout-hero-height-top: 20%;
+  --layout-hero-height-interior: 60%;
+  --layout-links-container-height: 600px;
+
+  /* ---- BORDER RADIUS ---- */
+  --radius-button: 90px;
+  --radius-card: 20px;
+
+  /* ---- BORDERS ---- */
+  --border-width: 2px;
+
+  /* ---- ANIMATION */
+  --ease-smooth: cubic-bezier(0.25, 1, 0.5, 1);
+  --timing-standard: 1.2s;
+
+  /* ---- TRANSFORM VALUES ---- */
+  --transform-translate-x-large: 500px;
+  --transform-translate-y-large: 100px;
+  --transform-scale-reduced: 0.7;
+  --transform-scale-enlarged: 1.3;
+  --transform-translate-y-medium: 50px;
+
+  /* ---- BREAKPOINTS ---- */
+  --bp-mobile-landscape: 710px;
+  --bp-tablet: 710px;
+  --bp-desktop: 1024px;
+}
 
 /* ============================================================
    1. CSS RESET & BROWSER NORMALIZATION
@@ -40,8 +99,8 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   font-size: 1rem;
   line-height: 1.5;
-  color: #333;
-  background-color: #fff;
+  color: var(--color-text-default);
+  background-color: var(--color-background-default);
 }
 
 /* Anchor links */
@@ -124,7 +183,7 @@ a:focus,
 input:focus,
 select:focus,
 textarea:focus {
-  outline: 2px solid #232323;
+  outline: var(--border-width) solid var(--color-primary);
   outline-offset: 2px;
 }
 
@@ -148,7 +207,7 @@ main {
 .horizontal-container {
   display: flex;
   flex-direction: row;
-  gap: 5px;
+  gap: var(--spacing-sm);
   justify-content: space-between;
   align-items: center;
 }
@@ -158,54 +217,54 @@ main {
    ============================================================ */
 
 .button-style {
-  background-color: #232323;
-  border: 2px solid transparent;
-  border-radius: 90px;
-  padding: 6px;
-  transition: all 1.2s cubic-bezier(0.25, 1, 0.5, 1);
+  background-color: var(--color-primary);
+  border: var(--border-width) solid transparent;
+  border-radius: var(--radius-button);
+  padding: var(--spacing-sm);
+  transition: all var(--timing-standard) var(--ease-smooth);
 }
 
 .button-style:hover {
-  border-color: #232323;
+  border-color: var(--color-primary);
   opacity: 0.8;
 }
 
 .button-style:focus-visible {
-  outline: 2px solid #232323;
+  outline: var(--border-width) solid var(--color-primary);
   outline-offset: 2px;
 }
 
 .content-info {
-  background-color: #000000;
+  background-color: var(--color-black);
 }
 
 .plan-style {
-  background-color: #ffffff;
-  border: 2px solid #474747;
-  border-radius: 20px;
-  padding: 10px;
+  background-color: var(--color-white);
+  border: var(--border-width) solid var(--color-border);
+  border-radius: var(--radius-card);
+  padding: var(--spacing-md);
 }
 
 .plan-container {
   display: flex;
   flex-direction: row;
-  gap: 5px;
-  padding: 5px;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-sm);
   align-items: center;
 }
 
 .main-icon {
-  width: 110px;
+  width: var(--size-icon-large);
   object-fit: contain;
 }
 
 .header-logo {
-  height: 20px;
+  height: var(--size-logo-height);
 }
 
 .base-icon {
-  width: 40px;
-  height: 40px;
+  width: var(--size-icon-base);
+  height: var(--size-icon-base);
   object-fit: contain;
 }
 
@@ -213,8 +272,8 @@ main {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 600px;
-  gap: 3px;
+  height: var(--layout-links-container-height);
+  gap: var(--spacing-xs);
   width: 100%;
 }
 
@@ -245,19 +304,19 @@ main {
 
 .hero-30 {
   align-self: center;
-  width: 80%;
-  height: 20%;
+  width: var(--layout-hero-width);
+  height: var(--layout-hero-height-top);
 }
 
 .hero-content {
   align-self: center;
-  color: white;
+  color: var(--color-text-light);
 }
 
 .hero-content-interior {
   align-self: center;
-  width: 80%;
-  height: 60%;
+  width: var(--layout-hero-width);
+  height: var(--layout-hero-height-interior);
 }
 
 /* Animated background with parallax effect */
@@ -267,28 +326,28 @@ main {
   height: 120%;
   object-fit: cover;
   z-index: -1;
-  transform: translateY(100px) scale(1.3);
-  transition: transform 1.2s cubic-bezier(0.25, 1, 0.5, 1);
+  transform: translateY(var(--transform-translate-y-large)) scale(var(--transform-scale-enlarged));
+  transition: transform var(--timing-standard) var(--ease-smooth);
   will-change: transform;
 }
 
 .hero-image-right {
   position: relative;
   width: 20%;
-  transform: translateX(500px) scale(0.7);
+  transform: translateX(var(--transform-translate-x-large)) scale(var(--transform-scale-reduced));
   opacity: 0;
-  transition: transform 1.2s cubic-bezier(0.25, 1, 0.5, 1),
-    opacity 1.2s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: transform var(--timing-standard) var(--ease-smooth),
+    opacity var(--timing-standard) var(--ease-smooth);
   will-change: transform, opacity;
 }
 
 .hero-image-left {
   position: relative;
   width: 20%;
-  transform: translateX(-500px) scale(0.7);
+  transform: translateX(calc(var(--transform-translate-x-large) * -1)) scale(var(--transform-scale-reduced));
   opacity: 0;
-  transition: transform 1.2s cubic-bezier(0.25, 1, 0.5, 1),
-    opacity 1.2s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: transform var(--timing-standard) var(--ease-smooth),
+    opacity var(--timing-standard) var(--ease-smooth);
   will-change: transform, opacity;
 }
 
@@ -296,17 +355,17 @@ main {
   position: relative;
   transform: translateY(0);
   opacity: 1;
-  transition: transform 1.2s cubic-bezier(0.25, 1, 0.5, 1),
-    opacity 1.2s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: transform var(--timing-standard) var(--ease-smooth),
+    opacity var(--timing-standard) var(--ease-smooth);
   will-change: transform, opacity;
 }
 
 .group-b {
   position: relative;
-  transform: translateY(50px);
+  transform: translateY(var(--transform-translate-y-medium));
   opacity: 0;
-  transition: transform 1.2s cubic-bezier(0.25, 1, 0.5, 1),
-    opacity 1.2s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: transform var(--timing-standard) var(--ease-smooth),
+    opacity var(--timing-standard) var(--ease-smooth);
   will-change: transform, opacity;
 }
 
@@ -314,8 +373,8 @@ main {
 .main-content-section {
   position: relative;
   z-index: 2;
-  background-color: white;
-  padding: 40px;
+  background-color: var(--color-white);
+  padding: var(--spacing-lg);
 }
 
 /* ============================================================
@@ -363,15 +422,15 @@ main {
    Note: Will be refactored to mobile-first approach in Phase 4
    ============================================================ */
 
-/* Hide on small screens (max-width 710px) */
-@media (max-width: 710px) {
+/* Hide on small screens (max-width mobile-landscape breakpoint) */
+@media (max-width: calc(var(--bp-mobile-landscape) - 1px)) {
   .hidden-mobile {
     display: none;
   }
 }
 
-/* Hide on large screens (min-width 710px) */
-@media (min-width: 710px) {
+/* Hide on large screens (min-width tablet breakpoint) */
+@media (min-width: var(--bp-tablet)) {
   .solo-desktop {
     display: none;
   }
