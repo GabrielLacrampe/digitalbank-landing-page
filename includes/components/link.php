@@ -14,10 +14,10 @@ function renderLink($linkData, $isDynamic = false, $extraClasses = '') {
 }
 
 // COMPONENTE PADRE: Renderiza la lista completa y llama a los hijos
-function renderListGroup($listData, $isDynamic = false, $extraClasses = 'link-listed') {
+function renderListGroup($listData, $isDynamic = false, $extraClasses = 'links__item') {
     if (empty($listData)) return;
     ?>
-    <div class="list-of-links">
+    <div class="links__list">
         <p><?php echo $listData['title']; ?></p>
         <ul>
             <?php 
