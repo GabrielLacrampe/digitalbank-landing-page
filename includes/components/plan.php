@@ -10,7 +10,7 @@ function renderPlan($planData, $isDynamic = false, $extraClasses = '') {
 
     ?>
     <a href="<?php echo $url; ?>">
-        <div class="plan-style <?php echo $extraClasses; ?>">
+        <div class="card <?php echo $extraClasses; ?>">
             <span>
                 <?php renderTitle($title, $isDynamic, '', 2); ?>
             </span>
