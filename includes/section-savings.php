@@ -14,7 +14,7 @@ $inicial = $datos['section_config']['initial_state'];
 
     <?php renderText($datos['dynamic_blocks'][$inicial], true); ?>
 
-    <?php renderButton($datos['static_blocks']['button'], false, 'hidden-mobile'); ?>
+    <?php renderButton($datos['static_blocks']['button'], false, 'is-hidden-mobile'); ?>
 
     <?php renderControllers($datos['controllers']); ?>
     <script class="data-json" type="application/json">
