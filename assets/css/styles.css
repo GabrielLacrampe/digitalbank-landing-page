@@ -1,18 +1,26 @@
 /**
  * MAIN STYLESHEET
  * Project: Proyecto Intermodular
- * Methodology: BEM (to be applied in Phase 4)
- * Approach: Mobile-first (to be refactored in Phase 4)
+ * Methodology: BEM (Block__Element--Modifier)
+ * Approach: Mobile-first
  * Standards: WCAG AA contrast compliance
+ *
+ * NAMING CONVENTION:
+ * - .block: Main component (e.g., .hero, .btn, .card)
+ * - .block__element: Component part (e.g., .hero__logo, .card__container)
+ * - .block--modifier: Component variant (e.g., .btn--primary, .hero__image--right)
+ * - .is-state: Current state (e.g., .is-hidden-mobile, .is-scroll-disabled)
+ * - .u-utility: Utility class (e.g., .u-width-full, .u-flex-row)
  *
  * CONTENT:
  * 0. CSS VARIABLES & TOKENS
  * 1. CSS RESET & BROWSER NORMALIZATION
  * 2. BASE STYLES
- * 3. COMPONENT STYLES
- * 4. HERO SECTION & LAYOUTS
- * 5. ANIMATIONS
- * 6. MEDIA QUERIES
+ * 3. UTILITIES
+ * 4. COMPONENTS (Buttons, Cards, Icons, Flex)
+ * 5. LAYOUTS (Hero, Sections, Links)
+ * 6. ANIMATIONS
+ * 7. MEDIA QUERIES
  */
 
 /* ============================================================
@@ -311,18 +319,32 @@ main {
 }
 
 /* ============================================================
-   2. BASE STYLES & UTILITIES
+   2. BASE STYLES
    ============================================================ */
 
-.width100 {
-  width: 100%;
+/* State classes */
+.is-hidden-mobile {
+  display: none;
 }
 
-.no-scroll {
+.is-hidden-desktop {
+  display: none;
+}
+
+.is-scroll-disabled {
   overflow: hidden;
 }
 
-.horizontal-container {
+/* ============================================================
+   3. UTILITIES
+   Reusable classes for common patterns
+   ============================================================ */
+
+.u-width-full {
+  width: 100%;
+}
+
+.u-flex-row {
   display: flex;
   flex-direction: row;
   gap: var(--spacing-sm);
@@ -330,40 +352,49 @@ main {
   align-items: center;
 }
 
+.u-flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
 /* ============================================================
-   3. COMPONENT STYLES
+   4. COMPONENTS
+   Reusable component blocks
    ============================================================ */
 
-.button-style {
+/* BUTTON COMPONENT */
+.btn {
   background-color: var(--color-primary);
   border: var(--border-width) solid transparent;
   border-radius: var(--radius-button);
   padding: var(--spacing-sm);
   transition: all var(--timing-standard) var(--ease-smooth);
+  cursor: pointer;
 }
 
-.button-style:hover {
+.btn:hover {
   border-color: var(--color-primary);
   opacity: 0.8;
 }
 
-.button-style:focus-visible {
+.btn:active {
+  opacity: 0.7;
+}
+
+.btn:focus-visible {
   outline: var(--border-width) solid var(--color-primary);
   outline-offset: 2px;
 }
 
-.content-info {
-  background-color: var(--color-black);
-}
-
-.plan-style {
+/* CARD COMPONENT */
+.card {
   background-color: var(--color-white);
   border: var(--border-width) solid var(--color-border);
   border-radius: var(--radius-card);
   padding: var(--spacing-md);
 }
 
-.plan-container {
+.card__container {
   display: flex;
   flex-direction: row;
   gap: var(--spacing-sm);
@@ -371,46 +402,42 @@ main {
   align-items: center;
 }
 
-.main-icon {
-  width: var(--size-icon-large);
-  object-fit: contain;
-}
-
-.header-logo {
-  height: var(--size-logo-height);
-}
-
-.base-icon {
+/* ICON COMPONENT */
+.icon {
   width: var(--size-icon-base);
   height: var(--size-icon-base);
   object-fit: contain;
 }
 
-.bottom-links-container {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  height: var(--layout-links-container-height);
-  gap: var(--spacing-xs);
-  width: 100%;
+.icon--lg {
+  width: var(--size-icon-large);
+  object-fit: contain;
 }
 
-.list-of-links {
-  padding: 0;
-  margin: 0;
+/* LOGO COMPONENT */
+.logo {
+  height: var(--size-logo-height);
 }
 
-.link-listed {
-  padding: 0;
-  margin: 0;
+/* SECTION COMPONENT */
+.section {
+  position: relative;
+  z-index: 2;
+  background-color: var(--color-white);
+  padding: var(--spacing-lg);
+}
+
+.section--dark {
+  background-color: var(--color-black);
 }
 
 /* ============================================================
-   4. HERO SECTION & LAYOUTS
+   5. LAYOUTS
+   Page sections and layout-specific styles
    ============================================================ */
 
-/* Container for parallax effect */
-.hero-section {
+/* HERO LAYOUT */
+.hero {
   position: relative;
   overflow: hidden;
   display: flex;
@@ -420,25 +447,24 @@ main {
   height: 100vh;
 }
 
-.hero-30 {
+.hero__logo {
   align-self: center;
   width: var(--layout-hero-width);
   height: var(--layout-hero-height-top);
 }
 
-.hero-content {
+.hero__content {
   align-self: center;
   color: var(--color-text-light);
 }
 
-.hero-content-interior {
+.hero__inner {
   align-self: center;
   width: var(--layout-hero-width);
   height: var(--layout-hero-height-interior);
 }
 
-/* Animated background with parallax effect */
-.fondo-animado {
+.hero__background {
   position: absolute;
   width: 100%;
   height: 120%;
@@ -449,54 +475,64 @@ main {
   will-change: transform;
 }
 
-.hero-image-right {
+.hero__image {
   position: relative;
   width: 20%;
+  opacity: 0;
+  transition: transform var(--timing-standard) var(--ease-smooth),
+    opacity var(--timing-standard) var(--ease-smooth);
+  will-change: transform, opacity;
+}
+
+.hero__image--right {
   transform: translateX(var(--transform-translate-x-large)) scale(var(--transform-scale-reduced));
-  opacity: 0;
-  transition: transform var(--timing-standard) var(--ease-smooth),
-    opacity var(--timing-standard) var(--ease-smooth);
-  will-change: transform, opacity;
 }
 
-.hero-image-left {
-  position: relative;
-  width: 20%;
+.hero__image--left {
   transform: translateX(calc(var(--transform-translate-x-large) * -1)) scale(var(--transform-scale-reduced));
-  opacity: 0;
+}
+
+.hero__group {
+  position: relative;
   transition: transform var(--timing-standard) var(--ease-smooth),
     opacity var(--timing-standard) var(--ease-smooth);
   will-change: transform, opacity;
 }
 
-.group-a {
-  position: relative;
+.hero__group--primary {
   transform: translateY(0);
   opacity: 1;
-  transition: transform var(--timing-standard) var(--ease-smooth),
-    opacity var(--timing-standard) var(--ease-smooth);
-  will-change: transform, opacity;
 }
 
-.group-b {
-  position: relative;
+.hero__group--secondary {
   transform: translateY(var(--transform-translate-y-medium));
   opacity: 0;
-  transition: transform var(--timing-standard) var(--ease-smooth),
-    opacity var(--timing-standard) var(--ease-smooth);
-  will-change: transform, opacity;
 }
 
-/* Main content sections overlay */
-.main-content-section {
-  position: relative;
-  z-index: 2;
-  background-color: var(--color-white);
-  padding: var(--spacing-lg);
+/* LINKS LAYOUT */
+.links {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: var(--layout-links-container-height);
+  gap: var(--spacing-xs);
+  width: 100%;
+}
+
+.links__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.links__item {
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 /* ============================================================
-   5. ANIMATIONS
+   6. ANIMATIONS
    ============================================================ */
 
 @keyframes mover-arriba {
@@ -536,8 +572,8 @@ main {
 }
 
 /* ============================================================
-   6. MEDIA QUERIES
-   Note: Will be refactored to mobile-first approach in Phase 4
+   7. MEDIA QUERIES
+   Mobile-first approach: base styles are mobile, desktop adjustments below
    ============================================================ */
 
 /* RESPONSIVE TYPOGRAPHY - Desktop (710px+) */
@@ -568,16 +604,17 @@ main {
   }
 }
 
-/* Hide on small screens (max-width mobile-landscape breakpoint) */
-@media (max-width: calc(var(--bp-mobile-landscape) - 1px)) {
-  .hidden-mobile {
-    display: none;
+/* STATE VISIBILITY - Mobile/Desktop Classes */
+/* Show elements hidden by default on mobile, reveal on desktop */
+@media (min-width: var(--bp-tablet)) {
+  .is-hidden-desktop {
+    display: none !important;
   }
 }
 
-/* Hide on large screens (min-width tablet breakpoint) */
-@media (min-width: var(--bp-tablet)) {
-  .solo-desktop {
-    display: none;
+/* Hide elements on small screens */
+@media (max-width: calc(var(--bp-mobile-landscape) - 1px)) {
+  .is-hidden-mobile {
+    display: none !important;
   }
 }
