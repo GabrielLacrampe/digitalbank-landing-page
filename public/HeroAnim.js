@@ -1,15 +1,15 @@
 let isAtTop = true; // Estado: ¿Estamos en el punto inicial?
 let isAnimating = false; // Bloqueo para evitar disparos múltiples
-const imagenMain = document.querySelector('.fondo-animado');
-const imagenLeft = document.querySelector('.hero-image-left');
-const imagenRight = document.querySelector('.hero-image-right');
-const groupA = document.querySelectorAll('.group-a');
-const groupB = document.querySelectorAll('.group-b');
+const imagenMain = document.querySelector('.hero__background');
+const imagenLeft = document.querySelector('.hero__image--left');
+const imagenRight = document.querySelector('.hero__image--right');
+const groupA = document.querySelectorAll('.hero__group--primary');
+const groupB = document.querySelectorAll('.hero__group--secondary');
 
 const body = document.body;
 
 // 1. Bloqueo inicial
-body.classList.add('no-scroll');
+body.classList.add('is-scroll-disabled');
 
 window.addEventListener('wheel', function (event) {
   if (isAnimating) return; // Si está moviéndose, no hacer nada
@@ -45,7 +45,7 @@ function animarHaciaAbajo() {
   });
 
   setTimeout(() => {
-    body.classList.remove('no-scroll');
+    body.classList.remove('is-scroll-disabled');
     isAtTop = false;
     isAnimating = false;
   }, 1200); // Duración igual a la del CSS
@@ -53,7 +53,7 @@ function animarHaciaAbajo() {
 
 function animarHaciaArriba() {
   isAnimating = true;
-  body.classList.add('no-scroll'); // Volvemos a bloquear el scroll
+  body.classList.add('is-scroll-disabled'); // Volvemos a bloquear el scroll
   imagenMain.style.transform = `translateY(100px) scale(1.3)`; // Estado A
   imagenLeft.style.transform = `translateX(-500px) scale(0.7)`;
   imagenLeft.style.opacity = '0';
