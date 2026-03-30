@@ -1,31 +1,149 @@
-a {
-  text-decoration: none;
+/**
+ * MAIN STYLESHEET
+ * Project: Proyecto Intermodular
+ * Methodology: BEM (to be applied in Phase 4)
+ * Approach: Mobile-first (to be refactored in Phase 4)
+ * Standards: WCAG AA contrast compliance
+ *
+ * CONTENT:
+ * 1. CSS RESET & BROWSER NORMALIZATION
+ * 2. BASE STYLES
+ * 3. COMPONENT STYLES
+ * 4. HERO SECTION & LAYOUTS
+ * 5. ANIMATIONS
+ * 6. MEDIA QUERIES
+ */
+
+/* ============================================================
+   1. CSS RESET & BROWSER NORMALIZATION
+   ============================================================ */
+
+/* Apply to all elements and pseudo-elements */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* HTML baseline */
 html {
-  /* Reserva el espacio de la barra de scroll siempre */
+  font-size: 16px;
   scrollbar-gutter: stable;
 }
 
-ul {
+/* Body baseline */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+  background-color: #fff;
+}
+
+/* Anchor links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Lists */
+ul,
+ol {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
+li {
+  list-style: none;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+}
+
+/* Paragraphs */
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Media elements */
+img,
+picture,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Form elements */
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
+
+input,
+textarea {
+  cursor: text;
+}
+
+input:disabled,
+textarea:disabled,
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* Default focus styles for accessibility */
+button:focus,
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid #232323;
+  outline-offset: 2px;
+}
+
+/* Main content area */
+main {
+  width: 100%;
+}
+
+/* ============================================================
+   2. BASE STYLES & UTILITIES
+   ============================================================ */
+
 .width100 {
   width: 100%;
 }
 
-.main-icon {
-  width: 110px;
-  object-fit: contain;
+.no-scroll {
+  overflow: hidden;
 }
-
-.header-logo {
-  height: 20px;
-}
-
 
 .horizontal-container {
   display: flex;
@@ -35,15 +153,27 @@ ul {
   align-items: center;
 }
 
+/* ============================================================
+   3. COMPONENT STYLES
+   ============================================================ */
+
 .button-style {
   background-color: #232323;
-  border: 2px solid #ffffff00;
+  border: 2px solid transparent;
   border-radius: 90px;
   padding: 6px;
+  transition: all 1.2s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
+.button-style:hover {
+  border-color: #232323;
+  opacity: 0.8;
+}
 
-
+.button-style:focus-visible {
+  outline: 2px solid #232323;
+  outline-offset: 2px;
+}
 
 .content-info {
   background-color: #000000;
@@ -61,8 +191,22 @@ ul {
   flex-direction: row;
   gap: 5px;
   padding: 5px;
-
   align-items: center;
+}
+
+.main-icon {
+  width: 110px;
+  object-fit: contain;
+}
+
+.header-logo {
+  height: 20px;
+}
+
+.base-icon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
 }
 
 .bottom-links-container {
@@ -75,46 +219,23 @@ ul {
 }
 
 .list-of-links {
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
 }
 
 .link-listed {
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
 }
 
-.base-icon {
-  width: 40px;
-  height: 40px;
-  object-fit: contain;
-}
+/* ============================================================
+   4. HERO SECTION & LAYOUTS
+   ============================================================ */
 
-
-
-
-/* Cuando la pantalla mide 760px o MÁS, desaparece */
-@media (min-width: 710px) {
-  .solo-desktop {
-    display: none;
-  }
-}
-
-/* Cuando la pantalla mide 760px o menos, desaparece */
-@media (max-width: 710px) {
-  .hidden-mobile {
-    display: none;
-  }
-}
-
-
-
-/* El "marco" donde vive el efecto parallax */
+/* Container for parallax effect */
 .hero-section {
   position: relative;
-  /* Para que esté por encima de la imagen */
   overflow: hidden;
-  /* CRUCIAL: Corta cualquier exceso de imagen */
   display: flex;
   flex-direction: column;
   z-index: 1;
@@ -122,9 +243,9 @@ ul {
   height: 100vh;
 }
 
-.hero-30{
+.hero-30 {
   align-self: center;
-  width:  80%;
+  width: 80%;
   height: 20%;
 }
 
@@ -136,90 +257,71 @@ ul {
 .hero-content-interior {
   align-self: center;
   width: 80%;
-  height: 60%
+  height: 60%;
 }
 
+/* Animated background with parallax effect */
 .fondo-animado {
   position: absolute;
   width: 100%;
   height: 120%;
   object-fit: cover;
   z-index: -1;
-  /* Empezamos con los valores iniciales */
   transform: translateY(100px) scale(1.3);
-  /* Transición suave para cuando JS cambie los valores */
   transition: transform 1.2s cubic-bezier(0.25, 1, 0.5, 1);
   will-change: transform;
 }
+
 .hero-image-right {
   position: relative;
   width: 20%;
-
-  /* Empezamos con los valores iniciales */
   transform: translateX(500px) scale(0.7);
   opacity: 0;
-  /* Transición suave para cuando JS cambie los valores */
-  transition: 
-  transform 1.2s cubic-bezier(0.25, 1, 0.5, 1), 
-  opacity 1.2s cubic-bezier(0.25, 1, 0.5, 1);
-  will-change: transform opacity;
+  transition: transform 1.2s cubic-bezier(0.25, 1, 0.5, 1),
+    opacity 1.2s cubic-bezier(0.25, 1, 0.5, 1);
+  will-change: transform, opacity;
 }
+
 .hero-image-left {
   position: relative;
   width: 20%;
-
-  /* Empezamos con los valores iniciales */
   transform: translateX(-500px) scale(0.7);
   opacity: 0;
-  /* Transición suave para cuando JS cambie los valores */
-  transition: 
-  transform 1.2s cubic-bezier(0.25, 1, 0.5, 1), 
-  opacity 1.2s cubic-bezier(0.25, 1, 0.5, 1);
-  will-change: transform opacity;
+  transition: transform 1.2s cubic-bezier(0.25, 1, 0.5, 1),
+    opacity 1.2s cubic-bezier(0.25, 1, 0.5, 1);
+  will-change: transform, opacity;
 }
+
 .group-a {
   position: relative;
-
-  /* Empezamos con los valores iniciales */
-  transform: translateY(0px);
+  transform: translateY(0);
   opacity: 1;
-  
-  /* Transición suave para cuando JS cambie los valores */
-  transition: 
-  transform 1.2s cubic-bezier(0.25, 1, 0.5, 1), 
-  opacity 1.2s cubic-bezier(0.25, 1, 0.5, 1);
-  will-change: transform opacity;
+  transition: transform 1.2s cubic-bezier(0.25, 1, 0.5, 1),
+    opacity 1.2s cubic-bezier(0.25, 1, 0.5, 1);
+  will-change: transform, opacity;
 }
+
 .group-b {
   position: relative;
-
-  /* Empezamos con los valores iniciales */
   transform: translateY(50px);
   opacity: 0;
-  
-  /* Transición suave para cuando JS cambie los valores */
-  transition: 
-  transform 1.2s cubic-bezier(0.25, 1, 0.5, 1), 
-  opacity 1.2s cubic-bezier(0.25, 1, 0.5, 1);
-  will-change: transform opacity;
+  transition: transform 1.2s cubic-bezier(0.25, 1, 0.5, 1),
+    opacity 1.2s cubic-bezier(0.25, 1, 0.5, 1);
+  will-change: transform, opacity;
 }
 
-/* Clase para bloquear el scroll del cuerpo */
-.no-scroll {
-  overflow: hidden;
-}
-
-/* El resto de secciones deben ser sólidas para tapar el hero al subir */
+/* Main content sections overlay */
 .main-content-section {
   position: relative;
   z-index: 2;
-  /* Mayor que el hero */
   background-color: white;
-  /* Color sólido para que no sea transparente */
   padding: 40px;
 }
 
-/* Definición del movimiento */
+/* ============================================================
+   5. ANIMATIONS
+   ============================================================ */
+
 @keyframes mover-arriba {
   from {
     transform: translateY(0);
@@ -227,8 +329,8 @@ ul {
   to {
     transform: translateY(-50%);
   }
-  /* Sube un 15% mientras bajas */
 }
+
 @keyframes mover-abajo {
   from {
     transform: translateY(0);
@@ -236,8 +338,8 @@ ul {
   to {
     transform: translateY(50%);
   }
-  /* Sube un 15% mientras bajas */
 }
+
 @keyframes mover-izquierda {
   from {
     transform: translateX(0);
@@ -245,8 +347,8 @@ ul {
   to {
     transform: translateX(-50%);
   }
-  /* Sube un 15% mientras bajas */
 }
+
 @keyframes mover-derecha {
   from {
     transform: translateX(0);
@@ -254,5 +356,23 @@ ul {
   to {
     transform: translateX(50%);
   }
-  /* Sube un 15% mientras bajas */
+}
+
+/* ============================================================
+   6. MEDIA QUERIES
+   Note: Will be refactored to mobile-first approach in Phase 4
+   ============================================================ */
+
+/* Hide on small screens (max-width 710px) */
+@media (max-width: 710px) {
+  .hidden-mobile {
+    display: none;
+  }
+}
+
+/* Hide on large screens (min-width 710px) */
+@media (min-width: 710px) {
+  .solo-desktop {
+    display: none;
+  }
 }
