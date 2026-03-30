@@ -36,11 +36,11 @@ function animarHaciaAbajo() {
   imagenRight.style.opacity = '1';
 
   groupA.forEach(el => {
-    el.style.transform = `translateY(0px)`;
+    el.style.transform = `translateY(-150px)`;
     el.style.opacity = '0';
   });
   groupB.forEach(el => {
-    el.style.transform = `translateY(0px)`;
+    el.style.transform = `translateY(-50px)`;
     el.style.opacity = '1';
   });
 
@@ -65,7 +65,7 @@ function animarHaciaArriba() {
     el.style.opacity = '1';
   });
   groupB.forEach(el => {
-    el.style.transform = `translateY(50px)`;
+    el.style.transform = `translateY(150px)`;
     el.style.opacity = '0';
   });
 
