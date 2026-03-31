@@ -620,13 +620,35 @@ main {
 
 .hero__content {
   align-self: center;
+  text-align: center;
   color: var(--color-text-light);
+}
+
+
+.hero__content__default {
+  align-self: center;
+  color: var(--color-text-default);
 }
 
 .hero__inner {
   align-self: center;
   width: var(--layout-hero-width);
   height: var(--layout-hero-height-interior);
+}
+
+.hero__inner--static {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.hero__controllers {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: var(--spacing-md) 0;
 }
 
 .hero__background {
@@ -644,6 +666,9 @@ main {
   position: relative;
   width: 20%;
   opacity: 0;
+
+  object-fit: cover;
+  z-index: -1;
   transition: transform var(--timing-standard) var(--ease-smooth),
     opacity var(--timing-standard) var(--ease-smooth);
   will-change: transform, opacity;
