@@ -3,7 +3,7 @@
     $mi_seccion = $web_data['section-awards_references']; 
     $datos = $mi_seccion['contenido']; 
 ?>
-<section id="awards-references">
+<section id="awards-references" class="hero">
     <?php renderTitle($datos['static_blocks'], false); ?>
     
     <?php renderText($datos['static_blocks']['award_a'], false); ?>
