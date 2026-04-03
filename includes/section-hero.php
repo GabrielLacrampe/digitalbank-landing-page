@@ -5,7 +5,7 @@ $datos = $mi_seccion['contenido'];
 <section id="main" class="main__section">        
     <?php renderImage($datos['static_blocks']['images']['image_a'], false, 'hero__background'); ?>
     
-    <div class="dymension__20"></div>
+    <div class="dymension__10"></div>
 
     <div class="dymension__80">
         <?php renderTitle($datos['static_blocks']['group_a'], false, 'light__content hero__group hero__group--primary'); ?>
@@ -20,5 +20,5 @@ $datos = $mi_seccion['contenido'];
         <?php renderImage($datos['static_blocks']['images']['image_c'], false, 'hero__image hero__image--right'); ?>
     </div>
 
-    <div class="dymension__20"></div>
+    <div class="dymension__10"></div>
 </section>
