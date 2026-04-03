@@ -14,16 +14,25 @@
   height: 100vh;
 }
 
-.dymension__20 { 
+.dymension__10 { 
   align-self: center;
   width: var(--layout-hero-width);
-  height: var(--layout-hero-height-top);
+  height: var(--layout-hero-height-small);
 }
 
 .dymension__80 {
   align-self: center;
   width: var(--layout-hero-width);
   height: var(--layout-hero-height-interior);
+}
+
+/* section safety | cards */
+.section__static__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  justify-content: center;
 }
 
 .light__content {
@@ -39,14 +48,6 @@
   color: var(--color-text-dark);
 }
 
-/* section safety | cards */
-.section__static__content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-  justify-content: center;
-}
 
 /* No se usan? */
 .hero__controllers {
