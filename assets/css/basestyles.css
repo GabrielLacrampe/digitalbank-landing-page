@@ -1,0 +1,16 @@
+/* ============================================================
+   2. BASE STYLES
+   ============================================================ */
+
+/* State classes */
+.is-hidden-mobile {
+  display: none;
+}
+
+.is-hidden-desktop {
+  display: none;
+}
+
+.is-scroll-disabled {
+  overflow: hidden;
+}
