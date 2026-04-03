@@ -58,6 +58,7 @@
 
   /* ---- LAYOUT DIMENSIONS ---- */
   --layout-hero-width: 80%;
+  --layout-hero-height-small: 10%;
   --layout-hero-height-top: 20%;
   --layout-hero-height-interior: 60%;
   --layout-links-container-height: 600px;
