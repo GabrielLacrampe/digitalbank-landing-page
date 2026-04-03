@@ -2,16 +2,16 @@
 $mi_seccion = $web_data['section-finalinfo']; 
 $datos = $mi_seccion['contenido']; 
 ?>
-<section id="finalinfo" class="hero">
-        <div class="hero__logo"></div>
+<section id="finalinfo" class="main__section">
+    <div class="dymension__20"></div>
 
-    <div class="hero__inner">
-        <?php renderTitle($datos['static_blocks'], false, 'hero__content__default'); ?>
+    <div class="dymension__80">
+        <?php renderTitle($datos['static_blocks'], false, 'dark__content'); ?>
 
-        <?php renderButton($datos['static_blocks']['button'], false, 'hero__content'); ?>
+        <?php renderButton($datos['static_blocks']['button'], false, 'light__content'); ?>
 
-        <?php renderText($datos['static_blocks'], false, 'hero__content__default'); ?>
+        <?php renderText($datos['static_blocks'], false, 'dark__content'); ?>
     </div>
     
-    <div class="hero__logo"></div>
+    <div class="dymension__20"></div>
 </section>
