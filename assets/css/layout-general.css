@@ -3,6 +3,19 @@
    Page sections and layout-specific styles
    ============================================================ */
 
+/* Header Overlay (Hero background extends under header) */
+.site-header {
+  position: absolute;
+  inset: 0 0 auto 0;
+  width: 100%;
+  z-index: 100;
+  background: transparent;
+}
+
+main {
+  margin: 0;
+}
+
 /* General */
 .main__section {
   position: relative;
