@@ -1,0 +1,187 @@
+/* ============================================================
+   4. COMPONENTS
+   Reusable component blocks
+   ============================================================ */
+
+/* BUTTON COMPONENT */
+.btn {
+  /* Display & Layout */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  
+  /* Dimensions with constraints */
+  width: auto;
+  min-width: var(--button-width-min);
+  max-width: var(--button-width-max);
+  min-height: var(--button-height-min);
+  max-height: var(--button-height-max);
+  height: auto;
+  
+  /* Spacing */
+  padding: var(--button-padding-vertical) var(--button-padding-horizontal);
+  margin: var(--button-margin);
+  
+  /* Styling */
+  background-color: var(--color-primary);
+  color: var(--button-text-color);
+  border: var(--border-width) solid transparent;
+  border-radius: var(--radius-button);
+  
+  /* Typography */
+  font-family: var(--font-family-base);
+  font-size: var(--button-font-size);
+  font-weight: var(--button-font-weight);
+  line-height: 1;
+  text-decoration: none;
+  white-space: nowrap;
+  
+  /* Behavior */
+  cursor: pointer;
+  transition: all var(--timing-standard) var(--ease-smooth);
+  
+  /* Remove default link styles */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* Visited state: mantiene el mismo color (no es azul como enlace típico) */
+.btn:visited {
+  color: var(--button-text-color-visited);
+}
+
+.btn:hover {
+  border-color: var(--color-primary);
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.btn:active {
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+.btn:focus-visible {
+  outline: var(--border-width) solid var(--color-primary);
+  outline-offset: 2px;
+  text-decoration: none;
+}
+
+/* TAB BUTTON COMPONENT - Replica estilos de .btn pero es <button> para acciones */
+.tab-btn {
+  /* Display & Layout */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  
+  /* Dimensions with constraints - IGUAL QUE .btn */
+  width: auto;
+  min-width: var(--button-width-min);
+  max-width: var(--button-width-max);
+  min-height: var(--button-height-min);
+  max-height: var(--button-height-max);
+  height: auto;
+  
+  /* Spacing */
+  padding: var(--button-padding-vertical) var(--button-padding-horizontal);
+  margin: var(--button-margin);
+  
+  /* Styling */
+  background-color: var(--color-primary);
+  color: var(--button-text-color);
+  border: var(--border-width) solid transparent;
+  border-radius: var(--radius-button);
+  
+  /* Typography */
+  font-family: var(--font-family-base);
+  font-size: var(--button-font-size);
+  font-weight: var(--button-font-weight);
+  line-height: 1;
+  white-space: nowrap;
+  
+  /* Behavior */
+  cursor: pointer;
+  transition: all var(--timing-standard) var(--ease-smooth);
+  
+  /* Remove default button styles */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.tab-btn:hover {
+  border-color: var(--color-primary);
+  opacity: 0.8;
+}
+
+.tab-btn:active {
+  opacity: 0.7;
+}
+
+.tab-btn:focus-visible {
+  outline: var(--border-width) solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* TABS CONTAINER - Agrupa y centra los botones de control */
+.tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-sm);
+  flex-wrap: wrap;
+}
+
+/* CARD COMPONENT */
+.card {
+  background-color: var(--color-white);
+  border: var(--border-width) solid var(--color-border);
+  border-radius: var(--radius-card);
+  padding: var(--spacing-md);
+}
+
+.card__container {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-sm);
+  align-items: center;
+}
+
+/* ICON COMPONENT */
+.icon {
+  width: var(--size-icon-base);
+  height: var(--size-icon-base);
+  object-fit: contain;
+}
+
+.icon--lg {
+  width: var(--size-icon-large);
+  object-fit: contain;
+}
+
+/* LOGO COMPONENT */
+.logo {
+  height: var(--size-logo-height);
+}
+
+/* SECTION COMPONENT */
+.section {
+  position: relative;
+  z-index: 2;
+  background-color: var(--color-white);
+  padding: var(--spacing-lg);
+}
+
+.section--dark {
+  background-color: var(--color-black);
+}
+
+.background__image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
