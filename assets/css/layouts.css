@@ -1,0 +1,144 @@
+/* ============================================================
+   5. LAYOUTS
+   Page sections and layout-specific styles
+   ============================================================ */
+
+/* HERO LAYOUT */
+.hero {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+}
+
+.hero__logo {
+  align-self: center;
+  width: var(--layout-hero-width);
+  height: var(--layout-hero-height-top);
+}
+
+.hero__content {
+  align-self: center;
+  text-align: center;
+  color: var(--color-text-light);
+}
+
+
+.hero__content__default {
+  align-self: center;
+  color: var(--color-text-default);
+}
+
+.hero__inner {
+  align-self: center;
+  width: var(--layout-hero-width);
+  height: var(--layout-hero-height-interior);
+}
+
+.hero__inner--static {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.hero__controllers {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: var(--spacing-md) 0;
+}
+
+.hero__background {
+  position: absolute;
+  width: 100%;
+  height: 120%;
+  object-fit: cover;
+  z-index: -1;
+  transform: translateY(var(--transform-translate-y-large)) scale(var(--transform-scale-enlarged));
+  transition: transform var(--timing-standard) var(--ease-smooth);
+  will-change: transform;
+}
+
+.hero__image {
+  position: relative;
+  width: 20%;
+  opacity: 0;
+
+  object-fit: cover;
+  z-index: -1;
+  transition: transform var(--timing-standard) var(--ease-smooth),
+    opacity var(--timing-standard) var(--ease-smooth);
+  will-change: transform, opacity;
+}
+
+.hero__image--right {
+  transform: translateX(var(--transform-translate-x-large)) scale(var(--transform-scale-reduced));
+}
+
+.hero__image--left {
+  transform: translateX(calc(var(--transform-translate-x-large) * -1)) scale(var(--transform-scale-reduced));
+}
+
+.hero__group {
+  position: relative;
+  transition: transform var(--timing-standard) var(--ease-smooth),
+    opacity var(--timing-standard) var(--ease-smooth);
+  will-change: transform, opacity;
+}
+
+.hero__group--primary {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.hero__group--secondary {
+  transform: translateY(var(--transform-translate-y-medium));
+  opacity: 0;
+}
+
+/* LINKS LAYOUT */
+.link{
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+  width: 100%;
+}
+
+.links__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  flex: 0 0 calc(33.333% - var(--spacing-md));
+  min-width: 250px;
+}
+
+.links__item {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.links__item a {
+  color: var(--color-white);
+  text-decoration: none;
+  transition: opacity var(--timing-standard) var(--ease-smooth);
+}
+
+.links__item a:hover {
+  opacity: 0.7;
+}
+
+.links__item a:visited {
+  color: var(--color-white);
+}
