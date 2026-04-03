@@ -3,23 +3,23 @@ $mi_seccion = $web_data['section-savings'];
 $datos = $mi_seccion['contenido']; 
 $inicial = $datos['section_config']['initial_state'];
 ?>
-<section id="savings" class="hero">        
+<section id="savings" class="main__section">        
     <?php renderImage($datos['dynamic_blocks'][$inicial], true, 'background__image'); ?>
-    <div class="hero__logo"></div>
+    <div class="dymension__20"></div>
 
-    <div class="hero__inner hero__inner--static">
-        <?php renderTitle($datos['static_blocks'], false, 'hero__content'); ?>
+    <div class="dymension__80 section__static__content">
+        <?php renderTitle($datos['static_blocks'], false, 'light__content'); ?>
         
-        <?php renderText($datos['static_blocks'], false, 'hero__content'); ?>
+        <?php renderText($datos['static_blocks'], false, 'light__content'); ?>
         
-        <?php renderTitle($datos['dynamic_blocks'][$inicial], true, 'hero__content'); ?>
+        <?php renderTitle($datos['dynamic_blocks'][$inicial], true, 'light__content'); ?>
 
-        <?php renderText($datos['dynamic_blocks'][$inicial], true, 'hero__content'); ?>
+        <?php renderText($datos['dynamic_blocks'][$inicial], true, 'light__content'); ?>
 
-        <?php renderButton($datos['static_blocks']['button'], false, 'hero__content'); ?>
+        <?php renderButton($datos['static_blocks']['button'], false, 'light__content'); ?>
     </div>
     
-    <div class="hero__logo">
+    <div class="dymension__20">
         <?php renderControllers($datos['controllers']); ?>
         <script class="data-json" type="application/json">
             <?php echo json_encode($datos['dynamic_blocks']); ?>
