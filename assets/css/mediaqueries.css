@@ -1,0 +1,79 @@
+/* ============================================================
+   7. MEDIA QUERIES & RESPONSIVE DESIGN
+   Mobile-first approach: base styles are mobile, desktop adjustments below
+   Breakpoints: 320px (mobile-xs) → 480px (mobile-sm) → 710px (tablet) → 1024px (desktop) → 1440px+ (desktop-lg)
+   ============================================================ */
+
+/* RESPONSIVE TYPOGRAPHY - Desktop (710px+) */
+@media (min-width: var(--bp-tablet)) {
+  /* Scale up typography for desktop */
+  h1 {
+    font-size: var(--font-size-h1-desktop);
+  }
+
+  h2 {
+    font-size: var(--font-size-h2-desktop);
+  }
+
+  h3 {
+    font-size: var(--font-size-h3-desktop);
+  }
+
+  h4 {
+    font-size: var(--font-size-h4-desktop);
+  }
+
+  h5 {
+    font-size: var(--font-size-h5-desktop);
+  }
+
+  h6 {
+    font-size: var(--font-size-h6-desktop);
+  }
+}
+
+/* STATE VISIBILITY - Mobile/Desktop Classes */
+
+/* Show elements hidden by default on mobile, reveal on desktop */
+@media (min-width: var(--bp-tablet)) {
+  .is-hidden-desktop {
+    display: none !important;
+  }
+}
+
+/* Hide elements on small screens */
+@media (max-width: calc(var(--bp-mobile-landscape) - 1px)) {
+  .is-hidden-mobile {
+    display: none !important;
+  }
+}
+
+/* ============================================================
+   7.1 LARGE SCREENS - Desktop (1024px+)
+   Enhanced spacing and sizing for larger viewports
+   ============================================================ */
+
+@media (min-width: var(--bp-desktop)) {
+  /* Increase content padding on larger screens */
+  .section {
+    padding: calc(var(--spacing-lg) * 1.5);
+  }
+
+  /* Larger hero for desktop */
+  .hero {
+    height: 100vh;
+  }
+}
+
+/* ============================================================
+   7.2 EXTRA LARGE SCREENS - Desktop XL (1440px+)
+   Max-width container for readability on ultra-wide displays
+   ============================================================ */
+
+@media (min-width: var(--bp-desktop-lg)) {
+  /* Optionally constrain max-width for better readability */
+  main {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+}
