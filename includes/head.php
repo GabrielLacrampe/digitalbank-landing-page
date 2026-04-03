@@ -3,7 +3,9 @@
 <title>Principal</title>
 <link rel="stylesheet" href="../assets/css/variables.css">
 <link rel="stylesheet" href="../assets/css/components.css">
-<link rel="stylesheet" href="../assets/css/layouts.css">
+<link rel="stylesheet" href="../assets/css/layout-general.css">
+<link rel="stylesheet" href="../assets/css/layout-links.css">
+<link rel="stylesheet" href="../assets/css/layout-hero.css">
 <link rel="stylesheet" href="../assets/css/animations.css">
 <link rel="stylesheet" href="../assets/css/mediaqueries.css">
 <link rel="stylesheet" href="../assets/css/utilities.css">
