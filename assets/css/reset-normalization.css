@@ -1,0 +1,240 @@
+/* ============================================================
+   1. CSS RESET & BROWSER NORMALIZATION
+   ============================================================ */
+
+/* Apply to all elements and pseudo-elements */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* HTML baseline */
+html {
+  font-size: 16px;
+  scrollbar-gutter: stable;
+}
+
+/* Body baseline */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  letter-spacing: var(--letter-spacing-base);
+  font-weight: var(--font-weight-normal);
+  color: var(--color-text-default);
+  background-color: var(--color-background-default);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Anchor links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Lists */
+ul,
+ol {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-heading);
+  letter-spacing: var(--letter-spacing-base);
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* H1 - Main heading */
+h1 {
+  font-size: var(--font-size-h1-mobile);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: 0.5rem;
+}
+
+/* H2 - Section heading */
+h2 {
+  font-size: var(--font-size-h2-mobile);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: 0.5rem;
+}
+
+/* H3 - Subsection heading */
+h3 {
+  font-size: var(--font-size-h3-mobile);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: 0.5rem;
+}
+
+/* H4 - Secondary heading */
+h4 {
+  font-size: var(--font-size-h4-mobile);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: 0.5rem;
+}
+
+/* H5 - Tertiary heading */
+h5 {
+  font-size: var(--font-size-h5-mobile);
+  font-weight: var(--font-weight-medium);
+  margin-bottom: 0.5rem;
+}
+
+/* H6 - Minor heading */
+h6 {
+  font-size: var(--font-size-h6-mobile);
+  font-weight: var(--font-weight-medium);
+  margin-bottom: 0.5rem;
+}
+
+/* Paragraphs */
+p {
+  margin: 0;
+  padding: 0;
+  line-height: var(--line-height-base);
+}
+
+/* Text emphasis */
+strong,
+b {
+  font-weight: var(--font-weight-bold);
+}
+
+em,
+i {
+  font-style: italic;
+}
+
+small {
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-base);
+}
+
+/* Code elements */
+code,
+pre {
+  font-family: var(--font-family-mono);
+  font-size: var(--font-size-sm);
+}
+
+code {
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 2px 6px;
+  border-radius: 3px;
+}
+
+pre {
+  background-color: #f5f5f5;
+  padding: 1rem;
+  overflow-x: auto;
+  border-radius: 4px;
+  line-height: 1.4;
+}
+
+/* Media elements */
+img,
+picture,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Form elements */
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
+
+input,
+textarea {
+  cursor: text;
+}
+
+input:disabled,
+textarea:disabled,
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* Default focus styles for accessibility */
+button:focus,
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  outline: var(--border-width) solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* Main content area */
+main {
+  width: 100%;
+}
+
+/* ============================================================
+   1.5 ACCESSIBILITY & REDUCED MOTION
+   Respects user preference for reduced motion
+   ============================================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  /* Disable all animations for users who prefer reduced motion */
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    transition-delay: 0 !important;
+  }
+
+  /* Disable smooth scroll */
+  html {
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Focus visible for keyboard navigation */
+:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Remove focus ring from mouse users (focus-visible only) */
+:focus:not(:focus-visible) {
+  outline: none;
+}
