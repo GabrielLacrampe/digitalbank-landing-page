@@ -3,7 +3,7 @@ $mi_seccion = $web_data['section-finalinfo'];
 $datos = $mi_seccion['contenido']; 
 ?>
 <section id="finalinfo" class="main__section">
-    <div class="dymension__20"></div>
+    <div class="dymension__10"></div>
 
     <div class="dymension__80">
         <?php renderTitle($datos['static_blocks'], false, 'dark__content'); ?>
@@ -13,5 +13,5 @@ $datos = $mi_seccion['contenido'];
         <?php renderText($datos['static_blocks'], false, 'dark__content'); ?>
     </div>
     
-    <div class="dymension__20"></div>
+    <div class="dymension__10"></div>
 </section>
