@@ -29,14 +29,37 @@ main {
 
 .dymension__10 { 
   align-self: center;
-  width: var(--layout-hero-width);
-  height: var(--layout-hero-height-small);
+  width: var(--layout-width-80);
+  height: var(--layout-height-10);
 }
 
-.dymension__80 {
+.dymension__20 { 
   align-self: center;
-  width: var(--layout-hero-width);
-  height: var(--layout-hero-height-interior);
+  width: var(--layout-width-80);
+  height: var(--layout-height-20);
+}
+
+.dymension__4020 { 
+  align-self: center;
+  width: var(--layout-width-40);
+  height: var(--layout-height-20);
+}
+
+.dymension__6020 { 
+  align-self: center;
+  width: var(--layout-width-60);
+  height: var(--layout-height-20);
+}
+
+.dymension__50 {
+  align-self: center;
+  width: var(--layout-width-80);
+  height: var(--layout-height-50);
+}
+.dymension__60 {
+  align-self: center;
+  width: var(--layout-width-80);
+  height: var(--layout-height-60);
 }
 
 /* section safety | cards */
