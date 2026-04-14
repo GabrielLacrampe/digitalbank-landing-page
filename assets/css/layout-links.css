@@ -1,9 +1,4 @@
 /* LINKS LAYOUT */
-.link{
-  color: var(--color-white);
-  text-decoration: none;
-}
-
 .links {
   display: flex;
   flex-direction: row;
@@ -28,7 +23,6 @@
 
 .links__item a {
   color: var(--color-white);
-  text-decoration: none;
   transition: opacity var(--timing-standard) var(--ease-smooth);
 }
 

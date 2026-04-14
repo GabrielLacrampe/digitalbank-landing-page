@@ -33,18 +33,14 @@
 }
 
 /* STATE VISIBILITY - Mobile/Desktop Classes */
-
-/* Show elements hidden by default on mobile, reveal on desktop */
-@media (min-width: var(--bp-tablet)) {
-  .is-hidden-desktop {
-    display: none !important;
-  }
-}
-
-/* Hide elements on small screens */
-@media (max-width: calc(var(--bp-mobile-landscape) - 1px)) {
+/* Desktop-first: adjust for mobile (smaller screens) */
+@media (max-width: calc(var(--bp-tablet) - 1px)) {
   .is-hidden-mobile {
-    display: none !important;
+    display: none !important; /* Hide on mobile */
+  }
+
+  .is-hidden-desktop {
+    display: block !important; /* Show on mobile */
   }
 }
 

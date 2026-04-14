@@ -33,7 +33,6 @@
   font-size: var(--button-font-size);
   font-weight: var(--button-font-weight);
   line-height: 1;
-  text-decoration: none;
   white-space: nowrap;
   
   /* Behavior */
@@ -47,25 +46,18 @@
 }
 
 /* Visited state: mantiene el mismo color (no es azul como enlace típico) */
-.btn:visited {
-  color: var(--button-text-color-visited);
-}
-
 .btn:hover {
   border-color: var(--color-primary);
   opacity: 0.8;
-  text-decoration: none;
 }
 
 .btn:active {
   opacity: 0.7;
-  text-decoration: none;
 }
 
 .btn:focus-visible {
   outline: var(--border-width) solid var(--color-primary);
   outline-offset: 2px;
-  text-decoration: none;
 }
 
 /* BEM Modifier: Tab button variant */
@@ -89,26 +81,6 @@
   border: var(--border-width) solid var(--color-border);
   border-radius: var(--radius-card);
   padding: var(--spacing-md);
-}
-
-.card__container {
-  display: flex;
-  flex-direction: row;
-  gap: var(--spacing-sm);
-  padding: var(--spacing-sm);
-  align-items: center;
-}
-
-/* ICON COMPONENT */
-.icon {
-  width: var(--size-icon-base);
-  height: var(--size-icon-base);
-  object-fit: contain;
-}
-
-.icon--lg {
-  width: var(--size-icon-large);
-  object-fit: contain;
 }
 
 /* LOGO COMPONENT */

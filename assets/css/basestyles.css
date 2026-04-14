@@ -2,15 +2,17 @@
    2. BASE STYLES
    ============================================================ */
 
-/* State classes */
+/* State classes - Desktop-first approach */
 .is-hidden-mobile {
-  display: none;
+  display: block; /* Visible en desktop por defecto */
 }
 
 .is-hidden-desktop {
-  display: none;
+  display: none; /* Oculto en desktop por defecto */
 }
 
 .is-scroll-disabled {
   overflow: hidden;
 }
+
+/* Media queries adjust these - see mediaqueries.css */
