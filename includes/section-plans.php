@@ -7,13 +7,13 @@ $plans_group1 = ['plan_standard', 'plan_plus', 'plan_premium'];
 $plans_group2 = ['plan_metal', 'plan_ultra'];
 ?>
 <section id="section-plans" class="main__section">
-    <div class="dymension__10"></div>
+    <div class="dimension__10"></div>
     <?php renderTitle(['title' => $datos['static_blocks']['title']], 'light__content', 2); ?>
-    <ul class="u-flex-row dymension__60 section__static__content">
+    <ul class="u-flex-row dimension__60 section__static__content">
         <?php renderPlanGroup($plans_group1, $datos); ?>
     </ul>
 
-    <ul class="u-flex-row dymension__60 section__static__content">
+    <ul class="u-flex-row dimension__60 section__static__content">
         <?php renderPlanGroup($plans_group2, $datos); ?>
     </ul>
 </section>

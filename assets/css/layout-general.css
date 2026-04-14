@@ -27,36 +27,36 @@ main {
   height: 100vh;
 }
 
-.dymension__10 { 
+.dimension__10 { 
   align-self: center;
   width: var(--layout-width-80);
   height: var(--layout-height-10);
 }
 
-.dymension__20 { 
+.dimension__20 { 
   align-self: center;
   width: var(--layout-width-80);
   height: var(--layout-height-20);
 }
 
-.dymension__4020 { 
+.dimension__4020 { 
   align-self: center;
   width: var(--layout-width-40);
   height: var(--layout-height-20);
 }
 
-.dymension__6020 { 
+.dimension__6020 { 
   align-self: center;
   width: var(--layout-width-60);
   height: var(--layout-height-20);
 }
 
-.dymension__50 {
+.dimension__50 {
   align-self: center;
   width: var(--layout-width-80);
   height: var(--layout-height-50);
 }
-.dymension__60 {
+.dimension__60 {
   align-self: center;
   width: var(--layout-width-80);
   height: var(--layout-height-60);

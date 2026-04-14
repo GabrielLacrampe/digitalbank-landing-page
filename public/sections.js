@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    document.querySelectorAll('.tab-btn').forEach(boton => {
+    document.querySelectorAll('.btn--tab').forEach(boton => {
         boton.addEventListener('click', (e) => {
             // 1. Buscamos la SECCIÓN contenedora más cercana (el ancestro <section>)
             const section = e.target.closest('section');

@@ -68,60 +68,10 @@
   text-decoration: none;
 }
 
-/* TAB BUTTON COMPONENT - Replica estilos de .btn pero es <button> para acciones */
-.tab-btn {
-  /* Display & Layout */
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  
-  /* Dimensions with constraints - IGUAL QUE .btn */
-  width: auto;
-  min-width: var(--button-width-min);
-  max-width: var(--button-width-max);
-  min-height: var(--button-height-min);
-  max-height: var(--button-height-max);
-  height: auto;
-  
-  /* Spacing */
-  padding: var(--button-padding-vertical) var(--button-padding-horizontal);
-  margin: var(--button-margin);
-  
-  /* Styling */
-  background-color: var(--color-primary);
-  color: var(--button-text-color);
-  border: var(--border-width) solid transparent;
-  border-radius: var(--radius-button);
-  
-  /* Typography */
-  font-family: var(--font-family-base);
-  font-size: var(--button-font-size);
-  font-weight: var(--button-font-weight);
-  line-height: 1;
-  white-space: nowrap;
-  
-  /* Behavior */
-  cursor: pointer;
-  transition: all var(--timing-standard) var(--ease-smooth);
-  
-  /* Remove default button styles */
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-
-.tab-btn:hover {
-  border-color: var(--color-primary);
-  opacity: 0.8;
-}
-
-.tab-btn:active {
-  opacity: 0.7;
-}
-
-.tab-btn:focus-visible {
-  outline: var(--border-width) solid var(--color-primary);
-  outline-offset: 2px;
+/* BEM Modifier: Tab button variant */
+.btn--tab {
+  /* Inherits all .btn styles, only differences needed here if any */
+  /* Currently identical to .btn, can add distinctions in future */
 }
 
 /* TABS CONTAINER - Agrupa y centra los botones de control */

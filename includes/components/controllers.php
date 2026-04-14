@@ -1,5 +1,5 @@
 <?php
-function renderControllers($datos, $containerClasses = 'tabs', $buttonClasses = 'btn tab-btn') {
+function renderControllers($datos, $containerClasses = 'tabs', $buttonClasses = 'btn btn--tab') {
     ?>
     <div class="<?php echo trim($containerClasses); ?>">
         <?php foreach ($datos as $btn): ?>
