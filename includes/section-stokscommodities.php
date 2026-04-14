@@ -4,7 +4,7 @@ $datos = $mi_seccion['contenido'];
 $inicial = $datos['section_config']['initial_state']; 
 ?>
 <section id="stocks-commodities" class="main__section">
-    <?php renderImage($datos['dynamic_blocks'][$inicial], 'dynamic-image'); ?>
+    <?php renderImage($datos['dynamic_blocks'][$inicial], 'dynamic-image  background__image'); ?>
     <div class="dymension__10"></div>
 
     <div class="dymension__60 section__static__content">
