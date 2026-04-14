@@ -7,7 +7,7 @@ $inicial = $datos['section_config']['initial_state'];
     <?php renderImage($datos['dynamic_blocks'][$inicial], true, 'background__image'); ?>
     <div class="dymension__10"></div>
 
-    <div class="dymension__80 section__static__content">
+    <div class="dymension__60 section__static__content">
         <?php renderTitle($datos['dynamic_blocks'][$inicial], true, 'light__content'); ?>
         
         <?php renderText($datos['dynamic_blocks'][$inicial], true, 'light__content'); ?>
