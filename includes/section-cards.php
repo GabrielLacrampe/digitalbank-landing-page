@@ -11,7 +11,7 @@
     
     <div class="dymension__10"></div>
     
-    <div class="dymension__80 section__static__content">
+    <div class="dymension__60 section__static__content">
         <?php renderTitle($datos['dynamic_blocks'][$inicial], true, 'light__content'); ?>
 
         <?php renderText($datos['dynamic_blocks'][$inicial], true, 'light__content'); ?>
