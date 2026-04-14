@@ -1,5 +1,5 @@
 <?php
-function renderPlan($planData, $isDynamic = false, $extraClasses = '') {
+function renderPlan($planData, $classes = 'card') {
     if (empty($planData)) return;
 
     // Limpiamos los datos para evitar errores
@@ -10,12 +10,12 @@ function renderPlan($planData, $isDynamic = false, $extraClasses = '') {
 
     ?>
     <a href="<?php echo $url; ?>">
-        <div class="card <?php echo $extraClasses; ?>">
+        <div class="<?php echo trim($classes); ?>">
             <span>
-                <?php renderTitle($title, $isDynamic, '', 2); ?>
+                <?php renderTitle($title, '', 2); ?>
             </span>
-            <?php renderTitle($price, $isDynamic, '', 3); ?>
-            <?php renderText($description, $isDynamic); ?>
+            <?php renderTitle($price, '', 3); ?>
+            <?php renderText($description); ?>
         </div>
     </a>
     <?php

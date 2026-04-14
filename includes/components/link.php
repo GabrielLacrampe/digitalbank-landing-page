@@ -1,9 +1,9 @@
 <?php
 // COMPONENTE HIJO: Renderiza un solo enlace
-function renderLink($linkData, $isDynamic = false, $extraClasses = '') {
+function renderLink($linkData, $classes = 'links__item') {
     if (empty($linkData)) return;
     ?>
-    <li class="links__item">
+    <li class="<?php echo trim($classes); ?>">
         <a href="<?php echo htmlspecialchars($linkData['url']); ?>">
             <span><?php echo htmlspecialchars($linkData['button_text']); ?></span>
         </a>
@@ -12,11 +12,11 @@ function renderLink($linkData, $isDynamic = false, $extraClasses = '') {
 }
 
 // COMPONENTE PADRE: Renderiza la lista completa y llama a los hijos
-function renderListGroup($listData, $isDynamic = false, $extraClasses = '') {
+function renderListGroup($listData, $containerClasses = 'links__list', $titleClasses = 'hero__content') {
     if (empty($listData)) return;
     ?>
-    <div class="links__list">
-        <p class="hero__content"><?php echo htmlspecialchars($listData['title']); ?></p>
+    <div class="<?php echo trim($containerClasses); ?>">
+        <p class="<?php echo trim($titleClasses); ?>"><?php echo htmlspecialchars($listData['title']); ?></p>
         <ul>
             <?php 
             // Recorremos todos los elementos de la lista que empiecen por 'link_'

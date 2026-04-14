@@ -13,10 +13,10 @@ document.addEventListener('DOMContentLoaded', () => {
             const nuevosDatos = todasLasOpciones[target];
 
             // 4. Seleccionamos los elementos a cambiar DENTRO de esta sección únicamente
-            const title = section.querySelector('.dynamic-title');
-            const text = section.querySelector('.dynamic-text');
-            const image = section.querySelector('.dynamic-image');
-            const butons = section.querySelector('.dynamic-button');
+            const title = section.querySelector('[class*="dynamic-title"]');
+            const text = section.querySelector('[class*="dynamic-text"]');
+            const image = section.querySelector('[class*="dynamic-image"]');
+            const butons = section.querySelector('[class*="dynamic-button"]');
             // 5. Animación y cambio
             //if(title) title.style.opacity = 0;
             //if(text) text.style.opacity = 0;

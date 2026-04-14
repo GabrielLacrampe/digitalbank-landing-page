@@ -8,7 +8,7 @@ $plans_group2 = ['plan_metal', 'plan_ultra'];
 ?>
 <section id="section-plans" class="main__section">
     <div class="dymension__10"></div>
-    <?php renderTitle(['title' => $datos['static_blocks']['title']], false, 'light__content', 2); ?>
+    <?php renderTitle(['title' => $datos['static_blocks']['title']], 'light__content', 2); ?>
     <ul class="u-flex-row dymension__60 section__static__content">
         <?php renderPlanGroup($plans_group1, $datos); ?>
     </ul>

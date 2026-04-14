@@ -4,7 +4,7 @@ $datos = $mi_seccion['contenido'];
 ?>
 <div class="u-flex-row">
     <div>
-        <?php renderImage($datos['static_blocks'], false, 'logo'); ?>
+        <?php renderImage($datos['static_blocks'], 'logo'); ?>
     </div>
 
     <div class="u-flex-row u-width-full">

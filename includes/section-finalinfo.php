@@ -6,11 +6,11 @@ $datos = $mi_seccion['contenido'];
     <div class="dymension__10"></div>
 
     <div class="dymension__60">
-        <?php renderTitle($datos['static_blocks'], false, 'dark__content'); ?>
+        <?php renderTitle($datos['static_blocks'], 'dark__content'); ?>
 
-        <?php renderButton($datos['static_blocks']['button'], false, 'light__content'); ?>
+        <?php renderButton($datos['static_blocks']['button'], 'btn light__content'); ?>
 
-        <?php renderText($datos['static_blocks'], false, 'dark__content'); ?>
+        <?php renderText($datos['static_blocks'], 'dark__content'); ?>
     </div>
     
     <div class="dymension__10"></div>

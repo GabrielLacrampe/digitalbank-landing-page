@@ -1,19 +1,13 @@
 <?php
-function renderButton($buttonData, $isDynamic = false, $extraClasses = '') {
+function renderButton($buttonData, $classes = 'btn') {
     if (empty($buttonData)) return;
-
-    // Determinamos la clase de tipo
-    $typeClass = $isDynamic ? 'btn--dynamic' : 'btn--static';
-    
-    // Construimos las clases finales
-    $allClasses = "btn {$typeClass} {$extraClasses}";
 
     // Limpiamos los datos
     $url = $buttonData['url'] ?? '#';
     $text = $buttonData['button_text'] ?? 'Click';
 
     ?>
-    <a class="<?php echo trim($allClasses); ?>" href="<?php echo htmlspecialchars($url); ?>">
+    <a class="<?php echo trim($classes); ?>" href="<?php echo htmlspecialchars($url); ?>">
         <?php echo htmlspecialchars($text); ?>
     </a>
     <?php
@@ -25,7 +19,8 @@ function renderAllButtons($dataBlock, $isDynamic = false) {
 
     foreach ($dataBlock as $key => $value) {
         if (strpos($key, 'button_') === 0 && is_array($value)) {
-            renderButton($value, $isDynamic, "btn-{$key}");
+            $classes = $isDynamic ? "btn dynamic-button btn-{$key}" : "btn btn-{$key}";
+            renderButton($value, $classes);
         }
     }
 }

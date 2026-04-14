@@ -7,16 +7,16 @@
 
 <section id="cards" class="main__section">        
 
-    <?php renderImage($datos['dynamic_blocks'][$inicial], true, 'background__image'); ?>
+    <?php renderImage($datos['dynamic_blocks'][$inicial], 'dynamic-image background__image'); ?>
     
     <div class="dymension__10"></div>
     
     <div class="dymension__60 section__static__content">
-        <?php renderTitle($datos['dynamic_blocks'][$inicial], true, 'light__content'); ?>
+        <?php renderTitle($datos['dynamic_blocks'][$inicial], 'dynamic-title light__content'); ?>
 
-        <?php renderText($datos['dynamic_blocks'][$inicial], true, 'light__content'); ?>
+        <?php renderText($datos['dynamic_blocks'][$inicial], 'dynamic-text light__content'); ?>
 
-        <?php renderButton($datos['dynamic_blocks'][$inicial]['button'], true, 'light__content'); ?>
+        <?php renderButton($datos['dynamic_blocks'][$inicial]['button'], 'btn dynamic-button light__content'); ?>
     </div>
     
     <div class="dymension__10">
