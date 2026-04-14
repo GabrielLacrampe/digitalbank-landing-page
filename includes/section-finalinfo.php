@@ -5,7 +5,7 @@ $datos = $mi_seccion['contenido'];
 <section id="finalinfo" class="main__section">
     <div class="dymension__10"></div>
 
-    <div class="dymension__80">
+    <div class="dymension__60">
         <?php renderTitle($datos['static_blocks'], false, 'dark__content'); ?>
 
         <?php renderButton($datos['static_blocks']['button'], false, 'light__content'); ?>
