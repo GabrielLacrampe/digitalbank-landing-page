@@ -6,7 +6,7 @@ $datos = $mi_seccion['contenido'];
     <?php renderImage($datos['static_blocks'], false, 'background__image'); ?>
     <div class="dymension__10"></div>
     
-    <div class="dymension__80 section__static__content">
+    <div class="dymension__60 section__static__content">
         <?php renderTitle($datos['static_blocks'], false, 'light__content'); ?>
 
         <?php renderText($datos['static_blocks'], false, 'light__content'); ?>
