@@ -77,6 +77,66 @@ main {
   color: var(--color-text-light);
 }
 
+/* awards & references thumbnails */
+.awards-references {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--spacing-lg);
+  min-height: 100%;
+}
+
+.awards-references__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(180px, 1fr));
+  gap: var(--spacing-lg);
+  width: 100%;
+  align-items: start;
+  justify-items: stretch;
+  align-content: center;
+}
+
+@media (max-width: 1024px) {
+  .awards-references__grid {
+    grid-template-columns: repeat(2, minmax(180px, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .awards-references__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.awards-references__item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  min-height: 0;
+}
+
+.awards-references__media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100px;
+  max-height: 120px;
+  overflow: hidden;
+}
+
+.awards-references__image {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.awards-references__text {
+  margin: 0;
+  line-height: 1.4;
+}
+
 /* section finalinfo*/
 .dark__content {
   align-self: center;
