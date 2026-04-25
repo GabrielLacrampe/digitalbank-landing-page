@@ -25,7 +25,7 @@
         include '../includes/section-links.php'; ?>
     </footer>
 
-    <script src="HeroAnim.js"></script>
+    <script src="animations.js"></script>
     <script src="sections.js"></script>
 </body>
 

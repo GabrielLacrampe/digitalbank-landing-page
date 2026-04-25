@@ -74,3 +74,29 @@ function animarHaciaArriba() {
     isAnimating = false;
   }, 1200);
 }
+
+// Background image scale animation on scroll
+document.addEventListener('DOMContentLoaded', function() {
+  const backgroundImages = document.querySelectorAll('.background__image');
+
+  if (backgroundImages.length === 0) return;
+
+  const observerOptions = {
+    root: null,
+    rootMargin: '0px',
+    threshold: Array.from({length: 101}, (_, i) => i / 100) // thresholds from 0.00 to 1.00
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      const ratio = entry.intersectionRatio;
+      // Scale from 1.2 (when not visible) to 1.0 (when fully visible)
+      const scale = 1.2 - (0.2 * ratio);
+      entry.target.style.setProperty('--bg-scale', scale);
+    });
+  }, observerOptions);
+
+  backgroundImages.forEach(img => {
+    observer.observe(img);
+  });
+});

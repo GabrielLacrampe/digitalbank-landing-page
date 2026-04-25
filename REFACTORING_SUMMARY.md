@@ -110,7 +110,7 @@ Comprehensive CSS refactoring transforming the project from a collection of hard
 6. ✅ `includes/section-links.php`
 7. ✅ `includes/header.php`
 8. ✅ `public/index.php`
-9. ✅ `public/HeroAnim.js` (all selectors updated)
+9. ✅ `public/animations.js` (all selectors updated)
 
 **Impact:** Scalable architecture, eliminates naming conflicts, improves maintainability
 
@@ -271,7 +271,7 @@ Comprehensive CSS refactoring transforming the project from a collection of hard
 12. `public/index.php` — Updated footer section class
 
 **JavaScript:**
-13. `public/HeroAnim.js` — Updated all DOM selectors to BEM classes
+13. `public/animations.js` — Updated all DOM selectors to BEM classes
 
 ---
 

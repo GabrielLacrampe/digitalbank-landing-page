@@ -52,7 +52,7 @@ includes/	Código reutilizable (actualmente vacío)
 Frontend:
 Archivo	Propósito
 index.html	Landing page principal con hero, secciones de servicios, planes y footer
-HeroAnim.js	Script de animación de hero interactivo con scroll controlado
+animations.js	Script de animación de hero interactivo con scroll controlado
 styles.css	Estilos globales (diseño responsive, componentes base)
 
 Backend:
