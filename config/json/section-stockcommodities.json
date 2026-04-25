@@ -11,14 +11,14 @@
     "option_a": {
       "title": "Explore 2,500+ stocks",
       "description": "From Apple to Zoom, invest in some of the biggest and most influential companies in the world, commission-free within your monthly allowance.² Other fees may apply. Capital at risk.",
-      "image": "card.jpg",
-      "alt": "Image of a card"
+      "image": "stocks.png",
+      "alt": "Image of stocks"
     },
     "option_b": {
       "title": "Discover Commodities",
       "description": "Add more balance to your portfolio with gold, silver, platinum, and palladium. And invest as you spend with automatic round ups.³ Other fees may apply. Capital at risk. Service is not regulated by the FCA.",
-      "image": "plant.jpg",
-      "alt": "Image of a plant"
+      "image": "commodities.png",
+      "alt": "Image of commodities"
     }
   },
   "static_blocks": {

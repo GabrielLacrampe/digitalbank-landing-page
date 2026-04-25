@@ -11,7 +11,7 @@
     "option_a": {
       "title": "Elevate your spend",
       "description": "Earn points on your purchases with one of our debit cards. Then redeem them for Airline Miles and more. RevPoints T&Cs apply. Some cards available on paid plans only. Fees may apply.",
-      "image": "card.jpg",
+      "image": "cards.png",
       "alt": "Image of a card",
       "button": {
         "button_text": "Start Earning",
@@ -21,8 +21,8 @@
     "option_b": {
       "title": "Go virtual",
       "description": "Create and add virtual cards to your Apple Wallet or Google Wallet to start paying right away.",
-      "image": "plant.jpg",
-      "alt": "Image of a plant",
+      "image": "digital-card.png",
+      "alt": "Image of a digital card",
       "button": {
         "button_text": "Create a Card",
         "url": "#"

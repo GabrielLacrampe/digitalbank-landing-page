@@ -4,28 +4,28 @@
     "initial_state": "option_a"
   },
   "controllers": [
-    { "id": "btnA", "label": "Wedding", "target_data": "option_a" },
-    { "id": "btnB", "label": "Adventure", "target_data": "option_b" },
-    { "id": "btnC", "label": "Moving", "target_data": "option_c" }
+    { "id": "btnA", "label": "Savings", "target_data": "option_a" },
+    { "id": "btnB", "label": "Financial Goals", "target_data": "option_b" },
+    { "id": "btnC", "label": "Growth", "target_data": "option_c" }
   ],
   "dynamic_blocks": {
     "option_a": {
-      "title": "Title for Wedding",
+      "title": "Title for Savings",
       "description": "Option A text sample",
-      "image": "card.jpg",
-      "alt": "Image of a card"
+      "image": "savings.png",
+      "alt": "Image of savings"
     },
     "option_b": {
-      "title": "Title for Adventure",
+      "title": "Title for Financial Goals",
       "description": "Option B text sample",
-      "image": "plant.jpg",
-      "alt": "Image of a plant"
+      "image": "financial-goals.png",
+      "alt": "Image of financial goals"
     },
     "option_c": {
-      "title": "Title for Moving",
+      "title": "Title for Growth",
       "description": "Option C text sample",
-      "image": "children.jpg",
-      "alt": "Image of children"
+      "image": "growth.png",
+      "alt": "Image of growth"
     }
   },
   "static_blocks": {

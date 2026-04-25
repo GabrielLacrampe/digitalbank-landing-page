@@ -5,8 +5,8 @@
   "static_blocks": {
     "title": "Your money’s safe space",
     "description": "With Revolut Secure, you’re entering a new era of money security — where our proactive, purpose-built defences and team of fraud specialists help protect every account, 24/7.",
-    "image": "plant.jpg",
-    "alt": "Image of a plant",
+    "image": "safety.png",
+    "alt": "Image of a safety symbol",
     "button": { 
         "button_text": "Learn More", 
         "url": "#" 
