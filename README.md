@@ -1,5 +1,4 @@
-# proyecto_intermodular
-One-Page Web
+# One-Page Web
 
 Temática: Banco digital estilo Revolut
 Objetivo: una web de un banco online que además de sus productos financieros ofrece herramientas de cálculo y seguimiento.
