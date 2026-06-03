@@ -7,14 +7,11 @@
   /* ---- TYPOGRAPHY ---- */
   --font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
   --font-family-mono: 'Courier New', monospace;
-  --font-size-base: 1rem;
-  --font-size-sm: 0.875rem;
-  --font-size-lg: 1.125rem;
+  --font-size-base: 1.125rem;
   --line-height-base: 1.6;
   --line-height-heading: 1.2;
   --letter-spacing-base: 0.5px;
   --font-weight-normal: 400;
-  --font-weight-medium: 500;
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
 
@@ -36,24 +33,20 @@
 
   /* ---- COLORS ---- */
   --color-primary: #232323;
-  --color-primary-hover: rgba(35, 35, 35, 0.8);
   --color-black: #000000;
   --color-white: #ffffff;
   --color-border: #474747;
   --color-text-dark: #333;
+  --color-text-default: #333;
   --color-text-light: #ffffff;
   --color-background-default: #fff;
 
   /* ---- SPACING SCALE ---- */
-  --spacing-xs: 3px;
   --spacing-sm: 5px;
   --spacing-md: 10px;
   --spacing-lg: 40px;
-  --spacing-xl: 110px;
 
   /* ---- COMPONENT-SPECIFIC SIZES ---- */
-  --size-icon-base: 40px;
-  --size-icon-large: 110px;
   --size-logo-height: 20px;
 
   /* ---- LAYOUT DIMENSIONS ---- */
@@ -64,7 +57,6 @@
   --layout-height-20: 20%;
   --layout-height-50: 50%;
   --layout-height-60: 60%;
-  --layout-links-container-height: 600px;
 
   /* ---- BORDER RADIUS ---- */
   --radius-button: 90px;
@@ -88,7 +80,6 @@
   --button-font-size: var(--font-size-base);
   --button-font-weight: var(--font-weight-semibold);
   --button-text-color: var(--color-text-light);
-  --button-text-color-visited: var(--color-text-light);
 
   /* ---- TRANSFORM VALUES ---- */
   --transform-translate-x-large: 500px;
@@ -98,11 +89,7 @@
   --transform-translate-y-medium: 50px;
 
   /* ---- BREAKPOINTS ---- */
-  --bp-mobile-xs: 320px;
-  --bp-mobile-sm: 480px;
-  --bp-mobile-landscape: 710px;
   --bp-tablet: 710px;
   --bp-desktop: 1024px;
   --bp-desktop-lg: 1440px;
-  --bp-desktop-xl: 1920px;
 }
