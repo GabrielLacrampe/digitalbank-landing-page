@@ -54,7 +54,7 @@ function animarHaciaAbajo() {
 function animarHaciaArriba() {
   isAnimating = true;
   body.classList.add('is-scroll-disabled'); // Volvemos a bloquear el scroll
-  imagenMain.style.transform = `translateY(-100px) scale(1.3)`; // Estado A
+  imagenMain.style.transform = `translateY(100px) scale(1.3)`; // Estado A
   imagenLeft.style.transform = `translateX(-500px) scale(0.7)`;
   imagenLeft.style.opacity = '0';
   imagenRight.style.transform = `translateX(500px) scale(0.7)`;

@@ -28,10 +28,7 @@
 }
 
 .hero__image {
-  position: relative;
-  width: 20%;
   opacity: 0;
-
   object-fit: cover;
   z-index: -1;
   transition: transform var(--timing-standard) var(--ease-smooth),
@@ -40,9 +37,16 @@
 }
 
 .hero__image--right {
+   position: absolute;
+  width: 90%;
+  height: 90%;
   transform: translateX(var(--transform-translate-x-large)) scale(var(--transform-scale-reduced));
 }
 
 .hero__image--left {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+
   transform: translateX(calc(var(--transform-translate-x-large) * -1)) scale(var(--transform-scale-reduced));
 }
