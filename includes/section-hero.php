@@ -5,9 +5,9 @@ $datos = $mi_seccion['contenido'];
 <section id="main" class="main__section">        
     <?php renderImage($datos['static_blocks']['images']['image_a'], 'hero__background'); ?>
     
-    <div class="dimension__10"></div>
+    <div class="dimension__20"></div>
 
-    <div class="dimension__50">
+    <div class="dimension__40">
         <?php renderTitle($datos['static_blocks']['group_a'], 'light__content hero__group hero__group--primary'); ?>
         <?php renderText($datos['static_blocks']['group_a'], 'light__content hero__group hero__group--primary'); ?>        
         <div class="section__static__content">
