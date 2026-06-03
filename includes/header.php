@@ -7,11 +7,16 @@ $datos = $mi_seccion['contenido'];
         <?php renderImage($datos['static_blocks'], 'logo'); ?>
     </div>
 
-    <div class="u-flex-row u-width-full">
-        <span class="u-flex-row">
-            <?php renderAllButtons($datos['static_blocks'], false); ?>
-        </span>
-    </div>
+    <span class="u-flex-row">
+        <?php renderAllButtons($datos['static_blocks'], false, ['login', 'register']); ?>
+    </span>
+
+    <div style="flex: 1;"></div>
+
+    <span class="u-flex-row">
+        <?php renderSpecificButtons($datos['static_blocks'], ['login', 'register'], false); ?>
+    </span>
+
     <div>
         <i class="bi bi-menu-button-wide is-hidden-desktop"></i>
     </div>
