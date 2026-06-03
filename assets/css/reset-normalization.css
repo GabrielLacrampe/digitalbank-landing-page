@@ -115,6 +115,13 @@ p {
   line-height: var(--line-height-base);
 }
 
+/* Paragraphs with light content - limited width for readability */
+p.light__content {
+  max-width: 65ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* Text emphasis */
 strong,
 b {
