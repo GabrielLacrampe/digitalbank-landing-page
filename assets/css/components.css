@@ -81,6 +81,10 @@
   border: var(--border-width) solid var(--color-border);
   border-radius: var(--radius-card);
   padding: var(--spacing-md);
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 /* LOGO COMPONENT */
