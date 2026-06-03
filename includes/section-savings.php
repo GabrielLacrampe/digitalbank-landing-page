@@ -12,10 +12,6 @@ $inicial = $datos['section_config']['initial_state'];
         
         <?php renderText($datos['static_blocks'], 'light__content'); ?>
         
-        <?php renderTitle($datos['dynamic_blocks'][$inicial], 'dynamic-title light__content'); ?>
-
-        <?php renderText($datos['dynamic_blocks'][$inicial], 'dynamic-text light__content'); ?>
-
         <?php renderButton($datos['static_blocks']['button'], 'btn light__content'); ?>
     </div>
     
