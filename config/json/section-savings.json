@@ -1,7 +1,7 @@
 {
   "section_config": {
     "id_container": "section-savings",
-    "initial_state": "option_a"
+    "initial_state": "option_c"
   },
   "controllers": [
     { "id": "btnA", "label": "Savings", "target_data": "option_a" },

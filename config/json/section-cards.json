@@ -1,7 +1,7 @@
 {
   "section_config": {
     "id_container": "section-cards",
-    "initial_state": "option_a"
+    "initial_state": "option_b"
   },
   "controllers": [
     { "id": "btnA", "label": "Physical cards", "target_data": "option_a" },

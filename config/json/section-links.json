@@ -4,289 +4,189 @@
   },
   "static_blocks": {
     "list_a":{    
-        "title": "Planes",
+        "title": "Investments",
         "link_a": { 
-            "button_text": "Estandar", 
+            "button_text": "Shares", 
             "url": "#" 
         },
         "link_b": { 
-            "button_text": "Estandar", 
+            "button_text": "Robo-Advisor", 
             "url": "#" 
         },
         "link_c": { 
-            "button_text": "Estandar", 
+            "button_text": "ETFs", 
             "url": "#" 
         },
         "link_d": { 
-            "button_text": "Estandar", 
-            "url": "#" 
-        },
-        "link_e": { 
-            "button_text": "Estandar", 
-            "url": "#" 
-        },
-        "link_f": { 
-            "button_text": "Estandar", 
+            "button_text": "Bonds", 
             "url": "#" 
         }
     },"list_b":{    
-        "title": "Planes",
+        "title": "Global Finances",
         "link_a": { 
-            "button_text": "Estandar", 
+            "button_text": "International transfers", 
             "url": "#" 
         },
         "link_b": { 
-            "button_text": "Estandar", 
+            "button_text": "Lounges", 
             "url": "#" 
         },
         "link_c": { 
-            "button_text": "Estandar", 
-            "url": "#" 
-        },
-        "link_d": { 
-            "button_text": "Estandar", 
-            "url": "#" 
-        },
-        "link_e": { 
-            "button_text": "Estandar", 
-            "url": "#" 
-        },
-        "link_f": { 
-            "button_text": "Estandar", 
+            "button_text": "Insurance", 
             "url": "#" 
         }
     },"list_c":{    
-        "title": "Planes",
+        "title": "Staff",
         "link_a": { 
-            "button_text": "Estandar", 
+            "button_text": "Contact us", 
             "url": "#" 
         },
         "link_b": { 
-            "button_text": "Estandar", 
+            "button_text": "Help Center", 
             "url": "#" 
         },
         "link_c": { 
-            "button_text": "Estandar", 
+            "button_text": "System status", 
             "url": "#" 
         },
         "link_d": { 
-            "button_text": "Estandar", 
+            "button_text": "Developer API", 
             "url": "#" 
         },
         "link_e": { 
-            "button_text": "Estandar", 
-            "url": "#" 
-        },
-        "link_f": { 
-            "button_text": "Estandar", 
+            "button_text": "Site Map", 
             "url": "#" 
         }
     },"list_d":{    
-        "title": "Planes",
+        "title": "Crypto",
         "link_a": { 
-            "button_text": "Estandar", 
+            "button_text": "Crypto", 
             "url": "#" 
         },
         "link_b": { 
-            "button_text": "Estandar", 
-            "url": "#" 
-        },
-        "link_c": { 
-            "button_text": "Estandar", 
-            "url": "#" 
-        },
-        "link_d": { 
-            "button_text": "Estandar", 
-            "url": "#" 
-        },
-        "link_e": { 
-            "button_text": "Estandar", 
-            "url": "#" 
-        },
-        "link_f": { 
-            "button_text": "Estandar", 
+            "button_text": "Revolution X", 
             "url": "#" 
         }
     },"list_e":{    
-        "title": "Planes",
+        "title": "Security and protection",
         "link_a": { 
-            "button_text": "Estandar", 
+            "button_text": "This is how we protect your money", 
             "url": "#" 
         },
         "link_b": { 
-            "button_text": "Estandar", 
+            "button_text": "Report a lost device", 
             "url": "#" 
         },
         "link_c": { 
-            "button_text": "Estandar", 
+            "button_text": "More information about fraud and scams", 
             "url": "#" 
         },
         "link_d": { 
-            "button_text": "Estandar", 
+            "button_text": "Security flaws", 
             "url": "#" 
         },
         "link_e": { 
-            "button_text": "Estandar", 
-            "url": "#" 
-        },
-        "link_f": { 
-            "button_text": "Estandar", 
+            "button_text": "Report on insights into consumer security", 
             "url": "#" 
         }
     },"list_f":{    
-        "title": "Planes",
+        "title": "Savings & Funds",
         "link_a": { 
-            "button_text": "Estandar", 
+            "button_text": "Daily Savings", 
             "url": "#" 
         },
         "link_b": { 
-            "button_text": "Estandar", 
-            "url": "#" 
-        },
-        "link_c": { 
-            "button_text": "Estandar", 
-            "url": "#" 
-        },
-        "link_d": { 
-            "button_text": "Estandar", 
-            "url": "#" 
-        },
-        "link_e": { 
-            "button_text": "Estandar", 
-            "url": "#" 
-        },
-        "link_f": { 
-            "button_text": "Estandar", 
+            "button_text": "Daily Money Market Funds", 
             "url": "#" 
         }
     },"list_g":{    
-        "title": "Planes",
+        "title": "Bills",
         "link_a": { 
-            "button_text": "Estandar", 
+            "button_text": "Bank account", 
             "url": "#" 
         },
         "link_b": { 
-            "button_text": "Estandar", 
+            "button_text": "Joint Account", 
             "url": "#" 
         },
         "link_c": { 
-            "button_text": "Estandar", 
+            "button_text": "Professional account", 
             "url": "#" 
         },
         "link_d": { 
-            "button_text": "Estandar", 
+            "button_text": "Parents and guardians", 
             "url": "#" 
         },
         "link_e": { 
-            "button_text": "Estandar", 
-            "url": "#" 
-        },
-        "link_f": { 
-            "button_text": "Estandar", 
+            "button_text": "Basic account", 
             "url": "#" 
         }
     },"list_h":{    
-        "title": "Planes",
+        "title": "About Revolution",
         "link_a": { 
-            "button_text": "Estandar", 
+            "button_text": "Sustainability", 
             "url": "#" 
         },
         "link_b": { 
-            "button_text": "Estandar", 
-            "url": "#" 
-        },
-        "link_c": { 
-            "button_text": "Estandar", 
-            "url": "#" 
-        },
-        "link_d": { 
-            "button_text": "Estandar", 
-            "url": "#" 
-        },
-        "link_e": { 
-            "button_text": "Estandar", 
-            "url": "#" 
-        },
-        "link_f": { 
-            "button_text": "Estandar", 
+            "button_text": "Code of Conduct", 
             "url": "#" 
         }
     },"list_i":{    
-        "title": "Planes",
+        "title": "Plans",
         "link_a": { 
-            "button_text": "Estandar", 
+            "button_text": "Standard", 
             "url": "#" 
         },
         "link_b": { 
-            "button_text": "Estandar", 
+            "button_text": "Plus", 
             "url": "#" 
         },
         "link_c": { 
-            "button_text": "Estandar", 
+            "button_text": "Premium", 
             "url": "#" 
         },
         "link_d": { 
-            "button_text": "Estandar", 
+            "button_text": "Metal", 
             "url": "#" 
         },
         "link_e": { 
-            "button_text": "Estandar", 
+            "button_text": "Ultra", 
             "url": "#" 
         },
         "link_f": { 
-            "button_text": "Estandar", 
+            "button_text": "Compare plans", 
             "url": "#" 
         }
     },"list_j":{    
-        "title": "Planes",
+        "title": "Mobile & Connectivity",
         "link_a": { 
-            "button_text": "Estandar", 
-            "url": "#" 
-        },
-        "link_b": { 
-            "button_text": "Estandar", 
-            "url": "#" 
-        },
-        "link_c": { 
-            "button_text": "Estandar", 
-            "url": "#" 
-        },
-        "link_d": { 
-            "button_text": "Estandar", 
-            "url": "#" 
-        },
-        "link_e": { 
-            "button_text": "Estandar", 
-            "url": "#" 
-        },
-        "link_f": { 
-            "button_text": "Estandar", 
+            "button_text": "Data plans", 
             "url": "#" 
         }
     },"list_k":{    
-        "title": "Planes",
+        "title": "Spending smartly",
         "link_a": { 
-            "button_text": "Estandar", 
+            "button_text": "Tickets", 
             "url": "#" 
         },
         "link_b": { 
-            "button_text": "Estandar", 
+            "button_text": "Sending and Receiving", 
             "url": "#" 
         },
         "link_c": { 
-            "button_text": "Estandar", 
+            "button_text": "Money management", 
             "url": "#" 
         },
         "link_d": { 
-            "button_text": "Estandar", 
+            "button_text": "RevPoints", 
             "url": "#" 
         },
         "link_e": { 
-            "button_text": "Estandar", 
+            "button_text": "Linked accounts", 
             "url": "#" 
         },
         "link_f": { 
-            "button_text": "Estandar", 
+            "button_text": "Shops", 
             "url": "#" 
         }
     }

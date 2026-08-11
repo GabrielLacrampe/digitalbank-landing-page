@@ -1,7 +1,7 @@
 {
   "section_config": {
     "id_container": "section-stocks-commodities",
-    "initial_state": "option_a"
+    "initial_state": "option_b"
   },
   "controllers": [
     { "id": "btnA", "label": "Stocks", "target_data": "option_a" },

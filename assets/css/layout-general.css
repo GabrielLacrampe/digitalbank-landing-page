@@ -41,8 +41,8 @@ main {
 
 .dimension__4020 { 
   align-self: center;
-  width: var(--layout-width-40);
-  height: var(--layout-height-20);
+  width: var(--layout-width-80);
+  height: var(--layout-height-80);
 }
 
 .dimension__6020 { 
